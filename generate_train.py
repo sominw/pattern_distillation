@@ -34,9 +34,24 @@ def save_summaries(summaries, filepath, idx):
     print(f"Summaries have been saved to {filepath} at index {idx}")
 
 
-def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, model_id):
+def load_existing_ids(filepath):
+    existing_ids = set()
+    if os.path.exists(filepath):
+        with jsonlines.open(filepath, mode='r') as reader:
+            for obj in reader:
+                existing_ids.add(obj['id'])
+    return existing_ids
+
+
+def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, model_id, checkpoint_fp=None):
     data = load_text_data(input_fp, hf)
     data_json = [] 
+
+    existing_ids = set()
+    if checkpoint_fp:
+        existing_ids = load_existing_ids(checkpoint_fp)
+        print(f"Loaded {len(existing_ids)} existing summaries from {checkpoint_fp}")
+
 
     pipeline = transformers.pipeline(
         "text-generation",
@@ -46,6 +61,10 @@ def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, mod
     )
 
     for idx, row in data.iterrows(): 
+        if row['id'] in existing_ids:
+            # print(f"Skipping already processed ID: {row['id']}")
+            continue
+
         processed_row = {
             "id": row['id'], 
             "text": row[text_col],
@@ -55,11 +74,12 @@ def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, mod
 
         data_json.append(processed_row)
 
-        if idx % save_interval == 0: 
+        if idx % save_interval == 0 and data_json: 
             save_summaries(data_json, output_jsonl, idx)
             data_json = []
 
-    save_summaries(data_json, output_jsonl, idx)
+    if data_json:
+        save_summaries(data_json, output_jsonl, idx)
     print("All summaries have been saved.")
 
 
@@ -70,6 +90,8 @@ if __name__ == "__main__":
     output_fp = "cnn_dailymail_generated_"+model_id.split('/')[-1]+".jsonl"
     save_interval = 100
     text_col = "article"
-   
+    
+    checkpoint_fp = output_fp 
+ 
     generate_train_data(input_fp, hf, output_fp, save_interval, text_col, model_id)
     
