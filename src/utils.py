@@ -30,7 +30,7 @@ def prepare_preprocess_clm_fn(tokenizer: AutoTokenizer):
 
     return preprocess_fn
 
-def prepare_compute_metrics_clm(tokenizer: AutoTokenizer, rationales: bool = True): 
+def prepare_compute_metrics_clm(tokenizer: AutoTokenizer): 
     rouge = evaluate.load("rouge")
     
     def compute_metrics(eval_pred) -> dict:
@@ -44,7 +44,28 @@ def prepare_compute_metrics_clm(tokenizer: AutoTokenizer, rationales: bool = Tru
         decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
         
 
+        final_labels = []
+        for sentence in decoded_predictions:
+            match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]', sentence.strip())
+            if match:
+                label = match.group(1)
+                final_labels.append(label.strip())
+            else:
+                final_labels.append("None")
+        decoded_predictions = final_labels
+
+        final_labels = []
+        for sentence in decoded_labels:
+            match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]', sentence.strip())
+            if match:
+                label = match.group(1)
+                final_labels.append(label.strip())
+            else:
+                final_labels.append("None")
+        decoded_labels = final_labels
+
         rand_ix = random.randint(0, len(decoded_labels) - 1)
+
 
         print ("\nLABELS (FULL): ", decoded_labels[rand_ix])
         print ("\nPREDS (FULL): ", decoded_predictions[rand_ix])

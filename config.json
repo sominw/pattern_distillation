@@ -1,6 +1,6 @@
 [
     {
-        "name": "cnn_dailymail",
+        "name": "cnn",
         "task_category": "summarization",
         "task_type" : "single document summarization",
         "split" : "false",

@@ -12,7 +12,8 @@ def load_data_for_training_evaluation(config: dict,
     """
     Load data for text2text model training
     """
-    df = pd.read_csv(config[teacher+"_filtered.csv"])
+    # print (config)
+    df = pd.read_csv(config[teacher+"_filtered"])
     df["clm"] = tokenizer.bos_token + df["text"] + " #### [SUMMARY]" + df["generated_summary"] + "[SUMMARY]"
     d = Dataset.from_pandas(df)
     d = d.train_test_split(test_size=0.2)

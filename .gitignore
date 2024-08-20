@@ -1,5 +1,6 @@
 data/
 .DS_Store
 *_apikey*
-__pycache__/
+__pycache__
 wandb
+logs
