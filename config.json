@@ -1,0 +1,31 @@
+[
+    {
+        "name": "cnn_dailymail",
+        "task_category": "summarization",
+        "task_type" : "single document summarization",
+        "split" : "false",
+        "subset": "none",
+        "path" : "none",
+        "mistral_json" : "/work/frink/shaib.c/pattern_distillation/generated_data/cnn_dailymail_generated_Mistral-7B-Instruct-v0.3.jsonl",
+        "mistral_filtered": "/work/frink/shaib.c/pattern_distillation/generated_data/cnn_dailymail_generated_Mistral-7B-Instruct-v0.3_filtered.csv"
+    },
+
+    {
+        "name": "rotten_tomatoes",
+        "task_category": "summarization",
+        "task_type" : "single document summarization",
+        "split" : "false",
+        "subset": "none",
+        "path" : "/work/frink/shaib.c/pattern_distillation/original_data/rotten_tomatoes_merged.csv"
+    }, 
+
+    {
+        "name": "cochrane",
+        "task_category": "summarization",
+        "task_type" : "multi document summarization",
+        "split" : "false",
+        "subset": "none",
+        "path" : "/work/frink/shaib.c/pattern_distillation/original_data/cochrane_train_merged.csv"
+    }
+
+]
