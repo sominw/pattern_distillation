@@ -41,7 +41,7 @@ def prepare_compute_metrics_clm(tokenizer: AutoTokenizer):
 
         decoded_predictions = tokenizer.batch_decode(predictions, skip_special_tokens=False)
         labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=False)
         
 
         final_labels = []

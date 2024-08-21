@@ -90,16 +90,25 @@ def main(args):
 
     compute_metrics = prepare_compute_metrics(tokenizer)
 
-    d_train, d_valid, d_test = load_data_for_training_evaluation(config, args.train, args.teacher, tokenizer)
+    d_train, d_valid, d_test = load_data_for_training_evaluation(config, args.train, args.teacher, tokenizer, args.sample_test)
     preprocess_fn = prepare_preprocess_clm_fn(tokenizer)
 
     tokenized_d_train = d_train.map(preprocess_fn, batched=True)
     tokenized_d_valid = d_valid.map(preprocess_fn, batched=True)
 
+    # print (tokenized_d_train[1])
+
+    # print ("\n\n")
+
+    # print (tokenized_d_valid[1])
+
     tokenized_d_train = tokenized_d_train.remove_columns(d_train.column_names)
     tokenized_d_valid = tokenized_d_valid.remove_columns(d_valid.column_names)
 
     output_path = cache_path + "pattern_distill_models/"
+
+    if args.output_path is None and args.train:
+         output_path = output_path + "trained/" + args.data + "/" + args.model + "_" + args.teacher
 
     logger.info("Output Path: \t" + output_path)
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
@@ -191,6 +200,7 @@ if __name__ == "__main__":
     # parser.add_argument("--ablation", type=str, default = None)
     # parser.add_argument("--abl_param", type=float, default=0)
     parser.add_argument("--report_to", type=str, default="none")
+    parser.add_argument("--sample_test", type=int, default=0)
     
     args_lightning = parser.parse_args() 
     main(args_lightning)

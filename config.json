@@ -6,8 +6,9 @@
         "split" : "false",
         "subset": "none",
         "path" : "none",
-        "mistral_json" : "/work/frink/shaib.c/pattern_distillation/generated_data/cnn_dailymail_generated_Mistral-7B-Instruct-v0.3.jsonl",
-        "mistral_filtered": "/work/frink/shaib.c/pattern_distillation/generated_data/cnn_dailymail_generated_Mistral-7B-Instruct-v0.3_filtered.csv"
+        "mistral7b_json" : "/work/frink/shaib.c/pattern_distillation/generated_data/cnn_dailymail_generated_Mistral-7B-Instruct-v0.3.jsonl",
+        "mistral7b_filtered": "/work/frink/shaib.c/pattern_distillation/generated_data/cnn_dailymail_generated_Mistral-7B-Instruct-v0.3_filtered.csv",
+        "mistral7b_test": "/work/frink/shaib.c/pattern_distillation/generated_data/cnn_dailymail_generated_Mistral-7B-Instruct-v0.3_test.csv"
     },
 
     {
