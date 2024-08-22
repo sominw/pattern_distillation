@@ -108,7 +108,7 @@ def main(args):
     output_path = cache_path + "pattern_distill_models/"
 
     if args.output_path is None and args.train:
-         output_path = output_path + "trained/" + args.data + "/" + args.model + "_" + args.teacher
+         output_path = output_path + "trained/" + args.data + "/" + args.model + "_" + args.teacher + "/"
 
     logger.info("Output Path: \t" + output_path)
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
