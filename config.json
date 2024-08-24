@@ -1,5 +1,35 @@
 [
     {
+        "name": "generation_cnn_dailymail",
+        "task_category": "summarization",
+        "task_type" : "single document summarization",
+        "split" : "train",
+        "subset": "none",
+        "path" : "ccdv/cnn_dailymail",
+        "text_col": "article"
+    },
+    
+    {
+        "name": "generation_cochrane",
+        "task_category": "summarization",
+        "task_type" : "single document summarization",
+        "split" : "train",
+        "subset": "none",
+        "path": "/home/shaib.c/pattern_distillation/original_data/cochrane_train_merged.csv",
+        "text_col": "abstract"
+    },
+
+    {
+        "name": "generation_rotten_tomatoes",
+        "task_category": "summarization",
+        "task_type" : "single document summarization",
+        "split" : "train",
+        "subset": "none",
+        "path": "/home/shaib.c/pattern_distillation/original_data/rotten_tomatoes_merged.csv",
+        "text_col": "summary"
+    },
+
+    {
         "name": "cnn",
         "task_category": "summarization",
         "task_type" : "single document summarization",

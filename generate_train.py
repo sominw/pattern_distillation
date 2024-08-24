@@ -2,8 +2,17 @@ import pandas as pd
 import transformers
 import torch
 import jsonlines
+import json
 import os
 from datasets import load_dataset
+import argparse
+import click
+import backoff
+# from itertools import chain
+# from openai import OpenAI
+from together import Together
+import together 
+
 
 def load_text_data(filepath, hf=False):
     if not hf:
@@ -12,7 +21,25 @@ def load_text_data(filepath, hf=False):
     elif hf: 
         return load_dataset(filepath, '3.0.0', split='train', cache_dir='/scratch/shaib.c/').to_pandas()
 
-    
+
+@backoff.on_exception(backoff.expo,
+                      (together.error.APIError,
+                      together.error.RateLimitError,
+                      together.error.APIConnectionError),
+                      giveup=together.error.InvalidRequestError)
+
+def call_together_api(text, model, key, client):
+    PROMPT = "\n\nPlease summarize the given text."
+
+    response = client.chat.completions.create(
+        model=model,
+        messages= [{"role": "user", "content": text + PROMPT}],
+    )
+
+    # print(response.choices[0].message.content)
+    return response.choices[0].message.content
+
+
 def generate_summary(text, pipeline):
     PROMPT = "\n\nPlease summarize the given text."
     messages = [
@@ -43,7 +70,7 @@ def load_existing_ids(filepath):
     return existing_ids
 
 
-def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, model_id, checkpoint_fp=None):
+def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, model_id, checkpoint_fp=None, together_api=False):
     data = load_text_data(input_fp, hf)
     data_json = [] 
 
@@ -52,25 +79,35 @@ def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, mod
         existing_ids = load_existing_ids(checkpoint_fp)
         print(f"Loaded {len(existing_ids)} existing summaries from {checkpoint_fp}")
 
-
-    pipeline = transformers.pipeline(
-        "text-generation",
-        model=model_id,
-        model_kwargs={"torch_dtype": torch.bfloat16},
-        device_map="auto",
-    )
+    if not together_api: 
+        pipeline = transformers.pipeline(
+            "text-generation",
+            model=model_id,
+            model_kwargs={"torch_dtype": torch.bfloat16},
+            device_map="auto",
+        )
 
     for idx, row in data.iterrows(): 
         if row['id'] in existing_ids:
             # print(f"Skipping already processed ID: {row['id']}")
             continue
-
-        processed_row = {
-            "id": row['id'], 
-            "text": row[text_col],
-            "gold_summary": row['highlights'], 
-            "generated_summary": generate_summary(row[text_col], pipeline)
-        }
+         
+        if not together_api:
+            processed_row = {
+                "id": row['id'], 
+                "text": row[text_col],
+                "gold_summary": row['highlights'], 
+                "generated_summary": generate_summary(row[text_col], pipeline)
+            }
+        else: 
+            key = open('/home/shaib.c/pattern_distillation/.togetherai_api_key.txt').read().strip()
+            client = Together(api_key=key)
+            processed_row = {
+                "id": row['id'], 
+                "text": row[text_col],
+                "gold_summary": row['highlights'], 
+                "generated_summary": call_together_api(row[text_col], model_id, key, client)
+            }
 
         data_json.append(processed_row)
 
@@ -83,15 +120,37 @@ def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, mod
     print("All summaries have been saved.")
 
 
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Generate training data')
+    
+    parser.add_argument('--dataset', type=str)
+    parser.add_argument('--model_id', type=str)
+    parser.add_argument('--together_api', type=bool, default=False)
+
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    input_fp = "ccdv/cnn_dailymail"
-    hf = True
-    model_id = "mistralai/Mistral-7B-Instruct-v0.3" # "google/gemma-2-9b-it" # "meta-llama/Meta-Llama-3.1-8B-Instruct" 
-    output_fp = "cnn_dailymail_generated_"+model_id.split('/')[-1]+".jsonl"
+
+    args = parse_arguments()
+
+    configs = json.load(open('config.json'))
+    configs = {conf['name'] : conf for conf in configs}
+    
+    if args.dataset == 'cnn_dailymail': 
+        hf = True 
+    else:
+        hf = False
+
+    DATA_ROOT = '/work/frink/shaib.c/pattern_distillation/generated_data/'
+    input_fp = configs['generation_' + args.dataset]['path']
+    output_fp = DATA_ROOT + args.dataset + "_generated_" +  args.model_id.split('/')[-1]+".jsonl"
+
     save_interval = 100
-    text_col = "article"
+
+    text_col = configs['generation_' + args.dataset]['text_col']
     
     checkpoint_fp = output_fp 
  
-    generate_train_data(input_fp, hf, output_fp, save_interval, text_col, model_id)
+    generate_train_data(input_fp, hf, output_fp, save_interval, text_col, args.model_id, checkpoint_fp, args.together_api)
     
