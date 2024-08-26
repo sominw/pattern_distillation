@@ -14,12 +14,15 @@ from together import Together
 import together 
 
 
-def load_text_data(filepath, hf=False):
+def load_text_data(filepath, ids, hf=False):
     if not hf:
         assert filepath.endswith('.csv')
         return pd.read_csv(filepath)  # Corrected variable name from 'filename' to 'filepath'
     elif hf: 
-        return load_dataset(filepath, '3.0.0', split='train', cache_dir='/scratch/shaib.c/').to_pandas()
+        if ids:
+            return load_dataset(filepath, '3.0.0', split='train', cache_dir='/scratch/shaib.c/').filter(lambda x: x['id'] in ids).to_pandas()
+        else: 
+            return load_dataset(filepath, '3.0.0', split='train', cache_dir='/scratch/shaib.c/').to_pandas()
 
 
 @backoff.on_exception(backoff.expo,
@@ -70,8 +73,8 @@ def load_existing_ids(filepath):
     return existing_ids
 
 
-def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, model_id, checkpoint_fp=None, together_api=False):
-    data = load_text_data(input_fp, hf)
+def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, ids, model_id, checkpoint_fp=None, together_api=False):
+    data = load_text_data(input_fp, ids, hf)
     data_json = [] 
 
     existing_ids = set()
@@ -136,9 +139,11 @@ if __name__ == "__main__":
 
     configs = json.load(open('config.json'))
     configs = {conf['name'] : conf for conf in configs}
-    
+    ids = None
     if args.dataset == 'cnn_dailymail': 
         hf = True 
+        id_path = '/home/shaib.c/pattern_distillation/generated_data/cnn_dailymail_ids.txt'
+        ids = open(id_path).read().splitlines()
     else:
         hf = False
 
@@ -152,5 +157,5 @@ if __name__ == "__main__":
     
     checkpoint_fp = output_fp 
  
-    generate_train_data(input_fp, hf, output_fp, save_interval, text_col, args.model_id, checkpoint_fp, args.together_api)
+    generate_train_data(input_fp, hf, output_fp, save_interval, text_col, ids, args.model_id, checkpoint_fp, args.together_api)
     
