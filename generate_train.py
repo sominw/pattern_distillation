@@ -73,7 +73,7 @@ def load_existing_ids(filepath):
     return existing_ids
 
 
-def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, ids, model_id, checkpoint_fp=None, together_api=False):
+def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, id_col, summary_col, ids, model_id, checkpoint_fp=None, together_api=False):
     data = load_text_data(input_fp, ids, hf)
     data_json = [] 
 
@@ -91,24 +91,24 @@ def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, ids
         )
 
     for idx, row in data.iterrows(): 
-        if row['id'] in existing_ids:
+        if row[id_col] in existing_ids:
             # print(f"Skipping already processed ID: {row['id']}")
             continue
          
         if not together_api:
             processed_row = {
-                "id": row['id'], 
+                "id": row[id_col], 
                 "text": row[text_col],
-                "gold_summary": row['highlights'], 
+                "gold_summary": row[summary_col], 
                 "generated_summary": generate_summary(row[text_col], pipeline)
             }
         else: 
             key = open('/home/shaib.c/pattern_distillation/.togetherai_api_key.txt').read().strip()
             client = Together(api_key=key)
             processed_row = {
-                "id": row['id'], 
+                "id": row[id_col], 
                 "text": row[text_col],
-                "gold_summary": row['highlights'], 
+                "gold_summary": row[summary_col], 
                 "generated_summary": call_together_api(row[text_col], model_id, key, client)
             }
 
@@ -154,8 +154,10 @@ if __name__ == "__main__":
     save_interval = 100
 
     text_col = configs['generation_' + args.dataset]['text_col']
+    id_col = configs['generation_' + args.dataset]['id_col']
+    summary_col = configs['generation_' + args.dataset]['summary_col']
     
     checkpoint_fp = output_fp 
  
-    generate_train_data(input_fp, hf, output_fp, save_interval, text_col, ids, args.model_id, checkpoint_fp, args.together_api)
+    generate_train_data(input_fp, hf, output_fp, save_interval, text_col, id_col, summary_col, ids, args.model_id, checkpoint_fp, args.together_api)
     

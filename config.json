@@ -6,7 +6,9 @@
         "split" : "train",
         "subset": "none",
         "path" : "ccdv/cnn_dailymail",
-        "text_col": "article"
+        "text_col": "article",
+        "id_col": "id",
+        "summary_col": "highlights"
     },
     
     {
@@ -16,7 +18,9 @@
         "split" : "train",
         "subset": "none",
         "path": "/home/shaib.c/pattern_distillation/original_data/cochrane_train_merged.csv",
-        "text_col": "abstract"
+        "text_col": "Abstract",
+        "id_col": "ReviewID",
+        "summary_col": "Target"
     },
 
     {
@@ -26,7 +30,9 @@
         "split" : "train",
         "subset": "none",
         "path": "/home/shaib.c/pattern_distillation/original_data/rotten_tomatoes_merged.csv",
-        "text_col": "summary"
+        "text_col": "review_content",
+        "id_col": "rotten_tomatoes_link",
+        "summary_col": "critics_consensus"
     },
 
     {

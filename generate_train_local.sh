@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --time=96:00:00
-#SBATCH --job-name=inference
+#SBATCH --job-name=gen_training_data
 #SBATCH --mem=128G
 #SBATCH --partition=177huntington
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
-#SBATCH --array=0-8%2
+#SBATCH --array=0-6%2
 #SBATCH --dependency=singleton
 
 CACHE_DIR="/scratch/shaib.c/"
