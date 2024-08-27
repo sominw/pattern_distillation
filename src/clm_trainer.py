@@ -194,7 +194,7 @@ if __name__ == "__main__":
 
 
     # src specific
-    parser.add_argument("--teacher", type=str, default="mistral")
+    parser.add_argument("--teacher", type=str, default="mistral7b")
     parser.add_argument("--model", type=str, default="gpt2_s")
     parser.add_argument("--train", type=bool, default=True, action=BooleanOptionalAction)
     # parser.add_argument("--ablation", type=str, default = None)
