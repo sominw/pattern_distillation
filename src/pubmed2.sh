@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES="0,1" python3 clm_trainer.py --teacher=mixtral --model=gpt2_xl --max_epochs=50 --batch_size=4 --data=pubmed
+CUDA_VISIBLE_DEVICES="0,1" python3 clm_trainer.py --teacher=llama70b --model=gpt2_xl --max_epochs=50 --batch_size=4 --data=pubmed

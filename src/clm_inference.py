@@ -102,10 +102,20 @@ def main(args):
         torch.cuda.empty_cache()
         generated_ids = outputs.to('cpu')
         generated_tokens = tokenizer.batch_decode(generated_ids, skip_special_tokens=False)[0]
+        # print (generated_tokens)
         try:
-            match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]', generated_tokens.strip())
+            # match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]', generated_tokens.strip())
+            # match = re.search(r'\[SUMMARY\]\s*(.*)', generated_tokens.strip())
+            match = generated_tokens[len(m_input):].strip()
+            match = re.search(r'\[SUMMARY\]\s*(.*)', match, re.DOTALL) # for gemma only
+            # match = generated_tokens.strip()
             if match:
-                summ = match.group(1)
+                # summ = match.group(1)
+                summ = match.group(1).replace('[SUMMARY]', '').strip() # for pubmedsum only, comment out otherwise
+                lines = re.split(r'\.\s*', summ)
+                unique_lines = list(dict.fromkeys(line.strip() for line in lines if line.strip()))
+                summ = '. '.join(unique_lines) + '.'
+                # summ = match # uncomment ONLY if summ = match.group(1) is commented out
                 generated.append(summ)
             else:
                 summ = "None"
@@ -116,12 +126,12 @@ def main(args):
             ip.append(ins["text"])
             ids.append(ins["id"])
             if args.verbose:
-                print ("\n\nID: ", ins["id"])
-                print ("\nTEXT: ", ins["text"])
-                print ("\nSTUDENT GENERATED: ", summ)
-                print ("\nGOLD: ", ins["gold_summary"])
-                print ("\nTEACHER GENERATED: ", ins["generated_summary"])
-                print ("\n\n---------------------------------------------\n\n")
+                # print ("\n\nID: ", ins["id"])
+                print ("\n---TEXT: ", ins["text"])
+                print ("\n---STUDENT GENERATED: ", summ)
+                # print ("\nGOLD: ", ins["gold_summary"])
+                print ("\n---TEACHER GENERATED: ", ins["generated_summary"])
+                print ("\n\n------------------------------------------------------------------------------------------\n\n")
         except:
             logger.error("Error in processing instance: " + ins["id"])
             erroneous += 1
