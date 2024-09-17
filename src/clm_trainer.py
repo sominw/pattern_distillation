@@ -152,7 +152,7 @@ def main(args):
                     eval_dataset=tokenized_d_valid,
                     tokenizer=tokenizer,
                     compute_metrics=compute_metrics,
-                    callbacks=[EarlyStoppingCallback(early_stopping_patience=10, early_stopping_threshold=0.02)]
+                    callbacks=[EarlyStoppingCallback(early_stopping_patience=15, early_stopping_threshold=0.02)]
                     )
     
     if args.train:
