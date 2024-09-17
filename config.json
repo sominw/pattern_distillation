@@ -10,6 +10,18 @@
         "id_col": "id",
         "summary_col": "highlights"
     },
+
+    {
+        "name": "generation_pubmedsum",
+        "task_category": "summarization",
+        "task_type" : "single document summarization",
+        "split" : "train",
+        "subset": "none",
+        "path" : "/work/frink/shaib.c/pattern_distillation/original_data/pubmed_summ.csv",
+        "text_col": "article",
+        "id_col": "None",
+        "summary_col": "abstract"
+    },
     
     {
         "name": "generation_cochrane",

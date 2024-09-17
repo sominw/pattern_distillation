@@ -12,14 +12,16 @@ import backoff
 # from openai import OpenAI
 from together import Together
 import together 
+import csv
+import numpy as np
 
 
-def load_text_data(filepath, ids, hf=False):
+def load_text_data(filepath, ckpt_ids, hf=False):
     if not hf:
         assert filepath.endswith('.csv')
         return pd.read_csv(filepath)  # Corrected variable name from 'filename' to 'filepath'
     elif hf: 
-        if ids:
+        if ckpt_ids:
             return load_dataset(filepath, '3.0.0', split='train', cache_dir='/scratch/shaib.c/').filter(lambda x: x['id'] in ids).to_pandas()
         else: 
             return load_dataset(filepath, '3.0.0', split='train', cache_dir='/scratch/shaib.c/').to_pandas()
@@ -32,21 +34,26 @@ def load_text_data(filepath, ids, hf=False):
                       giveup=together.error.InvalidRequestError)
 
 def call_together_api(text, model, key, client):
-    PROMPT = "\n\nPlease summarize the given text."
-
-    response = client.chat.completions.create(
-        model=model,
-        messages= [{"role": "user", "content": text + PROMPT}],
-    )
-
+    PROMPT = "\n\nPlease summarize the given text. Be concise and respond only in 3-5 sentences."
+    if text == np.nan:
+        return 'nan'
+    if text.startswith('['):
+        text = str(text).lstrip('[').rstrip(']')
+    try: 
+        response = client.chat.completions.create(
+            model=model,
+            messages= [{"role": "user", "content": text + PROMPT}],
+        )
     # print(response.choices[0].message.content)
-    return response.choices[0].message.content
+        return response.choices[0].message.content
+    except: 
+        return "invalid string, skipped."
 
 
 def generate_summary(text, pipeline):
     PROMPT = "\n\nPlease summarize the given text."
     messages = [
-        {"role": "system", "content": "You are a professional, accurate summary writer, and you are not too verbose."},
+        # {"role": "system", "content": "You are a professional, accurate summary writer, and you are not too verbose."},
         {"role": "user", "content": text + PROMPT},
     ]
 
@@ -73,9 +80,13 @@ def load_existing_ids(filepath):
     return existing_ids
 
 
-def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, id_col, summary_col, ids, model_id, checkpoint_fp=None, together_api=False):
-    data = load_text_data(input_fp, ids, hf)
+def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, id_col, summary_col, ckpt_ids, model_id, checkpoint_fp=None, together_api=False):
+    data = load_text_data(input_fp, ckpt_ids, hf)
     data_json = [] 
+
+    if id_col == 'None': 
+        data['id'] = data.index
+        id_col = 'id'
 
     existing_ids = set()
     if checkpoint_fp:
@@ -140,12 +151,14 @@ if __name__ == "__main__":
     configs = json.load(open('config.json'))
     configs = {conf['name'] : conf for conf in configs}
     ids = None
+
     if args.dataset == 'cnn_dailymail': 
         hf = True 
         id_path = '/home/shaib.c/pattern_distillation/generated_data/cnn_dailymail_ids.txt'
         ids = open(id_path).read().splitlines()
     else:
         hf = False
+    
 
     DATA_ROOT = '/work/frink/shaib.c/pattern_distillation/generated_data/'
     input_fp = configs['generation_' + args.dataset]['path']
@@ -160,4 +173,3 @@ if __name__ == "__main__":
     checkpoint_fp = output_fp 
  
     generate_train_data(input_fp, hf, output_fp, save_interval, text_col, id_col, summary_col, ids, args.model_id, checkpoint_fp, args.together_api)
-    
