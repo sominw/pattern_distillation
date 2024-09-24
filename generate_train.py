@@ -33,8 +33,8 @@ def load_text_data(filepath, ckpt_ids, hf=False):
                       together.error.APIConnectionError),
                       giveup=together.error.InvalidRequestError)
 
-def call_together_api(text, model, key, client):
-    PROMPT = "\n\nPlease summarize the given text. Be concise and respond only in 3-5 sentences."
+def call_together_api(prompt, text, model, key, client):
+
     if text == np.nan:
         return 'nan'
     if text.startswith('['):
@@ -42,7 +42,7 @@ def call_together_api(text, model, key, client):
     try: 
         response = client.chat.completions.create(
             model=model,
-            messages= [{"role": "user", "content": text + PROMPT}],
+            messages= [{"role": "user", "content": text + prompt}],
         )
     # print(response.choices[0].message.content)
         return response.choices[0].message.content
@@ -50,11 +50,10 @@ def call_together_api(text, model, key, client):
         return "invalid string, skipped."
 
 
-def generate_summary(text, pipeline):
-    PROMPT = "\n\nPlease summarize the given text."
+def generate_summary(prompt, text, pipeline):
     messages = [
         # {"role": "system", "content": "You are a professional, accurate summary writer, and you are not too verbose."},
-        {"role": "user", "content": text + PROMPT},
+        {"role": "user", "content": text + prompt},
     ]
 
     outputs = pipeline(
@@ -80,7 +79,7 @@ def load_existing_ids(filepath):
     return existing_ids
 
 
-def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, id_col, summary_col, ckpt_ids, model_id, checkpoint_fp=None, together_api=False):
+def generate_train_data(data_name, input_fp, hf, output_jsonl, save_interval, text_col, id_col, summary_col, input_col, ckpt_ids, model_id, checkpoint_fp=None, together_api=False):
     data = load_text_data(input_fp, ckpt_ids, hf)
     data_json = [] 
 
@@ -101,27 +100,51 @@ def generate_train_data(input_fp, hf, output_jsonl, save_interval, text_col, id_
             device_map="auto",
         )
 
+    PROMPT = "\n\nPlease summarize the given text."
+    # PROMPT = "\n\nPlease summarize the given text. Be concise and respond only in 3-5 sentences."
+
     for idx, row in data.iterrows(): 
         if row[id_col] in existing_ids:
             # print(f"Skipping already processed ID: {row['id']}")
             continue
-         
+            
         if not together_api:
-            processed_row = {
-                "id": row[id_col], 
-                "text": row[text_col],
-                "gold_summary": row[summary_col], 
-                "generated_summary": generate_summary(row[text_col], pipeline)
-            }
+            if data_name == 'alpaca':
+                PROMPT = ""
+                
+                processed_row = {
+                    "id": row[id_col], 
+                    "text": row[text_col],
+                    # "gold_summary": row[summary_col], 
+                    "generated_summary": generate_summary(PROMPT, str(row[text_col]) + str(row[input_col]), pipeline)
+                }
+            else: 
+                processed_row = {
+                    "id": row[id_col], 
+                    "text": row[text_col],
+                    "gold_summary": row[summary_col], 
+                    "generated_summary": generate_summary(PROMPT, row[text_col], pipeline)
+                }
         else: 
-            key = open('/home/shaib.c/pattern_distillation/.togetherai_api_key.txt').read().strip()
-            client = Together(api_key=key)
-            processed_row = {
-                "id": row[id_col], 
-                "text": row[text_col],
-                "gold_summary": row[summary_col], 
-                "generated_summary": call_together_api(row[text_col], model_id, key, client)
-            }
+            if data_name == 'alpaca': 
+                PROMPT = ""
+                key = open('/home/shaib.c/pattern_distillation/.togetherai_api_key.txt').read().strip()
+                client = Together(api_key=key)
+                processed_row = {
+                    "id": row[id_col], 
+                    "text": row[text_col],
+                    # "gold_summary": row[summary_col], 
+                    "generated_summary": call_together_api(PROMPT, str(row[text_col]) + str(row[input_col]), model_id, key, client)
+                }
+            else:            
+                key = open('/home/shaib.c/pattern_distillation/.togetherai_api_key.txt').read().strip()
+                client = Together(api_key=key)
+                processed_row = {
+                    "id": row[id_col], 
+                    "text": row[text_col],
+                    "gold_summary": row[summary_col], 
+                    "generated_summary": call_together_api(PROMPT, row[text_col], model_id, key, client)
+                }
 
         data_json.append(processed_row)
 
@@ -169,7 +192,11 @@ if __name__ == "__main__":
     text_col = configs['generation_' + args.dataset]['text_col']
     id_col = configs['generation_' + args.dataset]['id_col']
     summary_col = configs['generation_' + args.dataset]['summary_col']
+    input_col = None
+
+    if args.dataset == 'alpaca':
+        input_col = configs['generation_' + args.dataset]['input_col']
     
     checkpoint_fp = output_fp 
  
-    generate_train_data(input_fp, hf, output_fp, save_interval, text_col, id_col, summary_col, ids, args.model_id, checkpoint_fp, args.together_api)
+    generate_train_data(args.dataset, input_fp, hf, output_fp, save_interval, text_col, id_col, summary_col, input_col, ids, args.model_id, checkpoint_fp, args.together_api)
