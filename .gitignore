@@ -1,7 +1,9 @@
 data/
 .DS_Store
 *_apikey*
+*api_key*
 __pycache__
 wandb
 logs
+.log
 inference_outputs
