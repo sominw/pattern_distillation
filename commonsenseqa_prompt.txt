@@ -1,0 +1,19 @@
+Given the following two examples of question-answer instances, provide an answer for the third example.
+
+Question: The president had to make a decision regarding the hate attack on his country, what did he do?
+Choices:
+A: wage war
+B: fight enemy
+C: kill
+D: destroy enemy
+E: attacked his country
+Answer: The answer is A because the president's decision to address a hate attack on his country typically involves taking military action, such as waging war, to protect and defend the nation.</s>
+
+Question: Letters are sometimes delivered by hand through one of these.
+Choices:
+A: mail box
+B: suitcase
+C: front door
+D: bowl
+E: post office
+Answer: The answer is C because letters are delivered by hand through the front door.</s>

@@ -1,0 +1,7 @@
+Given the following two examples of question-answer instances, provide an answer for the third example.
+
+Question: Dan drives a car into the garage from the gravel parking lot. The car moves more smoothly into the garage than the parking lot. This is because there is a bumpier surface in the (A) garage floor (B) gravel parking lot.
+Answer: The answer is B because the question states that the car moves more smoothly into the garage than the parking lot, indicating that the gravel parking lot has a bumpier surface compared to the garage floor.</s>
+
+Question: The baseball team coach was considering both Ted and Roy for the right field position. He needed someone who could propel the ball all the way to the basemen and he knew Ted was more physically fit and possessed greater physical strength than Roy. Who could likely throw the ball a further distance? (A) Roy (B) Ted
+Answer: The answer is B because the question indicates that Ted is more physically fit and possesses greater physical strength than Roy, suggesting that Ted is more likely to throw the ball a further distance.</s>

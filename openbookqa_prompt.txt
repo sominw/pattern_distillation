@@ -1,0 +1,17 @@
+Given the following two examples of question-answer instances, provide an answer for the third example.
+
+Question: Oak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which means
+Choices:
+A: roots may fall apart
+B: roots may begin to die
+C: parts may break the concrete
+D: roots may be split
+Answer: The answer is C because as the oak tree grows, its roots may exert pressure on the sidewalk, causing the concrete to crack or break.
+
+Question: A cow eats some hay, an apple and a piece of bread. In its tummy
+Choices:
+A: the food rots
+B: the food dissolves
+C: the food melts
+D: the food grows
+Answer: The answer is B because the cow's stomach contains digestive enzymes that break down the consumed food into smaller, soluble molecules through the process of dissolution.

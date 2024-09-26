@@ -15,7 +15,6 @@ import together
 import csv
 import numpy as np
 
-
 def load_text_data(filepath, ckpt_ids, hf=False):
     if not hf:
         assert filepath.endswith('.csv')
