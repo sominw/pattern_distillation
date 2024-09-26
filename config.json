@@ -1,5 +1,18 @@
 [
     {
+        "name": "generation_alpaca",
+        "task_category": "instruction_following",
+        "task_type" : "instruction following",
+        "split" : "train",
+        "subset": "none",
+        "path" : "/work/frink/shaib.c/pattern_distillation/original_data/alpaca_data_instr_only_10k.csv",
+        "text_col": "instruction",
+        "id_col": "None",
+        "summary_col": "None", 
+        "input_col": "input"
+    },
+
+    {
         "name": "generation_cnn_dailymail",
         "task_category": "summarization",
         "task_type" : "single document summarization",
