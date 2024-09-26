@@ -1,170 +1,66 @@
-2024-09-26 07:44:06,639 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
-2024-09-26 07:44:06,657 [INFO] Average word length for model GPT2_llama3_8b: 23.68
-2024-09-26 07:44:06,683 [INFO] Average word length for model GPT2_mixtral: 391.64
-2024-09-26 07:44:06,703 [INFO] Average word length for model GPT2_mistral7b: 277.58
-2024-09-26 07:44:06,718 [INFO] Average word length for model GPT2_llama3_70b: 112.86
-2024-09-26 07:44:11,910 [INFO] Heatmap plots saved in the folder 'commonsenseqa_truncated_n=50'
-2024-09-26 07:44:15,539 [INFO] 
+2024-09-26 09:34:27,623 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-09-26 09:34:27,671 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 09:34:27,702 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 09:34:27,725 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 09:34:27,741 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 09:34:33,381 [INFO] Heatmap plots saved in the folder 'same_ids=True/commonsenseqa_truncated_n=50'
+2024-09-26 09:34:36,999 [INFO] 
 Discriminating between models:
-2024-09-26 07:44:15,827 [INFO] Accuracy: 0.475
-2024-09-26 07:44:15,827 [INFO] Classification Report for models:
-2024-09-26 07:44:15,828 [INFO]                  precision  recall  f1-score  support
-GPT2_llama3_70b      0.000   0.000     0.000   10.000
-GPT2_llama3_8b       0.310   0.900     0.462   10.000
-GPT2_mistral7b       0.909   1.000     0.952   10.000
-GPT2_mixtral         0.000   0.000     0.000   10.000
-accuracy             0.475   0.475     0.475    0.475
-macro avg            0.305   0.475     0.353   40.000
-weighted avg         0.305   0.475     0.353   40.000
-2024-09-26 07:44:15,835 [INFO] 
-Discriminating between teachers:
-2024-09-26 07:44:15,835 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:44:15,835 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:44:15,835 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:44:15,835 [INFO] Results saved to commonsenseqa_truncated_n=50
-2024-09-26 07:44:15,836 [INFO] Analysis for commonsenseqa (truncate=True) completed.
-
-2024-09-26 07:44:15,836 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
-2024-09-26 07:44:15,852 [INFO] Average word length for model GPT2_llama3_8b: 23.68
-2024-09-26 07:44:15,877 [INFO] Average word length for model GPT2_mixtral: 391.64
-2024-09-26 07:44:15,896 [INFO] Average word length for model GPT2_mistral7b: 277.58
-2024-09-26 07:44:15,913 [INFO] Average word length for model GPT2_llama3_70b: 112.86
-2024-09-26 07:44:22,154 [INFO] Heatmap plots saved in the folder 'commonsenseqa_original_len_n=50'
-2024-09-26 07:44:26,578 [INFO] 
-Discriminating between models:
-2024-09-26 07:44:27,195 [INFO] Accuracy: 0.900
-2024-09-26 07:44:27,195 [INFO] Classification Report for models:
-2024-09-26 07:44:27,196 [INFO]                  precision  recall  f1-score  support
-GPT2_llama3_70b      0.909     1.0     0.952     10.0
-GPT2_llama3_8b       1.000     0.9     0.947     10.0
-GPT2_mistral7b       0.750     0.9     0.818     10.0
-GPT2_mixtral         1.000     0.8     0.889     10.0
-accuracy             0.900     0.9     0.900      0.9
-macro avg            0.915     0.9     0.902     40.0
-weighted avg         0.915     0.9     0.902     40.0
-2024-09-26 07:44:27,201 [INFO] 
-Discriminating between teachers:
-2024-09-26 07:44:27,202 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:44:27,202 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:44:27,202 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:44:27,202 [INFO] Results saved to commonsenseqa_original_len_n=50
-2024-09-26 07:44:27,202 [INFO] Analysis for commonsenseqa (truncate=False) completed.
-
-2024-09-26 07:44:29,058 [INFO] Running analysis for openbookqa dataset (truncate=True)...
-2024-09-26 07:44:29,081 [INFO] Average word length for model GPT2_mistral7b: 315.6
-2024-09-26 07:44:29,095 [INFO] Average word length for model GPT2_llama3_70b: 282.92
-2024-09-26 07:44:29,110 [INFO] Average word length for model GPT2_mixtral: 371.54
-2024-09-26 07:44:29,119 [INFO] Average word length for model GPT2_llama3_8b: 23.06
-2024-09-26 07:44:37,279 [INFO] Heatmap plots saved in the folder 'openbookqa_truncated_n=50'
-2024-09-26 07:44:41,602 [INFO] 
-Discriminating between models:
-2024-09-26 07:44:41,945 [INFO] Accuracy: 0.500
-2024-09-26 07:44:41,945 [INFO] Classification Report for models:
-2024-09-26 07:44:41,946 [INFO]                  precision  recall  f1-score  support
-GPT2_llama3_70b      0.357     1.0     0.526     10.0
+2024-09-26 09:34:37,274 [INFO] Accuracy: 0.500
+2024-09-26 09:34:37,274 [INFO] Classification Report for models:
+2024-09-26 09:34:37,275 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.000     0.0     0.000     10.0
 GPT2_llama3_8b       0.000     0.0     0.000     10.0
-GPT2_mistral7b       0.833     1.0     0.909     10.0
-GPT2_mixtral         0.000     0.0     0.000     10.0
+GPT2_mistral7b       0.909     1.0     0.952     10.0
+GPT2_mixtral         0.345     1.0     0.513     10.0
 accuracy             0.500     0.5     0.500      0.5
-macro avg            0.298     0.5     0.359     40.0
-weighted avg         0.298     0.5     0.359     40.0
-2024-09-26 07:44:41,953 [INFO] 
+macro avg            0.313     0.5     0.366     40.0
+weighted avg         0.313     0.5     0.366     40.0
+2024-09-26 09:34:37,284 [INFO] 
 Discriminating between teachers:
-2024-09-26 07:44:41,953 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:44:41,953 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:44:41,953 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:44:41,953 [INFO] Results saved to openbookqa_truncated_n=50
-2024-09-26 07:44:41,954 [INFO] Analysis for openbookqa (truncate=True) completed.
+2024-09-26 09:34:37,284 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:34:37,284 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:34:37,284 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:34:37,284 [INFO] Results saved to same_ids=True/commonsenseqa_truncated_n=50
+2024-09-26 09:34:37,285 [INFO] Analysis for commonsenseqa (truncate=True) completed.
 
-2024-09-26 07:44:41,954 [INFO] Running analysis for openbookqa dataset (truncate=False)...
-2024-09-26 07:44:41,970 [INFO] Average word length for model GPT2_mistral7b: 315.6
-2024-09-26 07:44:41,984 [INFO] Average word length for model GPT2_llama3_70b: 282.92
-2024-09-26 07:44:41,998 [INFO] Average word length for model GPT2_mixtral: 371.54
-2024-09-26 07:44:42,007 [INFO] Average word length for model GPT2_llama3_8b: 23.06
-2024-09-26 07:44:51,316 [INFO] Heatmap plots saved in the folder 'openbookqa_original_len_n=50'
-2024-09-26 07:44:57,038 [INFO] 
+2024-09-26 09:34:37,285 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-09-26 09:34:37,338 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 09:34:37,370 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 09:34:37,392 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 09:34:37,407 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 09:34:43,604 [INFO] Heatmap plots saved in the folder 'same_ids=True/commonsenseqa_original_len_n=50'
+2024-09-26 09:34:47,952 [INFO] 
 Discriminating between models:
-2024-09-26 07:44:57,690 [INFO] Accuracy: 0.825
-2024-09-26 07:44:57,690 [INFO] Classification Report for models:
-2024-09-26 07:44:57,690 [INFO]                  precision  recall  f1-score  support
-GPT2_llama3_70b      0.727   0.800     0.762   10.000
-GPT2_llama3_8b       0.833   1.000     0.909   10.000
-GPT2_mistral7b       0.875   0.700     0.778   10.000
-GPT2_mixtral         0.889   0.800     0.842   10.000
+2024-09-26 09:34:48,488 [INFO] Accuracy: 0.825
+2024-09-26 09:34:48,488 [INFO] Classification Report for models:
+2024-09-26 09:34:48,488 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.750   0.600     0.667   10.000
+GPT2_llama3_8b       0.769   1.000     0.870   10.000
+GPT2_mistral7b       0.909   1.000     0.952   10.000
+GPT2_mixtral         0.875   0.700     0.778   10.000
 accuracy             0.825   0.825     0.825    0.825
-macro avg            0.831   0.825     0.823   40.000
-weighted avg         0.831   0.825     0.823   40.000
-2024-09-26 07:44:57,696 [INFO] 
+macro avg            0.826   0.825     0.817   40.000
+weighted avg         0.826   0.825     0.817   40.000
+2024-09-26 09:34:48,494 [INFO] 
 Discriminating between teachers:
-2024-09-26 07:44:57,696 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:44:57,696 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:44:57,696 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:44:57,696 [INFO] Results saved to openbookqa_original_len_n=50
-2024-09-26 07:44:57,696 [INFO] Analysis for openbookqa (truncate=False) completed.
+2024-09-26 09:34:48,494 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:34:48,494 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:34:48,494 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:34:48,494 [INFO] Results saved to same_ids=True/commonsenseqa_original_len_n=50
+2024-09-26 09:34:48,494 [INFO] Analysis for commonsenseqa (truncate=False) completed.
 
-2024-09-26 07:44:59,562 [INFO] Running analysis for quarel dataset (truncate=True)...
-2024-09-26 07:44:59,574 [INFO] Average word length for model GPT2_llama3_8b: 34.1
-2024-09-26 07:44:59,587 [INFO] Average word length for model GPT2_mixtral: 377.04
-2024-09-26 07:44:59,599 [INFO] Average word length for model GPT2_mistral7b: 293.42
-2024-09-26 07:44:59,609 [INFO] Average word length for model GPT2_llama3_70b: 259.38
-2024-09-26 07:45:07,160 [INFO] Heatmap plots saved in the folder 'quarel_truncated_n=50'
-2024-09-26 07:45:11,270 [INFO] 
+2024-09-26 09:34:52,101 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-09-26 09:34:52,131 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 09:34:52,163 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 09:34:52,202 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 09:34:52,215 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 09:36:44,622 [INFO] Heatmap plots saved in the folder 'same_ids=True/commonsenseqa_truncated'
+2024-09-26 09:38:05,602 [INFO] 
 Discriminating between models:
-2024-09-26 07:45:11,769 [INFO] Accuracy: 0.400
-2024-09-26 07:45:11,769 [INFO] Classification Report for models:
-2024-09-26 07:45:11,769 [INFO]                  precision  recall  f1-score  support
-GPT2_llama3_70b      0.273     0.3     0.286     10.0
-GPT2_llama3_8b       1.000     0.7     0.824     10.0
-GPT2_mistral7b       0.357     0.5     0.417     10.0
-GPT2_mixtral         0.125     0.1     0.111     10.0
-accuracy             0.400     0.4     0.400      0.4
-macro avg            0.439     0.4     0.409     40.0
-weighted avg         0.439     0.4     0.409     40.0
-2024-09-26 07:45:11,777 [INFO] 
-Discriminating between teachers:
-2024-09-26 07:45:11,777 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:45:11,778 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:45:11,778 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:45:11,778 [INFO] Results saved to quarel_truncated_n=50
-2024-09-26 07:45:11,778 [INFO] Analysis for quarel (truncate=True) completed.
-
-2024-09-26 07:45:11,778 [INFO] Running analysis for quarel dataset (truncate=False)...
-2024-09-26 07:45:11,788 [INFO] Average word length for model GPT2_llama3_8b: 34.1
-2024-09-26 07:45:11,799 [INFO] Average word length for model GPT2_mixtral: 377.04
-2024-09-26 07:45:11,810 [INFO] Average word length for model GPT2_mistral7b: 293.42
-2024-09-26 07:45:11,819 [INFO] Average word length for model GPT2_llama3_70b: 259.38
-2024-09-26 07:45:20,746 [INFO] Heatmap plots saved in the folder 'quarel_original_len_n=50'
-2024-09-26 07:45:26,286 [INFO] 
-Discriminating between models:
-2024-09-26 07:45:26,944 [INFO] Accuracy: 0.775
-2024-09-26 07:45:26,944 [INFO] Classification Report for models:
-2024-09-26 07:45:26,945 [INFO]                  precision  recall  f1-score  support
-GPT2_llama3_70b      0.700   0.700     0.700   10.000
-GPT2_llama3_8b       1.000   1.000     1.000   10.000
-GPT2_mistral7b       0.643   0.900     0.750   10.000
-GPT2_mixtral         0.833   0.500     0.625   10.000
-accuracy             0.775   0.775     0.775    0.775
-macro avg            0.794   0.775     0.769   40.000
-weighted avg         0.794   0.775     0.769   40.000
-2024-09-26 07:45:26,950 [INFO] 
-Discriminating between teachers:
-2024-09-26 07:45:26,951 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:45:26,951 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:45:26,951 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:45:26,951 [INFO] Results saved to quarel_original_len_n=50
-2024-09-26 07:45:26,951 [INFO] Analysis for quarel (truncate=False) completed.
-
-2024-09-26 07:45:29,647 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
-2024-09-26 07:45:29,695 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
-2024-09-26 07:45:29,709 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
-2024-09-26 07:45:29,730 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
-2024-09-26 07:45:29,757 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
-2024-09-26 07:47:23,702 [INFO] Heatmap plots saved in the folder 'commonsenseqa_truncated'
-2024-09-26 07:48:45,594 [INFO] 
-Discriminating between models:
-2024-09-26 07:48:52,220 [INFO] Accuracy: 0.502
-2024-09-26 07:48:52,220 [INFO] Classification Report for models:
-2024-09-26 07:48:52,221 [INFO]                  precision  recall  f1-score  support
+2024-09-26 09:38:12,148 [INFO] Accuracy: 0.502
+2024-09-26 09:38:12,148 [INFO] Classification Report for models:
+2024-09-26 09:38:12,148 [INFO]                  precision  recall  f1-score  support
 GPT2_llama3_70b      0.338   1.000     0.505  244.000
 GPT2_llama3_8b       1.000   0.004     0.008  244.000
 GPT2_mistral7b       0.965   1.000     0.982  245.000
@@ -172,25 +68,25 @@ GPT2_mixtral         0.000   0.000     0.000  244.000
 accuracy             0.502   0.502     0.502    0.502
 macro avg            0.576   0.501     0.374  977.000
 weighted avg         0.576   0.502     0.374  977.000
-2024-09-26 07:48:52,231 [INFO] 
+2024-09-26 09:38:12,160 [INFO] 
 Discriminating between teachers:
-2024-09-26 07:48:52,231 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:48:52,231 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:48:52,231 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:48:52,231 [INFO] Results saved to commonsenseqa_truncated
-2024-09-26 07:48:52,232 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+2024-09-26 09:38:12,160 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:38:12,160 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:38:12,160 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:38:12,160 [INFO] Results saved to same_ids=True/commonsenseqa_truncated
+2024-09-26 09:38:12,161 [INFO] Analysis for commonsenseqa (truncate=True) completed.
 
-2024-09-26 07:48:52,232 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
-2024-09-26 07:48:52,277 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
-2024-09-26 07:48:52,290 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
-2024-09-26 07:48:52,309 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
-2024-09-26 07:48:52,336 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
-2024-09-26 07:51:17,312 [INFO] Heatmap plots saved in the folder 'commonsenseqa_original_len'
-2024-09-26 07:52:51,944 [INFO] 
+2024-09-26 09:38:12,161 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-09-26 09:38:12,190 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 09:38:12,217 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 09:38:12,252 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 09:38:12,263 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 09:40:34,331 [INFO] Heatmap plots saved in the folder 'same_ids=True/commonsenseqa_original_len'
+2024-09-26 09:42:07,472 [INFO] 
 Discriminating between models:
-2024-09-26 07:52:57,802 [INFO] Accuracy: 0.979
-2024-09-26 07:52:57,802 [INFO] Classification Report for models:
-2024-09-26 07:52:57,803 [INFO]                  precision  recall  f1-score  support
+2024-09-26 09:42:13,349 [INFO] Accuracy: 0.979
+2024-09-26 09:42:13,349 [INFO] Classification Report for models:
+2024-09-26 09:42:13,349 [INFO]                  precision  recall  f1-score  support
 GPT2_llama3_70b      0.968   0.988     0.978  244.000
 GPT2_llama3_8b       0.992   1.000     0.996  244.000
 GPT2_mistral7b       0.972   0.984     0.978  245.000
@@ -198,25 +94,77 @@ GPT2_mixtral         0.983   0.943     0.962  244.000
 accuracy             0.979   0.979     0.979    0.979
 macro avg            0.979   0.979     0.978  977.000
 weighted avg         0.979   0.979     0.978  977.000
-2024-09-26 07:52:57,809 [INFO] 
+2024-09-26 09:42:13,356 [INFO] 
 Discriminating between teachers:
-2024-09-26 07:52:57,809 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:52:57,809 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:52:57,810 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:52:57,810 [INFO] Results saved to commonsenseqa_original_len
-2024-09-26 07:52:57,811 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+2024-09-26 09:42:13,356 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:42:13,356 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:42:13,356 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:42:13,356 [INFO] Results saved to same_ids=True/commonsenseqa_original_len
+2024-09-26 09:42:13,357 [INFO] Analysis for commonsenseqa (truncate=False) completed.
 
-2024-09-26 07:53:00,949 [INFO] Running analysis for openbookqa dataset (truncate=True)...
-2024-09-26 07:53:00,982 [INFO] Average word length for model GPT2_mistral7b: 332.246
-2024-09-26 07:53:01,002 [INFO] Average word length for model GPT2_mixtral: 379.354
-2024-09-26 07:53:01,010 [INFO] Average word length for model GPT2_llama3_8b: 25.138
-2024-09-26 07:53:01,028 [INFO] Average word length for model GPT2_llama3_70b: 304.268
-2024-09-26 07:54:24,635 [INFO] Heatmap plots saved in the folder 'openbookqa_truncated'
-2024-09-26 07:55:06,187 [INFO] 
+2024-09-26 09:42:16,190 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-09-26 09:42:16,215 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 09:42:16,234 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 09:42:16,254 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 09:42:16,264 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 09:42:24,667 [INFO] Heatmap plots saved in the folder 'same_ids=True/openbookqa_truncated_n=50'
+2024-09-26 09:42:28,907 [INFO] 
 Discriminating between models:
-2024-09-26 07:55:09,645 [INFO] Accuracy: 0.512
-2024-09-26 07:55:09,645 [INFO] Classification Report for models:
-2024-09-26 07:55:09,646 [INFO]                  precision  recall  f1-score  support
+2024-09-26 09:42:29,250 [INFO] Accuracy: 0.525
+2024-09-26 09:42:29,250 [INFO] Classification Report for models:
+2024-09-26 09:42:29,250 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.345   1.000     0.513   10.000
+GPT2_llama3_8b       1.000   0.100     0.182   10.000
+GPT2_mistral7b       1.000   1.000     1.000   10.000
+GPT2_mixtral         0.000   0.000     0.000   10.000
+accuracy             0.525   0.525     0.525    0.525
+macro avg            0.586   0.525     0.424   40.000
+weighted avg         0.586   0.525     0.424   40.000
+2024-09-26 09:42:29,258 [INFO] 
+Discriminating between teachers:
+2024-09-26 09:42:29,259 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:42:29,259 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:42:29,259 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:42:29,259 [INFO] Results saved to same_ids=True/openbookqa_truncated_n=50
+2024-09-26 09:42:29,259 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-09-26 09:42:29,259 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-09-26 09:42:29,287 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 09:42:29,305 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 09:42:29,327 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 09:42:29,337 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 09:42:38,871 [INFO] Heatmap plots saved in the folder 'same_ids=True/openbookqa_original_len_n=50'
+2024-09-26 09:42:44,676 [INFO] 
+Discriminating between models:
+2024-09-26 09:42:45,406 [INFO] Accuracy: 0.900
+2024-09-26 09:42:45,407 [INFO] Classification Report for models:
+2024-09-26 09:42:45,408 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.889     0.8     0.842     10.0
+GPT2_llama3_8b       0.833     1.0     0.909     10.0
+GPT2_mistral7b       0.909     1.0     0.952     10.0
+GPT2_mixtral         1.000     0.8     0.889     10.0
+accuracy             0.900     0.9     0.900      0.9
+macro avg            0.908     0.9     0.898     40.0
+weighted avg         0.908     0.9     0.898     40.0
+2024-09-26 09:42:45,414 [INFO] 
+Discriminating between teachers:
+2024-09-26 09:42:45,415 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:42:45,415 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:42:45,415 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:42:45,415 [INFO] Results saved to same_ids=True/openbookqa_original_len_n=50
+2024-09-26 09:42:45,415 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-09-26 09:42:47,412 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-09-26 09:42:47,438 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 09:42:47,457 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 09:42:47,467 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 09:42:47,487 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 09:44:10,882 [INFO] Heatmap plots saved in the folder 'same_ids=True/openbookqa_truncated'
+2024-09-26 09:44:53,380 [INFO] 
+Discriminating between models:
+2024-09-26 09:44:56,813 [INFO] Accuracy: 0.512
+2024-09-26 09:44:56,813 [INFO] Classification Report for models:
+2024-09-26 09:44:56,814 [INFO]                  precision  recall  f1-score  support
 GPT2_llama3_70b      0.000   0.000     0.000  100.000
 GPT2_llama3_8b       1.000   0.050     0.095  100.000
 GPT2_mistral7b       0.962   1.000     0.980  100.000
@@ -224,25 +172,25 @@ GPT2_mixtral         0.344   1.000     0.512  100.000
 accuracy             0.512   0.512     0.512    0.512
 macro avg            0.576   0.512     0.397  400.000
 weighted avg         0.576   0.512     0.397  400.000
-2024-09-26 07:55:09,656 [INFO] 
+2024-09-26 09:44:56,822 [INFO] 
 Discriminating between teachers:
-2024-09-26 07:55:09,656 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:55:09,656 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:55:09,656 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:55:09,656 [INFO] Results saved to openbookqa_truncated
-2024-09-26 07:55:09,656 [INFO] Analysis for openbookqa (truncate=True) completed.
+2024-09-26 09:44:56,822 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:44:56,822 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:44:56,822 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:44:56,822 [INFO] Results saved to same_ids=True/openbookqa_truncated
+2024-09-26 09:44:56,823 [INFO] Analysis for openbookqa (truncate=True) completed.
 
-2024-09-26 07:55:09,656 [INFO] Running analysis for openbookqa dataset (truncate=False)...
-2024-09-26 07:55:09,681 [INFO] Average word length for model GPT2_mistral7b: 332.246
-2024-09-26 07:55:09,700 [INFO] Average word length for model GPT2_mixtral: 379.354
-2024-09-26 07:55:09,708 [INFO] Average word length for model GPT2_llama3_8b: 25.138
-2024-09-26 07:55:09,725 [INFO] Average word length for model GPT2_llama3_70b: 304.268
-2024-09-26 07:56:47,853 [INFO] Heatmap plots saved in the folder 'openbookqa_original_len'
-2024-09-26 07:57:40,190 [INFO] 
+2024-09-26 09:44:56,823 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-09-26 09:44:56,849 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 09:44:56,867 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 09:44:56,876 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 09:44:56,892 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 09:46:33,780 [INFO] Heatmap plots saved in the folder 'same_ids=True/openbookqa_original_len'
+2024-09-26 09:47:27,550 [INFO] 
 Discriminating between models:
-2024-09-26 07:57:43,471 [INFO] Accuracy: 0.942
-2024-09-26 07:57:43,471 [INFO] Classification Report for models:
-2024-09-26 07:57:43,472 [INFO]                  precision  recall  f1-score  support
+2024-09-26 09:47:30,797 [INFO] Accuracy: 0.942
+2024-09-26 09:47:30,797 [INFO] Classification Report for models:
+2024-09-26 09:47:30,797 [INFO]                  precision  recall  f1-score  support
 GPT2_llama3_70b      0.959   0.930     0.944  100.000
 GPT2_llama3_8b       0.935   1.000     0.966  100.000
 GPT2_mistral7b       0.906   0.960     0.932  100.000
@@ -250,25 +198,77 @@ GPT2_mixtral         0.978   0.880     0.926  100.000
 accuracy             0.942   0.942     0.942    0.942
 macro avg            0.944   0.943     0.942  400.000
 weighted avg         0.944   0.943     0.942  400.000
-2024-09-26 07:57:43,477 [INFO] 
+2024-09-26 09:47:30,803 [INFO] 
 Discriminating between teachers:
-2024-09-26 07:57:43,478 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:57:43,478 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:57:43,478 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:57:43,478 [INFO] Results saved to openbookqa_original_len
-2024-09-26 07:57:43,479 [INFO] Analysis for openbookqa (truncate=False) completed.
+2024-09-26 09:47:30,804 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:47:30,804 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:47:30,804 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:47:30,804 [INFO] Results saved to same_ids=True/openbookqa_original_len
+2024-09-26 09:47:30,805 [INFO] Analysis for openbookqa (truncate=False) completed.
 
-2024-09-26 07:57:48,316 [INFO] Running analysis for quarel dataset (truncate=True)...
-2024-09-26 07:57:48,343 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
-2024-09-26 07:57:48,358 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
-2024-09-26 07:57:48,371 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
-2024-09-26 07:57:48,383 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
-2024-09-26 07:58:28,942 [INFO] Heatmap plots saved in the folder 'quarel_truncated'
-2024-09-26 07:58:51,348 [INFO] 
+2024-09-26 09:47:34,750 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-09-26 09:47:34,776 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 09:47:34,791 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 09:47:34,804 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 09:47:34,815 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 09:47:42,604 [INFO] Heatmap plots saved in the folder 'same_ids=True/quarel_truncated_n=50'
+2024-09-26 09:47:46,811 [INFO] 
 Discriminating between models:
-2024-09-26 07:58:54,058 [INFO] Accuracy: 0.596
-2024-09-26 07:58:54,058 [INFO] Classification Report for models:
-2024-09-26 07:58:54,059 [INFO]                  precision  recall  f1-score  support
+2024-09-26 09:47:47,354 [INFO] Accuracy: 0.400
+2024-09-26 09:47:47,354 [INFO] Classification Report for models:
+2024-09-26 09:47:47,355 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.222     0.2     0.211     10.0
+GPT2_llama3_8b       0.857     0.6     0.706     10.0
+GPT2_mistral7b       0.333     0.6     0.429     10.0
+GPT2_mixtral         0.333     0.2     0.250     10.0
+accuracy             0.400     0.4     0.400      0.4
+macro avg            0.437     0.4     0.399     40.0
+weighted avg         0.437     0.4     0.399     40.0
+2024-09-26 09:47:47,363 [INFO] 
+Discriminating between teachers:
+2024-09-26 09:47:47,363 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:47:47,363 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:47:47,363 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:47:47,363 [INFO] Results saved to same_ids=True/quarel_truncated_n=50
+2024-09-26 09:47:47,363 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-09-26 09:47:47,363 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-09-26 09:47:47,378 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 09:47:47,391 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 09:47:47,403 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 09:47:47,414 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 09:47:56,514 [INFO] Heatmap plots saved in the folder 'same_ids=True/quarel_original_len_n=50'
+2024-09-26 09:48:02,197 [INFO] 
+Discriminating between models:
+2024-09-26 09:48:02,929 [INFO] Accuracy: 0.825
+2024-09-26 09:48:02,929 [INFO] Classification Report for models:
+2024-09-26 09:48:02,930 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.700   0.700     0.700   10.000
+GPT2_llama3_8b       0.909   1.000     0.952   10.000
+GPT2_mistral7b       1.000   0.900     0.947   10.000
+GPT2_mixtral         0.700   0.700     0.700   10.000
+accuracy             0.825   0.825     0.825    0.825
+macro avg            0.827   0.825     0.825   40.000
+weighted avg         0.827   0.825     0.825   40.000
+2024-09-26 09:48:02,935 [INFO] 
+Discriminating between teachers:
+2024-09-26 09:48:02,936 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:48:02,936 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:48:02,936 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:48:02,936 [INFO] Results saved to same_ids=True/quarel_original_len_n=50
+2024-09-26 09:48:02,936 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-09-26 09:48:05,075 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-09-26 09:48:05,099 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 09:48:05,113 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 09:48:05,125 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 09:48:05,133 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 09:48:45,818 [INFO] Heatmap plots saved in the folder 'same_ids=True/quarel_truncated'
+2024-09-26 09:49:09,895 [INFO] 
+Discriminating between models:
+2024-09-26 09:49:12,506 [INFO] Accuracy: 0.596
+2024-09-26 09:49:12,506 [INFO] Classification Report for models:
+2024-09-26 09:49:12,507 [INFO]                  precision  recall  f1-score  support
 GPT2_llama3_70b      0.452   0.339     0.388   56.000
 GPT2_llama3_8b       0.722   0.709     0.716   55.000
 GPT2_mistral7b       0.586   0.732     0.651   56.000
@@ -276,25 +276,25 @@ GPT2_mixtral         0.596   0.607     0.602   56.000
 accuracy             0.596   0.596     0.596    0.596
 macro avg            0.589   0.597     0.589  223.000
 weighted avg         0.589   0.596     0.588  223.000
-2024-09-26 07:58:54,072 [INFO] 
+2024-09-26 09:49:12,527 [INFO] 
 Discriminating between teachers:
-2024-09-26 07:58:54,072 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 07:58:54,073 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 07:58:54,073 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 07:58:54,073 [INFO] Results saved to quarel_truncated
-2024-09-26 07:58:54,073 [INFO] Analysis for quarel (truncate=True) completed.
+2024-09-26 09:49:12,528 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:49:12,528 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:49:12,528 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:49:12,528 [INFO] Results saved to same_ids=True/quarel_truncated
+2024-09-26 09:49:12,528 [INFO] Analysis for quarel (truncate=True) completed.
 
-2024-09-26 07:58:54,073 [INFO] Running analysis for quarel dataset (truncate=False)...
-2024-09-26 07:58:54,089 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
-2024-09-26 07:58:54,102 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
-2024-09-26 07:58:54,114 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
-2024-09-26 07:58:54,124 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
-2024-09-26 07:59:42,997 [INFO] Heatmap plots saved in the folder 'quarel_original_len'
-2024-09-26 08:00:12,193 [INFO] 
+2024-09-26 09:49:12,528 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-09-26 09:49:12,566 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 09:49:12,577 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 09:49:12,588 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 09:49:12,594 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 09:50:01,592 [INFO] Heatmap plots saved in the folder 'same_ids=True/quarel_original_len'
+2024-09-26 09:50:31,672 [INFO] 
 Discriminating between models:
-2024-09-26 08:00:14,771 [INFO] Accuracy: 0.910
-2024-09-26 08:00:14,771 [INFO] Classification Report for models:
-2024-09-26 08:00:14,772 [INFO]                  precision  recall  f1-score  support
+2024-09-26 09:50:34,248 [INFO] Accuracy: 0.910
+2024-09-26 09:50:34,249 [INFO] Classification Report for models:
+2024-09-26 09:50:34,249 [INFO]                  precision  recall  f1-score  support
 GPT2_llama3_70b      0.845   0.875     0.860    56.00
 GPT2_llama3_8b       0.981   0.964     0.972    55.00
 GPT2_mistral7b       0.964   0.946     0.955    56.00
@@ -302,190 +302,190 @@ GPT2_mixtral         0.857   0.857     0.857    56.00
 accuracy             0.910   0.910     0.910     0.91
 macro avg            0.912   0.911     0.911   223.00
 weighted avg         0.911   0.910     0.911   223.00
-2024-09-26 08:00:14,778 [INFO] 
+2024-09-26 09:50:34,255 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:00:14,778 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:00:14,778 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:00:14,778 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:00:14,778 [INFO] Results saved to quarel_original_len
-2024-09-26 08:00:14,778 [INFO] Analysis for quarel (truncate=False) completed.
+2024-09-26 09:50:34,255 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:50:34,255 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:50:34,255 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:50:34,255 [INFO] Results saved to same_ids=True/quarel_original_len
+2024-09-26 09:50:34,256 [INFO] Analysis for quarel (truncate=False) completed.
 
-2024-09-26 08:00:21,531 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
-2024-09-26 08:00:21,536 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
-2024-09-26 08:00:21,568 [INFO] Average word length for model gpt2_llama8b.csv: 103.56
-2024-09-26 08:00:21,601 [INFO] Average word length for model gpt2_mixtral.csv: 109.7
-2024-09-26 08:00:21,631 [INFO] Average word length for model gpt2_llama70b.csv: 107.86
-2024-09-26 08:00:21,662 [INFO] Average word length for model gpt2_mistral7b.csv: 111.52
-2024-09-26 08:00:26,493 [INFO] Heatmap plots saved in the folder 'rotten_tomatoes_truncated_n=50'
-2024-09-26 08:00:33,088 [INFO] 
+2024-09-26 09:50:37,319 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-09-26 09:50:37,332 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 09:50:37,365 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 09:50:37,398 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 09:50:37,428 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 09:50:37,459 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 09:50:41,314 [INFO] Heatmap plots saved in the folder 'same_ids=True/rotten_tomatoes_truncated_n=50'
+2024-09-26 09:50:46,144 [INFO] 
 Discriminating between models:
-2024-09-26 08:00:33,274 [INFO] Accuracy: 0.650
-2024-09-26 08:00:33,274 [INFO] Classification Report for models:
-2024-09-26 08:00:33,275 [INFO]                 precision  recall  f1-score  support
-gpt2_llama70b       0.909    1.00     0.952    10.00
-gpt2_llama8b        0.462    0.60     0.522    10.00
-gpt2_mistral7b      0.500    0.60     0.545    10.00
-gpt2_mixtral        1.000    0.40     0.571    10.00
-accuracy            0.650    0.65     0.650     0.65
-macro avg           0.718    0.65     0.648    40.00
-weighted avg        0.718    0.65     0.648    40.00
-2024-09-26 08:00:33,283 [INFO] 
+2024-09-26 09:50:46,306 [INFO] Accuracy: 0.548
+2024-09-26 09:50:46,306 [INFO] Classification Report for models:
+2024-09-26 09:50:46,307 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.800   1.000     0.889    8.000
+gpt2_llama8b        0.167   0.143     0.154    7.000
+gpt2_mistral7b      0.250   0.125     0.167    8.000
+gpt2_mixtral        0.636   0.875     0.737    8.000
+accuracy            0.548   0.548     0.548    0.548
+macro avg           0.463   0.536     0.487   31.000
+weighted avg        0.473   0.548     0.497   31.000
+2024-09-26 09:50:46,316 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:00:33,283 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:00:33,284 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:00:33,284 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:00:33,284 [INFO] Results saved to rotten_tomatoes_truncated_n=50
-2024-09-26 08:00:33,284 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+2024-09-26 09:50:46,316 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:50:46,316 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:50:46,316 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:50:46,316 [INFO] Results saved to same_ids=True/rotten_tomatoes_truncated_n=50
+2024-09-26 09:50:46,317 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
 
-2024-09-26 08:00:33,284 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
-2024-09-26 08:00:33,292 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
-2024-09-26 08:00:33,323 [INFO] Average word length for model gpt2_llama8b.csv: 103.56
-2024-09-26 08:00:33,354 [INFO] Average word length for model gpt2_mixtral.csv: 109.7
-2024-09-26 08:00:33,384 [INFO] Average word length for model gpt2_llama70b.csv: 107.86
-2024-09-26 08:00:33,414 [INFO] Average word length for model gpt2_mistral7b.csv: 111.52
-2024-09-26 08:00:37,961 [INFO] Heatmap plots saved in the folder 'rotten_tomatoes_original_len_n=50'
-2024-09-26 08:00:44,782 [INFO] 
+2024-09-26 09:50:46,317 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-09-26 09:50:46,328 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 09:50:46,359 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 09:50:46,392 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 09:50:46,423 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 09:50:46,455 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 09:50:49,896 [INFO] Heatmap plots saved in the folder 'same_ids=True/rotten_tomatoes_original_len_n=50'
+2024-09-26 09:50:54,918 [INFO] 
 Discriminating between models:
-2024-09-26 08:00:45,454 [INFO] Accuracy: 0.925
-2024-09-26 08:00:45,454 [INFO] Classification Report for models:
-2024-09-26 08:00:45,455 [INFO]                 precision  recall  f1-score  support
-gpt2_llama70b       1.000   1.000     1.000   10.000
-gpt2_llama8b        1.000   0.700     0.824   10.000
-gpt2_mistral7b      0.769   1.000     0.870   10.000
-gpt2_mixtral        1.000   1.000     1.000   10.000
-accuracy            0.925   0.925     0.925    0.925
-macro avg           0.942   0.925     0.923   40.000
-weighted avg        0.942   0.925     0.923   40.000
-2024-09-26 08:00:45,460 [INFO] 
+2024-09-26 09:50:55,496 [INFO] Accuracy: 0.839
+2024-09-26 09:50:55,496 [INFO] Classification Report for models:
+2024-09-26 09:50:55,497 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.889   1.000     0.941    8.000
+gpt2_llama8b        0.667   0.857     0.750    7.000
+gpt2_mistral7b      0.833   0.625     0.714    8.000
+gpt2_mixtral        1.000   0.875     0.933    8.000
+accuracy            0.839   0.839     0.839    0.839
+macro avg           0.847   0.839     0.835   31.000
+weighted avg        0.853   0.839     0.837   31.000
+2024-09-26 09:50:55,503 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:00:45,461 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:00:45,461 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:00:45,461 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:00:45,461 [INFO] Results saved to rotten_tomatoes_original_len_n=50
-2024-09-26 08:00:45,461 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+2024-09-26 09:50:55,503 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:50:55,503 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:50:55,503 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:50:55,503 [INFO] Results saved to same_ids=True/rotten_tomatoes_original_len_n=50
+2024-09-26 09:50:55,503 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
 
-2024-09-26 08:00:49,011 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
-2024-09-26 08:00:49,017 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
-2024-09-26 08:00:49,052 [INFO] Average word length for model gpt2_llama8b.csv: 103.94736842105263
-2024-09-26 08:00:49,084 [INFO] Average word length for model gpt2_mixtral.csv: 108.58984375
-2024-09-26 08:00:49,114 [INFO] Average word length for model gpt2_llama70b.csv: 107.94117647058823
-2024-09-26 08:00:49,143 [INFO] Average word length for model gpt2_mistral7b.csv: 111.93574297188755
-2024-09-26 08:01:07,784 [INFO] Heatmap plots saved in the folder 'rotten_tomatoes_truncated'
-2024-09-26 08:01:34,452 [INFO] 
+2024-09-26 09:50:57,485 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-09-26 09:50:57,492 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 09:50:57,525 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 09:50:57,558 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 09:50:57,589 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 09:50:57,620 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 09:51:30,263 [INFO] Heatmap plots saved in the folder 'same_ids=True/rotten_tomatoes_truncated'
+2024-09-26 09:52:18,326 [INFO] 
 Discriminating between models:
-2024-09-26 08:01:35,282 [INFO] Accuracy: 0.695
-2024-09-26 08:01:35,282 [INFO] Classification Report for models:
-2024-09-26 08:01:35,283 [INFO]                 precision  recall  f1-score  support
-gpt2_llama70b       0.771   0.982     0.864   55.000
-gpt2_llama8b        0.588   0.588     0.588   34.000
-gpt2_mistral7b      0.574   0.540     0.557   50.000
-gpt2_mixtral        0.795   0.608     0.689   51.000
-accuracy            0.695   0.695     0.695    0.695
-macro avg           0.682   0.679     0.674  190.000
-weighted avg        0.693   0.695     0.687  190.000
-2024-09-26 08:01:35,306 [INFO] 
+2024-09-26 09:52:19,779 [INFO] Accuracy: 0.685
+2024-09-26 09:52:19,786 [INFO] Classification Report for models:
+2024-09-26 09:52:19,786 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.873   0.967     0.918   92.000
+gpt2_llama8b        0.500   0.567     0.531   67.000
+gpt2_mistral7b      0.634   0.612     0.623   85.000
+gpt2_mixtral        0.671   0.547     0.603   86.000
+accuracy            0.685   0.685     0.685    0.685
+macro avg           0.670   0.673     0.669  330.000
+weighted avg        0.683   0.685     0.681  330.000
+2024-09-26 09:52:19,801 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:01:35,307 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:01:35,307 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:01:35,307 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:01:35,307 [INFO] Results saved to rotten_tomatoes_truncated
-2024-09-26 08:01:35,308 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+2024-09-26 09:52:19,802 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:52:19,802 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:52:19,802 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:52:19,802 [INFO] Results saved to same_ids=True/rotten_tomatoes_truncated
+2024-09-26 09:52:19,802 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
 
-2024-09-26 08:01:35,308 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
-2024-09-26 08:01:35,334 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
-2024-09-26 08:01:35,365 [INFO] Average word length for model gpt2_llama8b.csv: 103.94736842105263
-2024-09-26 08:01:35,396 [INFO] Average word length for model gpt2_mixtral.csv: 108.58984375
-2024-09-26 08:01:35,427 [INFO] Average word length for model gpt2_llama70b.csv: 107.94117647058823
-2024-09-26 08:01:35,457 [INFO] Average word length for model gpt2_mistral7b.csv: 111.93574297188755
-2024-09-26 08:01:54,232 [INFO] Heatmap plots saved in the folder 'rotten_tomatoes_original_len'
-2024-09-26 08:02:21,795 [INFO] 
+2024-09-26 09:52:19,803 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-09-26 09:52:19,816 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 09:52:19,846 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 09:52:19,878 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 09:52:19,907 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 09:52:19,935 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 09:52:53,213 [INFO] Heatmap plots saved in the folder 'same_ids=True/rotten_tomatoes_original_len'
+2024-09-26 09:53:42,879 [INFO] 
 Discriminating between models:
-2024-09-26 08:02:22,944 [INFO] Accuracy: 0.942
-2024-09-26 08:02:22,944 [INFO] Classification Report for models:
-2024-09-26 08:02:22,944 [INFO]                 precision  recall  f1-score  support
-gpt2_llama70b       0.964   0.982     0.973   55.000
-gpt2_llama8b        0.846   0.971     0.904   34.000
-gpt2_mistral7b      0.939   0.920     0.929   50.000
-gpt2_mixtral        1.000   0.902     0.948   51.000
-accuracy            0.942   0.942     0.942    0.942
-macro avg           0.937   0.944     0.939  190.000
-weighted avg        0.946   0.942     0.943  190.000
-2024-09-26 08:02:22,950 [INFO] 
+2024-09-26 09:53:44,687 [INFO] Accuracy: 0.958
+2024-09-26 09:53:44,687 [INFO] Classification Report for models:
+2024-09-26 09:53:44,688 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.989   0.989     0.989   92.000
+gpt2_llama8b        0.954   0.925     0.939   67.000
+gpt2_mistral7b      0.965   0.965     0.965   85.000
+gpt2_mixtral        0.920   0.942     0.931   86.000
+accuracy            0.958   0.958     0.958    0.958
+macro avg           0.957   0.955     0.956  330.000
+weighted avg        0.958   0.958     0.958  330.000
+2024-09-26 09:53:44,694 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:02:22,950 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:02:22,951 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:02:22,951 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:02:22,951 [INFO] Results saved to rotten_tomatoes_original_len
-2024-09-26 08:02:22,951 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+2024-09-26 09:53:44,694 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:53:44,694 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:53:44,694 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:53:44,694 [INFO] Results saved to same_ids=True/rotten_tomatoes_original_len
+2024-09-26 09:53:44,695 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
 
-2024-09-26 08:02:30,132 [INFO] Running analysis for cnn dataset (truncate=True)...
-2024-09-26 08:02:30,168 [INFO] Average word length for model gpt2_gemma2_9b.csv: 29.54
-2024-09-26 08:02:30,202 [INFO] Average word length for model gpt2_llama8b.csv: 98.76
-2024-09-26 08:02:30,234 [INFO] Average word length for model gpt2_mixtral.csv: 127.52
-2024-09-26 08:02:30,264 [INFO] Average word length for model gpt2_llama70b.csv: 86.54
-2024-09-26 08:02:30,299 [INFO] Average word length for model gpt2_mistral7b.csv: 112.32
-2024-09-26 08:02:35,538 [INFO] Heatmap plots saved in the folder 'cnn_truncated_n=50'
-2024-09-26 08:02:43,824 [INFO] 
+2024-09-26 09:53:48,639 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-09-26 09:53:48,680 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 09:53:48,711 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 09:53:48,744 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 09:53:48,773 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 09:53:48,806 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 09:53:53,208 [INFO] Heatmap plots saved in the folder 'same_ids=True/cnn_truncated_n=50'
+2024-09-26 09:53:59,802 [INFO] 
 Discriminating between models:
-2024-09-26 08:02:44,046 [INFO] Accuracy: 0.260
-2024-09-26 08:02:44,046 [INFO] Classification Report for models:
-2024-09-26 08:02:44,046 [INFO]                 precision  recall  f1-score  support
-gpt2_gemma2_9b      0.556    0.50     0.526    10.00
-gpt2_llama70b       0.000    0.00     0.000    10.00
-gpt2_llama8b        0.188    0.30     0.231    10.00
-gpt2_mistral7b      0.250    0.20     0.222    10.00
-gpt2_mixtral        0.300    0.30     0.300    10.00
-accuracy            0.260    0.26     0.260     0.26
-macro avg           0.259    0.26     0.256    50.00
-weighted avg        0.259    0.26     0.256    50.00
-2024-09-26 08:02:44,077 [INFO] 
+2024-09-26 09:53:59,988 [INFO] Accuracy: 0.071
+2024-09-26 09:53:59,988 [INFO] Classification Report for models:
+2024-09-26 09:53:59,989 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.000   0.000     0.000    3.000
+gpt2_llama70b       0.067   0.111     0.083    9.000
+gpt2_llama8b        0.083   0.100     0.091   10.000
+gpt2_mistral7b      0.125   0.100     0.111   10.000
+gpt2_mixtral        0.000   0.000     0.000   10.000
+accuracy            0.071   0.071     0.071    0.071
+macro avg           0.055   0.062     0.057   42.000
+weighted avg        0.064   0.071     0.066   42.000
+2024-09-26 09:53:59,996 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:02:44,077 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:02:44,077 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:02:44,077 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:02:44,077 [INFO] Results saved to cnn_truncated_n=50
-2024-09-26 08:02:44,078 [INFO] Analysis for cnn (truncate=True) completed.
+2024-09-26 09:53:59,996 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:53:59,996 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:53:59,996 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:53:59,996 [INFO] Results saved to same_ids=True/cnn_truncated_n=50
+2024-09-26 09:53:59,996 [INFO] Analysis for cnn (truncate=True) completed.
 
-2024-09-26 08:02:44,078 [INFO] Running analysis for cnn dataset (truncate=False)...
-2024-09-26 08:02:44,108 [INFO] Average word length for model gpt2_gemma2_9b.csv: 29.54
-2024-09-26 08:02:44,135 [INFO] Average word length for model gpt2_llama8b.csv: 98.76
-2024-09-26 08:02:44,164 [INFO] Average word length for model gpt2_mixtral.csv: 127.52
-2024-09-26 08:02:44,189 [INFO] Average word length for model gpt2_llama70b.csv: 86.54
-2024-09-26 08:02:44,220 [INFO] Average word length for model gpt2_mistral7b.csv: 112.32
-2024-09-26 08:02:49,145 [INFO] Heatmap plots saved in the folder 'cnn_original_len_n=50'
-2024-09-26 08:02:57,763 [INFO] 
+2024-09-26 09:53:59,996 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-09-26 09:54:00,027 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 09:54:00,058 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 09:54:00,090 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 09:54:00,119 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 09:54:00,152 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 09:54:04,362 [INFO] Heatmap plots saved in the folder 'same_ids=True/cnn_original_len_n=50'
+2024-09-26 09:54:11,225 [INFO] 
 Discriminating between models:
-2024-09-26 08:02:58,432 [INFO] Accuracy: 0.520
-2024-09-26 08:02:58,432 [INFO] Classification Report for models:
-2024-09-26 08:02:58,433 [INFO]                 precision  recall  f1-score  support
-gpt2_gemma2_9b      1.000    0.90     0.947    10.00
-gpt2_llama70b       0.333    0.50     0.400    10.00
-gpt2_llama8b        0.364    0.40     0.381    10.00
-gpt2_mistral7b      0.400    0.40     0.400    10.00
-gpt2_mixtral        0.800    0.40     0.533    10.00
-accuracy            0.520    0.52     0.520     0.52
-macro avg           0.579    0.52     0.532    50.00
-weighted avg        0.579    0.52     0.532    50.00
-2024-09-26 08:02:58,438 [INFO] 
+2024-09-26 09:54:12,055 [INFO] Accuracy: 0.119
+2024-09-26 09:54:12,055 [INFO] Classification Report for models:
+2024-09-26 09:54:12,055 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.750   1.000     0.857    3.000
+gpt2_llama70b       0.154   0.222     0.182    9.000
+gpt2_llama8b        0.000   0.000     0.000   10.000
+gpt2_mistral7b      0.000   0.000     0.000   10.000
+gpt2_mixtral        0.000   0.000     0.000   10.000
+accuracy            0.119   0.119     0.119    0.119
+macro avg           0.181   0.244     0.208   42.000
+weighted avg        0.087   0.119     0.100   42.000
+2024-09-26 09:54:12,061 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:02:58,439 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:02:58,439 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:02:58,439 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:02:58,439 [INFO] Results saved to cnn_original_len_n=50
-2024-09-26 08:02:58,439 [INFO] Analysis for cnn (truncate=False) completed.
+2024-09-26 09:54:12,061 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:54:12,061 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:54:12,061 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:54:12,061 [INFO] Results saved to same_ids=True/cnn_original_len_n=50
+2024-09-26 09:54:12,062 [INFO] Analysis for cnn (truncate=False) completed.
 
-2024-09-26 08:03:03,004 [INFO] Running analysis for cnn dataset (truncate=True)...
-2024-09-26 08:03:03,039 [INFO] Average word length for model gpt2_gemma2_9b.csv: 35.11764705882353
-2024-09-26 08:03:03,070 [INFO] Average word length for model gpt2_llama8b.csv: 102.29721030042919
-2024-09-26 08:03:03,103 [INFO] Average word length for model gpt2_mixtral.csv: 125.60342979635584
-2024-09-26 08:03:03,131 [INFO] Average word length for model gpt2_llama70b.csv: 84.49785407725322
-2024-09-26 08:03:03,165 [INFO] Average word length for model gpt2_mistral7b.csv: 118.347
-2024-09-26 08:04:15,444 [INFO] Heatmap plots saved in the folder 'cnn_truncated'
-2024-09-26 08:06:13,217 [INFO] 
+2024-09-26 09:54:14,844 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-09-26 09:54:14,907 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 09:54:14,938 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 09:54:14,970 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 09:54:14,999 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 09:54:15,033 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 09:55:26,603 [INFO] Heatmap plots saved in the folder 'same_ids=True/cnn_truncated'
+2024-09-26 09:57:24,004 [INFO] 
 Discriminating between models:
-2024-09-26 08:06:16,595 [INFO] Accuracy: 0.240
-2024-09-26 08:06:16,595 [INFO] Classification Report for models:
-2024-09-26 08:06:16,596 [INFO]                 precision  recall  f1-score  support
+2024-09-26 09:57:27,392 [INFO] Accuracy: 0.240
+2024-09-26 09:57:27,392 [INFO] Classification Report for models:
+2024-09-26 09:57:27,393 [INFO]                 precision  recall  f1-score  support
 gpt2_gemma2_9b      0.812   0.481     0.605    54.00
 gpt2_llama70b       0.223   0.198     0.210   187.00
 gpt2_llama8b        0.182   0.172     0.177   186.00
@@ -494,26 +494,26 @@ gpt2_mixtral        0.228   0.241     0.234   187.00
 accuracy            0.240   0.240     0.240     0.24
 macro avg           0.334   0.273     0.295   814.00
 weighted avg        0.255   0.240     0.244   814.00
-2024-09-26 08:06:16,627 [INFO] 
+2024-09-26 09:57:27,403 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:06:16,628 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:06:16,628 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:06:16,628 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:06:16,628 [INFO] Results saved to cnn_truncated
-2024-09-26 08:06:16,629 [INFO] Analysis for cnn (truncate=True) completed.
+2024-09-26 09:57:27,404 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 09:57:27,404 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 09:57:27,404 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 09:57:27,404 [INFO] Results saved to same_ids=True/cnn_truncated
+2024-09-26 09:57:27,405 [INFO] Analysis for cnn (truncate=True) completed.
 
-2024-09-26 08:06:16,629 [INFO] Running analysis for cnn dataset (truncate=False)...
-2024-09-26 08:06:16,664 [INFO] Average word length for model gpt2_gemma2_9b.csv: 35.11764705882353
-2024-09-26 08:06:16,692 [INFO] Average word length for model gpt2_llama8b.csv: 102.29721030042919
-2024-09-26 08:06:16,723 [INFO] Average word length for model gpt2_mixtral.csv: 125.60342979635584
-2024-09-26 08:06:16,750 [INFO] Average word length for model gpt2_llama70b.csv: 84.49785407725322
-2024-09-26 08:06:16,781 [INFO] Average word length for model gpt2_mistral7b.csv: 118.347
-2024-09-26 08:07:31,265 [INFO] Heatmap plots saved in the folder 'cnn_original_len'
-2024-09-26 08:09:32,124 [INFO] 
+2024-09-26 09:57:27,405 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-09-26 09:57:27,435 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 09:57:27,464 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 09:57:27,495 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 09:57:27,523 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 09:57:27,555 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 09:58:41,657 [INFO] Heatmap plots saved in the folder 'same_ids=True/cnn_original_len'
+2024-09-26 10:00:42,248 [INFO] 
 Discriminating between models:
-2024-09-26 08:09:36,545 [INFO] Accuracy: 0.557
-2024-09-26 08:09:36,545 [INFO] Classification Report for models:
-2024-09-26 08:09:36,545 [INFO]                 precision  recall  f1-score  support
+2024-09-26 10:00:46,665 [INFO] Accuracy: 0.557
+2024-09-26 10:00:46,665 [INFO] Classification Report for models:
+2024-09-26 10:00:46,665 [INFO]                 precision  recall  f1-score  support
 gpt2_gemma2_9b      0.712   0.778     0.743   54.000
 gpt2_llama70b       0.590   0.561     0.575  187.000
 gpt2_llama8b        0.477   0.505     0.491  186.000
@@ -522,82 +522,82 @@ gpt2_mixtral        0.621   0.508     0.559  187.000
 accuracy            0.557   0.557     0.557    0.557
 macro avg           0.583   0.588     0.583  814.000
 weighted avg        0.561   0.557     0.557  814.000
-2024-09-26 08:09:36,552 [INFO] 
+2024-09-26 10:00:46,672 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:09:36,552 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:09:36,553 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:09:36,553 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:09:36,553 [INFO] Results saved to cnn_original_len
-2024-09-26 08:09:36,554 [INFO] Analysis for cnn (truncate=False) completed.
+2024-09-26 10:00:46,673 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:00:46,673 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:00:46,673 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:00:46,673 [INFO] Results saved to same_ids=True/cnn_original_len
+2024-09-26 10:00:46,674 [INFO] Analysis for cnn (truncate=False) completed.
 
-2024-09-26 08:09:39,321 [INFO] Running analysis for pubmed dataset (truncate=True)...
-2024-09-26 08:09:39,356 [INFO] Average word length for model gpt2_gemma2_9b.csv: 249.52
-2024-09-26 08:09:39,382 [INFO] Average word length for model gpt2_llama8b.csv: 224.56
-2024-09-26 08:09:39,404 [INFO] Average word length for model gpt2_mixtral.csv: 126.42
-2024-09-26 08:09:39,420 [INFO] Average word length for model gpt2_llama70b.csv: 114.84
-2024-09-26 08:09:39,444 [INFO] Average word length for model gpt2_mistral7b.csv: 185.9
-2024-09-26 08:09:49,375 [INFO] Heatmap plots saved in the folder 'pubmed_truncated_n=50'
-2024-09-26 08:10:01,758 [INFO] 
+2024-09-26 10:00:54,593 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-09-26 10:00:54,654 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:00:54,681 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:00:54,703 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:00:54,723 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:00:54,747 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:01:05,635 [INFO] Heatmap plots saved in the folder 'same_ids=True/pubmed_truncated_n=50'
+2024-09-26 10:01:18,899 [INFO] 
 Discriminating between models:
-2024-09-26 08:10:02,339 [INFO] Accuracy: 0.520
-2024-09-26 08:10:02,339 [INFO] Classification Report for models:
-2024-09-26 08:10:02,340 [INFO]                 precision  recall  f1-score  support
-gpt2_gemma2_9b      0.692    0.90     0.783    10.00
-gpt2_llama70b       0.000    0.00     0.000    10.00
-gpt2_llama8b        0.556    0.50     0.526    10.00
-gpt2_mistral7b      0.667    0.60     0.632    10.00
-gpt2_mixtral        0.400    0.60     0.480    10.00
+2024-09-26 10:01:19,464 [INFO] Accuracy: 0.580
+2024-09-26 10:01:19,464 [INFO] Classification Report for models:
+2024-09-26 10:01:19,465 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.833    1.00     0.909    10.00
+gpt2_llama70b       0.500    0.70     0.583    10.00
+gpt2_llama8b        0.625    0.50     0.556    10.00
+gpt2_mistral7b      0.300    0.30     0.300    10.00
+gpt2_mixtral        0.667    0.40     0.500    10.00
+accuracy            0.580    0.58     0.580     0.58
+macro avg           0.585    0.58     0.570    50.00
+weighted avg        0.585    0.58     0.570    50.00
+2024-09-26 10:01:19,478 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:01:19,478 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:01:19,478 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:01:19,478 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:01:19,479 [INFO] Results saved to same_ids=True/pubmed_truncated_n=50
+2024-09-26 10:01:19,479 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-09-26 10:01:19,479 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-09-26 10:01:19,535 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:01:19,561 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:01:19,581 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:01:19,599 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:01:19,621 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:01:32,285 [INFO] Heatmap plots saved in the folder 'same_ids=True/pubmed_original_len_n=50'
+2024-09-26 10:01:47,706 [INFO] 
+Discriminating between models:
+2024-09-26 10:01:49,013 [INFO] Accuracy: 0.520
+2024-09-26 10:01:49,013 [INFO] Classification Report for models:
+2024-09-26 10:01:49,013 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      1.000    0.90     0.947    10.00
+gpt2_llama70b       0.333    0.10     0.154    10.00
+gpt2_llama8b        0.571    0.40     0.471    10.00
+gpt2_mistral7b      0.417    0.50     0.455    10.00
+gpt2_mixtral        0.368    0.70     0.483    10.00
 accuracy            0.520    0.52     0.520     0.52
-macro avg           0.463    0.52     0.484    50.00
-weighted avg        0.463    0.52     0.484    50.00
-2024-09-26 08:10:02,347 [INFO] 
+macro avg           0.538    0.52     0.502    50.00
+weighted avg        0.538    0.52     0.502    50.00
+2024-09-26 10:01:49,019 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:10:02,347 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:10:02,347 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:10:02,347 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:10:02,348 [INFO] Results saved to pubmed_truncated_n=50
-2024-09-26 08:10:02,348 [INFO] Analysis for pubmed (truncate=True) completed.
+2024-09-26 10:01:49,020 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:01:49,020 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:01:49,020 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:01:49,020 [INFO] Results saved to same_ids=True/pubmed_original_len_n=50
+2024-09-26 10:01:49,020 [INFO] Analysis for pubmed (truncate=False) completed.
 
-2024-09-26 08:10:02,348 [INFO] Running analysis for pubmed dataset (truncate=False)...
-2024-09-26 08:10:02,369 [INFO] Average word length for model gpt2_gemma2_9b.csv: 249.52
-2024-09-26 08:10:02,389 [INFO] Average word length for model gpt2_llama8b.csv: 224.56
-2024-09-26 08:10:02,407 [INFO] Average word length for model gpt2_mixtral.csv: 126.42
-2024-09-26 08:10:02,424 [INFO] Average word length for model gpt2_llama70b.csv: 114.84
-2024-09-26 08:10:02,443 [INFO] Average word length for model gpt2_mistral7b.csv: 185.9
-2024-09-26 08:10:14,012 [INFO] Heatmap plots saved in the folder 'pubmed_original_len_n=50'
-2024-09-26 08:10:28,364 [INFO] 
+2024-09-26 10:01:56,122 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-09-26 10:01:56,172 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:01:56,197 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:01:56,219 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:01:56,240 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:01:56,266 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:03:44,585 [INFO] Heatmap plots saved in the folder 'same_ids=True/pubmed_truncated'
+2024-09-26 10:06:04,496 [INFO] 
 Discriminating between models:
-2024-09-26 08:10:29,655 [INFO] Accuracy: 0.560
-2024-09-26 08:10:29,655 [INFO] Classification Report for models:
-2024-09-26 08:10:29,655 [INFO]                 precision  recall  f1-score  support
-gpt2_gemma2_9b      0.700    0.70     0.700    10.00
-gpt2_llama70b       0.300    0.30     0.300    10.00
-gpt2_llama8b        1.000    0.70     0.824    10.00
-gpt2_mistral7b      0.636    0.70     0.667    10.00
-gpt2_mixtral        0.333    0.40     0.364    10.00
-accuracy            0.560    0.56     0.560     0.56
-macro avg           0.594    0.56     0.571    50.00
-weighted avg        0.594    0.56     0.571    50.00
-2024-09-26 08:10:29,661 [INFO] 
-Discriminating between teachers:
-2024-09-26 08:10:29,661 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:10:29,661 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:10:29,661 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:10:29,661 [INFO] Results saved to pubmed_original_len_n=50
-2024-09-26 08:10:29,662 [INFO] Analysis for pubmed (truncate=False) completed.
-
-2024-09-26 08:10:31,757 [INFO] Running analysis for pubmed dataset (truncate=True)...
-2024-09-26 08:10:31,789 [INFO] Average word length for model gpt2_gemma2_9b.csv: 259.8294314381271
-2024-09-26 08:10:31,813 [INFO] Average word length for model gpt2_llama8b.csv: 221.84102564102565
-2024-09-26 08:10:31,834 [INFO] Average word length for model gpt2_mixtral.csv: 125.44949494949495
-2024-09-26 08:10:31,852 [INFO] Average word length for model gpt2_llama70b.csv: 113.36227045075125
-2024-09-26 08:10:31,876 [INFO] Average word length for model gpt2_mistral7b.csv: 191.83779264214047
-2024-09-26 08:12:19,156 [INFO] Heatmap plots saved in the folder 'pubmed_truncated'
-2024-09-26 08:14:39,167 [INFO] 
-Discriminating between models:
-2024-09-26 08:14:43,852 [INFO] Accuracy: 0.708
-2024-09-26 08:14:43,852 [INFO] Classification Report for models:
-2024-09-26 08:14:43,852 [INFO]                 precision  recall  f1-score  support
+2024-09-26 10:06:09,173 [INFO] Accuracy: 0.708
+2024-09-26 10:06:09,173 [INFO] Classification Report for models:
+2024-09-26 10:06:09,174 [INFO]                 precision  recall  f1-score  support
 gpt2_gemma2_9b      0.876   0.883     0.880  120.000
 gpt2_llama70b       0.774   0.800     0.787  120.000
 gpt2_llama8b        0.667   0.598     0.631  117.000
@@ -606,26 +606,26 @@ gpt2_mixtral        0.550   0.605     0.576  119.000
 accuracy            0.708   0.708     0.708    0.708
 macro avg           0.708   0.707     0.707  595.000
 weighted avg        0.709   0.708     0.708  595.000
-2024-09-26 08:14:43,869 [INFO] 
+2024-09-26 10:06:09,194 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:14:43,870 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:14:43,870 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:14:43,870 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:14:43,870 [INFO] Results saved to pubmed_truncated
-2024-09-26 08:14:43,871 [INFO] Analysis for pubmed (truncate=True) completed.
+2024-09-26 10:06:09,195 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:06:09,195 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:06:09,195 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:06:09,195 [INFO] Results saved to same_ids=True/pubmed_truncated
+2024-09-26 10:06:09,196 [INFO] Analysis for pubmed (truncate=True) completed.
 
-2024-09-26 08:14:43,871 [INFO] Running analysis for pubmed dataset (truncate=False)...
-2024-09-26 08:14:43,899 [INFO] Average word length for model gpt2_gemma2_9b.csv: 259.8294314381271
-2024-09-26 08:14:43,920 [INFO] Average word length for model gpt2_llama8b.csv: 221.84102564102565
-2024-09-26 08:14:43,938 [INFO] Average word length for model gpt2_mixtral.csv: 125.44949494949495
-2024-09-26 08:14:43,956 [INFO] Average word length for model gpt2_llama70b.csv: 113.36227045075125
-2024-09-26 08:14:43,978 [INFO] Average word length for model gpt2_mistral7b.csv: 191.83779264214047
-2024-09-26 08:16:59,970 [INFO] Heatmap plots saved in the folder 'pubmed_original_len'
-2024-09-26 08:19:44,027 [INFO] 
+2024-09-26 10:06:09,196 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-09-26 10:06:09,270 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:06:09,292 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:06:09,311 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:06:09,328 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:06:09,350 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:08:25,826 [INFO] Heatmap plots saved in the folder 'same_ids=True/pubmed_original_len'
+2024-09-26 10:11:10,013 [INFO] 
 Discriminating between models:
-2024-09-26 08:19:49,155 [INFO] Accuracy: 0.822
-2024-09-26 08:19:49,155 [INFO] Classification Report for models:
-2024-09-26 08:19:49,156 [INFO]                 precision  recall  f1-score  support
+2024-09-26 10:11:15,154 [INFO] Accuracy: 0.822
+2024-09-26 10:11:15,154 [INFO] Classification Report for models:
+2024-09-26 10:11:15,154 [INFO]                 precision  recall  f1-score  support
 gpt2_gemma2_9b      0.983   0.975     0.979  120.000
 gpt2_llama70b       0.713   0.808     0.758  120.000
 gpt2_llama8b        0.920   0.786     0.848  117.000
@@ -634,11 +634,655 @@ gpt2_mixtral        0.694   0.782     0.735  119.000
 accuracy            0.822   0.822     0.822    0.822
 macro avg           0.832   0.821     0.824  595.000
 weighted avg        0.832   0.822     0.824  595.000
-2024-09-26 08:19:49,162 [INFO] 
+2024-09-26 10:11:15,161 [INFO] 
 Discriminating between teachers:
-2024-09-26 08:19:49,162 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
-2024-09-26 08:19:49,163 [ERROR] Analysis for teachers could not be performed due to data issues.
-2024-09-26 08:19:49,163 [WARNING] All Models LR analysis could not be performed due to data issues.
-2024-09-26 08:19:49,163 [INFO] Results saved to pubmed_original_len
-2024-09-26 08:19:49,164 [INFO] Analysis for pubmed (truncate=False) completed.
+2024-09-26 10:11:15,161 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:11:15,161 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:11:15,161 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:11:15,161 [INFO] Results saved to same_ids=True/pubmed_original_len
+2024-09-26 10:11:15,162 [INFO] Analysis for pubmed (truncate=False) completed.
+
+2024-09-26 10:11:18,791 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-09-26 10:11:18,827 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 10:11:18,842 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 10:11:18,863 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 10:11:18,899 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 10:11:24,190 [INFO] Heatmap plots saved in the folder 'same_ids=False/commonsenseqa_truncated_n=50'
+2024-09-26 10:11:27,648 [INFO] 
+Discriminating between models:
+2024-09-26 10:11:27,934 [INFO] Accuracy: 0.475
+2024-09-26 10:11:27,934 [INFO] Classification Report for models:
+2024-09-26 10:11:27,934 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.000   0.000     0.000   10.000
+GPT2_llama3_8b       0.310   0.900     0.462   10.000
+GPT2_mistral7b       0.909   1.000     0.952   10.000
+GPT2_mixtral         0.000   0.000     0.000   10.000
+accuracy             0.475   0.475     0.475    0.475
+macro avg            0.305   0.475     0.353   40.000
+weighted avg         0.305   0.475     0.353   40.000
+2024-09-26 10:11:27,942 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:11:27,942 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:11:27,942 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:11:27,942 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:11:27,942 [INFO] Results saved to same_ids=False/commonsenseqa_truncated_n=50
+2024-09-26 10:11:27,943 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-09-26 10:11:27,943 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-09-26 10:11:27,977 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 10:11:27,990 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 10:11:28,010 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 10:11:28,048 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 10:11:34,240 [INFO] Heatmap plots saved in the folder 'same_ids=False/commonsenseqa_original_len_n=50'
+2024-09-26 10:11:38,549 [INFO] 
+Discriminating between models:
+2024-09-26 10:11:39,185 [INFO] Accuracy: 0.900
+2024-09-26 10:11:39,185 [INFO] Classification Report for models:
+2024-09-26 10:11:39,185 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.909     1.0     0.952     10.0
+GPT2_llama3_8b       1.000     0.9     0.947     10.0
+GPT2_mistral7b       0.750     0.9     0.818     10.0
+GPT2_mixtral         1.000     0.8     0.889     10.0
+accuracy             0.900     0.9     0.900      0.9
+macro avg            0.915     0.9     0.902     40.0
+weighted avg         0.915     0.9     0.902     40.0
+2024-09-26 10:11:39,191 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:11:39,192 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:11:39,192 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:11:39,192 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:11:39,192 [INFO] Results saved to same_ids=False/commonsenseqa_original_len_n=50
+2024-09-26 10:11:39,192 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-09-26 10:11:41,490 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-09-26 10:11:41,536 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 10:11:41,576 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 10:11:41,591 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 10:11:41,614 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 10:13:34,868 [INFO] Heatmap plots saved in the folder 'same_ids=False/commonsenseqa_truncated'
+2024-09-26 10:14:59,439 [INFO] 
+Discriminating between models:
+2024-09-26 10:15:06,235 [INFO] Accuracy: 0.502
+2024-09-26 10:15:06,235 [INFO] Classification Report for models:
+2024-09-26 10:15:06,235 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.338   1.000     0.505  244.000
+GPT2_llama3_8b       1.000   0.004     0.008  244.000
+GPT2_mistral7b       0.965   1.000     0.982  245.000
+GPT2_mixtral         0.000   0.000     0.000  244.000
+accuracy             0.502   0.502     0.502    0.502
+macro avg            0.576   0.501     0.374  977.000
+weighted avg         0.576   0.502     0.374  977.000
+2024-09-26 10:15:06,247 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:15:06,247 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:15:06,247 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:15:06,248 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:15:06,248 [INFO] Results saved to same_ids=False/commonsenseqa_truncated
+2024-09-26 10:15:06,248 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-09-26 10:15:06,248 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-09-26 10:15:06,304 [INFO] Average word length for model GPT2_mistral7b: 240.31859131859133
+2024-09-26 10:15:06,342 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-09-26 10:15:06,354 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-09-26 10:15:06,374 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-09-26 10:17:29,055 [INFO] Heatmap plots saved in the folder 'same_ids=False/commonsenseqa_original_len'
+2024-09-26 10:19:05,718 [INFO] 
+Discriminating between models:
+2024-09-26 10:19:11,649 [INFO] Accuracy: 0.979
+2024-09-26 10:19:11,650 [INFO] Classification Report for models:
+2024-09-26 10:19:11,650 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.968   0.988     0.978  244.000
+GPT2_llama3_8b       0.992   1.000     0.996  244.000
+GPT2_mistral7b       0.972   0.984     0.978  245.000
+GPT2_mixtral         0.983   0.943     0.962  244.000
+accuracy             0.979   0.979     0.979    0.979
+macro avg            0.979   0.979     0.978  977.000
+weighted avg         0.979   0.979     0.978  977.000
+2024-09-26 10:19:11,657 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:19:11,657 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:19:11,657 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:19:11,657 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:19:11,657 [INFO] Results saved to same_ids=False/commonsenseqa_original_len
+2024-09-26 10:19:11,658 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-09-26 10:19:19,487 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-09-26 10:19:19,517 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 10:19:19,536 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 10:19:19,545 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 10:19:19,562 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 10:19:28,137 [INFO] Heatmap plots saved in the folder 'same_ids=False/openbookqa_truncated_n=50'
+2024-09-26 10:19:32,531 [INFO] 
+Discriminating between models:
+2024-09-26 10:19:32,868 [INFO] Accuracy: 0.500
+2024-09-26 10:19:32,868 [INFO] Classification Report for models:
+2024-09-26 10:19:32,869 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.357     1.0     0.526     10.0
+GPT2_llama3_8b       0.000     0.0     0.000     10.0
+GPT2_mistral7b       0.833     1.0     0.909     10.0
+GPT2_mixtral         0.000     0.0     0.000     10.0
+accuracy             0.500     0.5     0.500      0.5
+macro avg            0.298     0.5     0.359     40.0
+weighted avg         0.298     0.5     0.359     40.0
+2024-09-26 10:19:32,877 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:19:32,878 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:19:32,878 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:19:32,878 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:19:32,878 [INFO] Results saved to same_ids=False/openbookqa_truncated_n=50
+2024-09-26 10:19:32,878 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-09-26 10:19:32,878 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-09-26 10:19:32,915 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 10:19:32,933 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 10:19:32,942 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 10:19:32,959 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 10:19:42,552 [INFO] Heatmap plots saved in the folder 'same_ids=False/openbookqa_original_len_n=50'
+2024-09-26 10:19:48,263 [INFO] 
+Discriminating between models:
+2024-09-26 10:19:48,875 [INFO] Accuracy: 0.825
+2024-09-26 10:19:48,875 [INFO] Classification Report for models:
+2024-09-26 10:19:48,876 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.727   0.800     0.762   10.000
+GPT2_llama3_8b       0.833   1.000     0.909   10.000
+GPT2_mistral7b       0.875   0.700     0.778   10.000
+GPT2_mixtral         0.889   0.800     0.842   10.000
+accuracy             0.825   0.825     0.825    0.825
+macro avg            0.831   0.825     0.823   40.000
+weighted avg         0.831   0.825     0.823   40.000
+2024-09-26 10:19:48,882 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:19:48,882 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:19:48,882 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:19:48,882 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:19:48,882 [INFO] Results saved to same_ids=False/openbookqa_original_len_n=50
+2024-09-26 10:19:48,882 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-09-26 10:19:53,644 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-09-26 10:19:53,687 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 10:19:53,710 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 10:19:53,731 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 10:19:53,743 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 10:21:18,846 [INFO] Heatmap plots saved in the folder 'same_ids=False/openbookqa_truncated'
+2024-09-26 10:22:01,972 [INFO] 
+Discriminating between models:
+2024-09-26 10:22:05,421 [INFO] Accuracy: 0.512
+2024-09-26 10:22:05,421 [INFO] Classification Report for models:
+2024-09-26 10:22:05,422 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.000   0.000     0.000  100.000
+GPT2_llama3_8b       1.000   0.050     0.095  100.000
+GPT2_mistral7b       0.962   1.000     0.980  100.000
+GPT2_mixtral         0.344   1.000     0.512  100.000
+accuracy             0.512   0.512     0.512    0.512
+macro avg            0.576   0.512     0.397  400.000
+weighted avg         0.576   0.512     0.397  400.000
+2024-09-26 10:22:05,438 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:22:05,438 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:22:05,438 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:22:05,438 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:22:05,438 [INFO] Results saved to same_ids=False/openbookqa_truncated
+2024-09-26 10:22:05,439 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-09-26 10:22:05,439 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-09-26 10:22:05,474 [INFO] Average word length for model GPT2_llama3_70b: 304.268
+2024-09-26 10:22:05,493 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-09-26 10:22:05,511 [INFO] Average word length for model GPT2_mistral7b: 332.246
+2024-09-26 10:22:05,519 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-09-26 10:23:42,619 [INFO] Heatmap plots saved in the folder 'same_ids=False/openbookqa_original_len'
+2024-09-26 10:24:36,613 [INFO] 
+Discriminating between models:
+2024-09-26 10:24:39,865 [INFO] Accuracy: 0.942
+2024-09-26 10:24:39,865 [INFO] Classification Report for models:
+2024-09-26 10:24:39,866 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.959   0.930     0.944  100.000
+GPT2_llama3_8b       0.935   1.000     0.966  100.000
+GPT2_mistral7b       0.906   0.960     0.932  100.000
+GPT2_mixtral         0.978   0.880     0.926  100.000
+accuracy             0.942   0.942     0.942    0.942
+macro avg            0.944   0.943     0.942  400.000
+weighted avg         0.944   0.943     0.942  400.000
+2024-09-26 10:24:39,872 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:24:39,872 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:24:39,872 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:24:39,872 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:24:39,872 [INFO] Results saved to same_ids=False/openbookqa_original_len
+2024-09-26 10:24:39,872 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-09-26 10:24:45,669 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-09-26 10:24:45,702 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 10:24:45,715 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 10:24:45,728 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 10:24:45,742 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 10:24:53,615 [INFO] Heatmap plots saved in the folder 'same_ids=False/quarel_truncated_n=50'
+2024-09-26 10:24:57,845 [INFO] 
+Discriminating between models:
+2024-09-26 10:24:58,350 [INFO] Accuracy: 0.400
+2024-09-26 10:24:58,350 [INFO] Classification Report for models:
+2024-09-26 10:24:58,350 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.273     0.3     0.286     10.0
+GPT2_llama3_8b       1.000     0.7     0.824     10.0
+GPT2_mistral7b       0.357     0.5     0.417     10.0
+GPT2_mixtral         0.125     0.1     0.111     10.0
+accuracy             0.400     0.4     0.400      0.4
+macro avg            0.439     0.4     0.409     40.0
+weighted avg         0.439     0.4     0.409     40.0
+2024-09-26 10:24:58,358 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:24:58,358 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:24:58,358 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:24:58,358 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:24:58,358 [INFO] Results saved to same_ids=False/quarel_truncated_n=50
+2024-09-26 10:24:58,359 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-09-26 10:24:58,359 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-09-26 10:24:58,374 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 10:24:58,387 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 10:24:58,403 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 10:24:58,421 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 10:25:07,434 [INFO] Heatmap plots saved in the folder 'same_ids=False/quarel_original_len_n=50'
+2024-09-26 10:25:13,030 [INFO] 
+Discriminating between models:
+2024-09-26 10:25:13,653 [INFO] Accuracy: 0.775
+2024-09-26 10:25:13,653 [INFO] Classification Report for models:
+2024-09-26 10:25:13,654 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.700   0.700     0.700   10.000
+GPT2_llama3_8b       1.000   1.000     1.000   10.000
+GPT2_mistral7b       0.643   0.900     0.750   10.000
+GPT2_mixtral         0.833   0.500     0.625   10.000
+accuracy             0.775   0.775     0.775    0.775
+macro avg            0.794   0.775     0.769   40.000
+weighted avg         0.794   0.775     0.769   40.000
+2024-09-26 10:25:13,659 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:25:13,660 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:25:13,660 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:25:13,660 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:25:13,660 [INFO] Results saved to same_ids=False/quarel_original_len_n=50
+2024-09-26 10:25:13,660 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-09-26 10:25:18,671 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-09-26 10:25:18,702 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 10:25:18,715 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 10:25:18,727 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 10:25:18,735 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 10:26:00,052 [INFO] Heatmap plots saved in the folder 'same_ids=False/quarel_truncated'
+2024-09-26 10:26:23,831 [INFO] 
+Discriminating between models:
+2024-09-26 10:26:26,444 [INFO] Accuracy: 0.596
+2024-09-26 10:26:26,445 [INFO] Classification Report for models:
+2024-09-26 10:26:26,445 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.452   0.339     0.388   56.000
+GPT2_llama3_8b       0.722   0.709     0.716   55.000
+GPT2_mistral7b       0.586   0.732     0.651   56.000
+GPT2_mixtral         0.596   0.607     0.602   56.000
+accuracy             0.596   0.596     0.596    0.596
+macro avg            0.589   0.597     0.589  223.000
+weighted avg         0.589   0.596     0.588  223.000
+2024-09-26 10:26:26,456 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:26:26,457 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:26:26,457 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:26:26,457 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:26:26,457 [INFO] Results saved to same_ids=False/quarel_truncated
+2024-09-26 10:26:26,457 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-09-26 10:26:26,457 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-09-26 10:26:26,483 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-09-26 10:26:26,495 [INFO] Average word length for model GPT2_llama3_70b: 264.4856115107914
+2024-09-26 10:26:26,508 [INFO] Average word length for model GPT2_mistral7b: 288.28057553956836
+2024-09-26 10:26:26,517 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-09-26 10:27:15,848 [INFO] Heatmap plots saved in the folder 'same_ids=False/quarel_original_len'
+2024-09-26 10:27:45,716 [INFO] 
+Discriminating between models:
+2024-09-26 10:27:48,281 [INFO] Accuracy: 0.910
+2024-09-26 10:27:48,281 [INFO] Classification Report for models:
+2024-09-26 10:27:48,282 [INFO]                  precision  recall  f1-score  support
+GPT2_llama3_70b      0.845   0.875     0.860    56.00
+GPT2_llama3_8b       0.981   0.964     0.972    55.00
+GPT2_mistral7b       0.964   0.946     0.955    56.00
+GPT2_mixtral         0.857   0.857     0.857    56.00
+accuracy             0.910   0.910     0.910     0.91
+macro avg            0.912   0.911     0.911   223.00
+weighted avg         0.911   0.910     0.911   223.00
+2024-09-26 10:27:48,288 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:27:48,288 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:27:48,288 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:27:48,288 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:27:48,288 [INFO] Results saved to same_ids=False/quarel_original_len
+2024-09-26 10:27:48,288 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-09-26 10:27:54,707 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-09-26 10:27:54,716 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 10:27:54,748 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 10:27:54,781 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 10:27:54,812 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 10:27:54,842 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 10:28:00,161 [INFO] Heatmap plots saved in the folder 'same_ids=False/rotten_tomatoes_truncated_n=50'
+2024-09-26 10:28:06,859 [INFO] 
+Discriminating between models:
+2024-09-26 10:28:07,180 [INFO] Accuracy: 0.750
+2024-09-26 10:28:07,180 [INFO] Classification Report for models:
+2024-09-26 10:28:07,181 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.900    0.90     0.900    10.00
+gpt2_llama8b        0.571    0.80     0.667    10.00
+gpt2_mistral7b      0.667    0.60     0.632    10.00
+gpt2_mixtral        1.000    0.70     0.824    10.00
+accuracy            0.750    0.75     0.750     0.75
+macro avg           0.785    0.75     0.755    40.00
+weighted avg        0.785    0.75     0.755    40.00
+2024-09-26 10:28:07,191 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:28:07,191 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:28:07,191 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:28:07,191 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:28:07,191 [INFO] Results saved to same_ids=False/rotten_tomatoes_truncated_n=50
+2024-09-26 10:28:07,192 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-09-26 10:28:07,192 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-09-26 10:28:07,215 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 10:28:07,247 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 10:28:07,280 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 10:28:07,309 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 10:28:07,339 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 10:28:12,655 [INFO] Heatmap plots saved in the folder 'same_ids=False/rotten_tomatoes_original_len_n=50'
+2024-09-26 10:28:19,544 [INFO] 
+Discriminating between models:
+2024-09-26 10:28:20,011 [INFO] Accuracy: 0.925
+2024-09-26 10:28:20,011 [INFO] Classification Report for models:
+2024-09-26 10:28:20,012 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.909   1.000     0.952   10.000
+gpt2_llama8b        0.818   0.900     0.857   10.000
+gpt2_mistral7b      1.000   0.900     0.947   10.000
+gpt2_mixtral        1.000   0.900     0.947   10.000
+accuracy            0.925   0.925     0.925    0.925
+macro avg           0.932   0.925     0.926   40.000
+weighted avg        0.932   0.925     0.926   40.000
+2024-09-26 10:28:20,017 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:28:20,018 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:28:20,018 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:28:20,018 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:28:20,018 [INFO] Results saved to same_ids=False/rotten_tomatoes_original_len_n=50
+2024-09-26 10:28:20,018 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-09-26 10:28:24,254 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-09-26 10:28:24,258 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 10:28:24,295 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 10:28:24,329 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 10:28:24,360 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 10:28:24,392 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 10:28:57,322 [INFO] Heatmap plots saved in the folder 'same_ids=False/rotten_tomatoes_truncated'
+2024-09-26 10:29:45,268 [INFO] 
+Discriminating between models:
+2024-09-26 10:29:46,718 [INFO] Accuracy: 0.685
+2024-09-26 10:29:46,718 [INFO] Classification Report for models:
+2024-09-26 10:29:46,719 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.873   0.967     0.918   92.000
+gpt2_llama8b        0.500   0.567     0.531   67.000
+gpt2_mistral7b      0.634   0.612     0.623   85.000
+gpt2_mixtral        0.671   0.547     0.603   86.000
+accuracy            0.685   0.685     0.685    0.685
+macro avg           0.670   0.673     0.669  330.000
+weighted avg        0.683   0.685     0.681  330.000
+2024-09-26 10:29:46,733 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:29:46,734 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:29:46,734 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:29:46,734 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:29:46,734 [INFO] Results saved to same_ids=False/rotten_tomatoes_truncated
+2024-09-26 10:29:46,735 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-09-26 10:29:46,735 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-09-26 10:29:46,747 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-09-26 10:29:46,777 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-09-26 10:29:46,809 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-09-26 10:29:46,838 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-09-26 10:29:46,868 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-09-26 10:30:20,062 [INFO] Heatmap plots saved in the folder 'same_ids=False/rotten_tomatoes_original_len'
+2024-09-26 10:31:09,742 [INFO] 
+Discriminating between models:
+2024-09-26 10:31:11,555 [INFO] Accuracy: 0.958
+2024-09-26 10:31:11,555 [INFO] Classification Report for models:
+2024-09-26 10:31:11,556 [INFO]                 precision  recall  f1-score  support
+gpt2_llama70b       0.989   0.989     0.989   92.000
+gpt2_llama8b        0.954   0.925     0.939   67.000
+gpt2_mistral7b      0.965   0.965     0.965   85.000
+gpt2_mixtral        0.920   0.942     0.931   86.000
+accuracy            0.958   0.958     0.958    0.958
+macro avg           0.957   0.955     0.956  330.000
+weighted avg        0.958   0.958     0.958  330.000
+2024-09-26 10:31:11,562 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:31:11,562 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:31:11,562 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:31:11,562 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:31:11,562 [INFO] Results saved to same_ids=False/rotten_tomatoes_original_len
+2024-09-26 10:31:11,563 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-09-26 10:31:22,886 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-09-26 10:31:22,940 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 10:31:22,971 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 10:31:23,004 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 10:31:23,032 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 10:31:23,065 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 10:31:28,700 [INFO] Heatmap plots saved in the folder 'same_ids=False/cnn_truncated_n=50'
+2024-09-26 10:31:37,085 [INFO] 
+Discriminating between models:
+2024-09-26 10:31:37,304 [INFO] Accuracy: 0.260
+2024-09-26 10:31:37,304 [INFO] Classification Report for models:
+2024-09-26 10:31:37,304 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.556    0.50     0.526    10.00
+gpt2_llama70b       0.000    0.00     0.000    10.00
+gpt2_llama8b        0.188    0.30     0.231    10.00
+gpt2_mistral7b      0.250    0.20     0.222    10.00
+gpt2_mixtral        0.300    0.30     0.300    10.00
+accuracy            0.260    0.26     0.260     0.26
+macro avg           0.259    0.26     0.256    50.00
+weighted avg        0.259    0.26     0.256    50.00
+2024-09-26 10:31:37,315 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:31:37,315 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:31:37,315 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:31:37,315 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:31:37,315 [INFO] Results saved to same_ids=False/cnn_truncated_n=50
+2024-09-26 10:31:37,315 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-09-26 10:31:37,315 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-09-26 10:31:37,348 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 10:31:37,379 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 10:31:37,411 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 10:31:37,441 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 10:31:37,476 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 10:31:42,398 [INFO] Heatmap plots saved in the folder 'same_ids=False/cnn_original_len_n=50'
+2024-09-26 10:31:51,074 [INFO] 
+Discriminating between models:
+2024-09-26 10:31:51,748 [INFO] Accuracy: 0.520
+2024-09-26 10:31:51,748 [INFO] Classification Report for models:
+2024-09-26 10:31:51,748 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      1.000    0.90     0.947    10.00
+gpt2_llama70b       0.333    0.50     0.400    10.00
+gpt2_llama8b        0.364    0.40     0.381    10.00
+gpt2_mistral7b      0.400    0.40     0.400    10.00
+gpt2_mixtral        0.800    0.40     0.533    10.00
+accuracy            0.520    0.52     0.520     0.52
+macro avg           0.579    0.52     0.532    50.00
+weighted avg        0.579    0.52     0.532    50.00
+2024-09-26 10:31:51,754 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:31:51,754 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:31:51,754 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:31:51,754 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:31:51,754 [INFO] Results saved to same_ids=False/cnn_original_len_n=50
+2024-09-26 10:31:51,755 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-09-26 10:31:56,768 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-09-26 10:31:56,820 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 10:31:56,852 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 10:31:56,887 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 10:31:56,917 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 10:31:56,951 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 10:33:09,212 [INFO] Heatmap plots saved in the folder 'same_ids=False/cnn_truncated'
+2024-09-26 10:35:06,815 [INFO] 
+Discriminating between models:
+2024-09-26 10:35:10,203 [INFO] Accuracy: 0.240
+2024-09-26 10:35:10,203 [INFO] Classification Report for models:
+2024-09-26 10:35:10,204 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.812   0.481     0.605    54.00
+gpt2_llama70b       0.223   0.198     0.210   187.00
+gpt2_llama8b        0.182   0.172     0.177   186.00
+gpt2_mistral7b      0.226   0.275     0.248   200.00
+gpt2_mixtral        0.228   0.241     0.234   187.00
+accuracy            0.240   0.240     0.240     0.24
+macro avg           0.334   0.273     0.295   814.00
+weighted avg        0.255   0.240     0.244   814.00
+2024-09-26 10:35:10,239 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:35:10,239 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:35:10,239 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:35:10,239 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:35:10,239 [INFO] Results saved to same_ids=False/cnn_truncated
+2024-09-26 10:35:10,240 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-09-26 10:35:10,241 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-09-26 10:35:10,283 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-09-26 10:35:10,311 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-09-26 10:35:10,343 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-09-26 10:35:10,371 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-09-26 10:35:10,406 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-09-26 10:36:24,750 [INFO] Heatmap plots saved in the folder 'same_ids=False/cnn_original_len'
+2024-09-26 10:38:25,492 [INFO] 
+Discriminating between models:
+2024-09-26 10:38:29,903 [INFO] Accuracy: 0.557
+2024-09-26 10:38:29,903 [INFO] Classification Report for models:
+2024-09-26 10:38:29,903 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.712   0.778     0.743   54.000
+gpt2_llama70b       0.590   0.561     0.575  187.000
+gpt2_llama8b        0.477   0.505     0.491  186.000
+gpt2_mistral7b      0.515   0.585     0.548  200.000
+gpt2_mixtral        0.621   0.508     0.559  187.000
+accuracy            0.557   0.557     0.557    0.557
+macro avg           0.583   0.588     0.583  814.000
+weighted avg        0.561   0.557     0.557  814.000
+2024-09-26 10:38:29,910 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:38:29,911 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:38:29,911 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:38:29,911 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:38:29,911 [INFO] Results saved to same_ids=False/cnn_original_len
+2024-09-26 10:38:29,912 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-09-26 10:38:39,413 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-09-26 10:38:39,462 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:38:39,489 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:38:39,512 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:38:39,531 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:38:39,557 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:38:49,716 [INFO] Heatmap plots saved in the folder 'same_ids=False/pubmed_truncated_n=50'
+2024-09-26 10:39:02,177 [INFO] 
+Discriminating between models:
+2024-09-26 10:39:02,762 [INFO] Accuracy: 0.520
+2024-09-26 10:39:02,762 [INFO] Classification Report for models:
+2024-09-26 10:39:02,763 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.692    0.90     0.783    10.00
+gpt2_llama70b       0.000    0.00     0.000    10.00
+gpt2_llama8b        0.556    0.50     0.526    10.00
+gpt2_mistral7b      0.667    0.60     0.632    10.00
+gpt2_mixtral        0.400    0.60     0.480    10.00
+accuracy            0.520    0.52     0.520     0.52
+macro avg           0.463    0.52     0.484    50.00
+weighted avg        0.463    0.52     0.484    50.00
+2024-09-26 10:39:02,771 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:39:02,772 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:39:02,772 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:39:02,772 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:39:02,772 [INFO] Results saved to same_ids=False/pubmed_truncated_n=50
+2024-09-26 10:39:02,772 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-09-26 10:39:02,772 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-09-26 10:39:02,821 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:39:02,846 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:39:02,870 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:39:02,889 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:39:02,913 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:39:14,610 [INFO] Heatmap plots saved in the folder 'same_ids=False/pubmed_original_len_n=50'
+2024-09-26 10:39:29,035 [INFO] 
+Discriminating between models:
+2024-09-26 10:39:30,302 [INFO] Accuracy: 0.560
+2024-09-26 10:39:30,302 [INFO] Classification Report for models:
+2024-09-26 10:39:30,303 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.700    0.70     0.700    10.00
+gpt2_llama70b       0.300    0.30     0.300    10.00
+gpt2_llama8b        1.000    0.70     0.824    10.00
+gpt2_mistral7b      0.636    0.70     0.667    10.00
+gpt2_mixtral        0.333    0.40     0.364    10.00
+accuracy            0.560    0.56     0.560     0.56
+macro avg           0.594    0.56     0.571    50.00
+weighted avg        0.594    0.56     0.571    50.00
+2024-09-26 10:39:30,309 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:39:30,309 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:39:30,309 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:39:30,309 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:39:30,309 [INFO] Results saved to same_ids=False/pubmed_original_len_n=50
+2024-09-26 10:39:30,309 [INFO] Analysis for pubmed (truncate=False) completed.
+
+2024-09-26 10:39:41,240 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-09-26 10:39:41,294 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:39:41,321 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:39:41,343 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:39:41,364 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:39:41,390 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:41:29,090 [INFO] Heatmap plots saved in the folder 'same_ids=False/pubmed_truncated'
+2024-09-26 10:43:48,719 [INFO] 
+Discriminating between models:
+2024-09-26 10:43:53,397 [INFO] Accuracy: 0.708
+2024-09-26 10:43:53,397 [INFO] Classification Report for models:
+2024-09-26 10:43:53,397 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.876   0.883     0.880  120.000
+gpt2_llama70b       0.774   0.800     0.787  120.000
+gpt2_llama8b        0.667   0.598     0.631  117.000
+gpt2_mistral7b      0.675   0.647     0.661  119.000
+gpt2_mixtral        0.550   0.605     0.576  119.000
+accuracy            0.708   0.708     0.708    0.708
+macro avg           0.708   0.707     0.707  595.000
+weighted avg        0.709   0.708     0.708  595.000
+2024-09-26 10:43:53,414 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:43:53,415 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:43:53,415 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:43:53,415 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:43:53,415 [INFO] Results saved to same_ids=False/pubmed_truncated
+2024-09-26 10:43:53,416 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-09-26 10:43:53,416 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-09-26 10:43:53,454 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-09-26 10:43:53,478 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-09-26 10:43:53,497 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-09-26 10:43:53,516 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-09-26 10:43:53,543 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-09-26 10:46:08,488 [INFO] Heatmap plots saved in the folder 'same_ids=False/pubmed_original_len'
+2024-09-26 10:48:49,588 [INFO] 
+Discriminating between models:
+2024-09-26 10:48:54,628 [INFO] Accuracy: 0.822
+2024-09-26 10:48:54,628 [INFO] Classification Report for models:
+2024-09-26 10:48:54,628 [INFO]                 precision  recall  f1-score  support
+gpt2_gemma2_9b      0.983   0.975     0.979  120.000
+gpt2_llama70b       0.713   0.808     0.758  120.000
+gpt2_llama8b        0.920   0.786     0.848  117.000
+gpt2_mistral7b      0.849   0.756     0.800  119.000
+gpt2_mixtral        0.694   0.782     0.735  119.000
+accuracy            0.822   0.822     0.822    0.822
+macro avg           0.832   0.821     0.824  595.000
+weighted avg        0.832   0.822     0.824  595.000
+2024-09-26 10:48:54,634 [INFO] 
+Discriminating between teachers:
+2024-09-26 10:48:54,635 [ERROR] Error: One or both columns (teacher_summ, teacher) not found in the DataFrame.
+2024-09-26 10:48:54,635 [ERROR] Analysis for teachers could not be performed due to data issues.
+2024-09-26 10:48:54,635 [WARNING] All Models LR analysis could not be performed due to data issues.
+2024-09-26 10:48:54,635 [INFO] Results saved to same_ids=False/pubmed_original_len
+2024-09-26 10:48:54,636 [INFO] Analysis for pubmed (truncate=False) completed.
 

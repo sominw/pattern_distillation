@@ -1,0 +1,5 @@
+Model,cosine_similarity,rouge_1_f,rouge_2_f,rouge_l_f
+gpt2_gemma2_9b,0.539,0.428,0.184,0.382
+gpt2_llama8b,0.56,0.461,0.207,0.41
+gpt2_mixtral,0.523,0.424,0.217,0.387
+gpt2_llama70b,0.543,0.46,0.217,0.408

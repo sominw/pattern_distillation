@@ -26,19 +26,19 @@ from src import (
 
 warnings.filterwarnings("ignore")
 
-def run_analysis(dataset, truncate, sample_size=None, qa_datasets=False):
+def run_analysis(dataset, truncate, same_ids, sample_size=None, qa_datasets=False):
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     truncation_status = "truncated" if truncate else "original_len"
-    output_dir = f"{dataset}_{truncation_status}"
+    output_dir = f"same_ids={same_ids}/{dataset}_{truncation_status}"
 
     if sample_size:
         output_dir += f"_n={sample_size}"
     os.makedirs(output_dir, exist_ok=True)
     
 
-    dfs = load_dfs(dataset, truncate, sample_size, qa_datasets)
+    dfs = load_dfs(dataset, truncate, same_ids, sample_size, qa_datasets)
 
     # Within-Model Analysis (Student vs its own Teacher)
     within_model_results = []
@@ -89,15 +89,19 @@ def main():
     parser.add_argument("--dataset", type=str, default=None, help="Dataset to analyze")
     # parser.add_argument("--truncate", type=bool, default=False, help="Whether to truncate text")
     parser.add_argument("--sample_size", type=int, default=None, help="Sample size to use")
-    parser.add_argument("--qa_datasets", type=bool, default=False, help="Whether to use QA datasets")
+    parser.add_argument('--qa_datasets', type=str, default='False')
+    parser.add_argument('--same_ids', type=str, default='True')
 
     args = parser.parse_args()
+
+    args.qa_datasets = args.qa_datasets.lower() == 'true'
+    args.same_ids = args.same_ids.lower() == 'true'
 
     # for dataset in DATASETS:
     for truncate in [True, False]:
         logging.info(f"Running analysis for {args.dataset} dataset (truncate={truncate})...")
         # run_analysis(dataset, truncate, sample_size=None, qa_datasets=False)
-        run_analysis(args.dataset, truncate, args.sample_size, args.qa_datasets)
+        run_analysis(args.dataset, truncate, args.same_ids, args.sample_size, args.qa_datasets)
         logging.info(f"Analysis for {args.dataset} (truncate={truncate}) completed.\n")
 
 if __name__ == "__main__":
