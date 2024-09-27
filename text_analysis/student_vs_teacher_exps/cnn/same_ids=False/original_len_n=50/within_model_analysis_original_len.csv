@@ -1,0 +1,6 @@
+Teacher,cosine_similarity,rouge_1_f,rouge_2_f,rouge_l_f
+gemma2_9b,0.475,0.257,0.092,0.23
+llama8b,0.729,0.537,0.284,0.486
+mixtral,0.75,0.564,0.318,0.52
+llama70b,0.711,0.521,0.267,0.465
+mistral7b,0.745,0.54,0.301,0.5

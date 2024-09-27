@@ -1,0 +1,26 @@
+Student Model,Teacher Model,cosine_similarity,rouge_1_f,rouge_2_f,rouge_l_f
+gpt2_gemma2_9b,gemma2_9b,0.585,0.351,0.124,0.318
+gpt2_gemma2_9b,llama8b,0.401,0.178,0.017,0.166
+gpt2_gemma2_9b,mixtral,0.406,0.182,0.024,0.167
+gpt2_gemma2_9b,llama70b,0.328,0.168,0.015,0.151
+gpt2_gemma2_9b,mistral7b,0.444,0.176,0.024,0.162
+gpt2_llama8b,gemma2_9b,0.403,0.188,0.029,0.176
+gpt2_llama8b,llama8b,0.665,0.465,0.198,0.429
+gpt2_llama8b,mixtral,0.38,0.171,0.02,0.16
+gpt2_llama8b,llama70b,0.314,0.173,0.018,0.161
+gpt2_llama8b,mistral7b,0.47,0.193,0.041,0.177
+gpt2_mixtral,gemma2_9b,0.384,0.176,0.025,0.164
+gpt2_mixtral,llama8b,0.396,0.173,0.025,0.158
+gpt2_mixtral,mixtral,0.703,0.522,0.285,0.481
+gpt2_mixtral,llama70b,0.337,0.166,0.017,0.151
+gpt2_mixtral,mistral7b,0.447,0.179,0.038,0.163
+gpt2_llama70b,gemma2_9b,0.361,0.182,0.021,0.163
+gpt2_llama70b,llama8b,0.379,0.186,0.025,0.172
+gpt2_llama70b,mixtral,0.378,0.172,0.015,0.161
+gpt2_llama70b,llama70b,0.618,0.472,0.232,0.435
+gpt2_llama70b,mistral7b,0.42,0.18,0.032,0.168
+gpt2_mistral7b,gemma2_9b,0.413,0.179,0.022,0.162
+gpt2_mistral7b,llama8b,0.432,0.201,0.039,0.186
+gpt2_mistral7b,mixtral,0.422,0.186,0.03,0.168
+gpt2_mistral7b,llama70b,0.349,0.177,0.023,0.163
+gpt2_mistral7b,mistral7b,0.794,0.595,0.383,0.561

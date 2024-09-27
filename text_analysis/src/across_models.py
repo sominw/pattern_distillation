@@ -20,13 +20,13 @@ def analyze_student_vs_all_teachers(dfs, truncate):
     results = []
     for i, student_df in enumerate(dfs):
         for j, teacher_df in enumerate(dfs):
-            if i != j:
-                min_rows = min(len(student_df), len(teacher_df))
-                similarities = [calculate_similarity(student_df['student'].iloc[k], teacher_df['teacher_summ'].iloc[k], truncate) for k in range(min_rows)]
-                avg_similarities = pd.DataFrame(similarities).mean().round(3)
-                results.append({
-                    'Student Model': MODELS[i].split('.')[0],
-                    'Teacher Model': MODELS[j].split('.')[0].lower().split('gpt2_')[1],
-                    **avg_similarities
-                })
+            # if i != j:
+            min_rows = min(len(student_df), len(teacher_df))
+            similarities = [calculate_similarity(student_df['student'].iloc[k], teacher_df['teacher_summ'].iloc[k], truncate) for k in range(min_rows)]
+            avg_similarities = pd.DataFrame(similarities).mean().round(3)
+            results.append({
+                'Student Model': MODELS[i].split('.')[0],
+                'Teacher Model': MODELS[j].split('.')[0].lower().split('gpt2_')[1],
+                **avg_similarities
+            })
     return pd.DataFrame(results)

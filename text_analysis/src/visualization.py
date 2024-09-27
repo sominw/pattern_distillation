@@ -5,6 +5,59 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import logging
 
+import os
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import logging
+
+def create_student_teacher_heatmap(df, output_dir, truncation_status):
+    sns.set_style("white", {'axes.grid': False})
+    
+    student_models = sorted(df['Student Model'].unique())
+    teacher_models = sorted(df['Teacher Model'].unique())
+    
+    metrics = ['cosine_similarity', 'rouge_1_f', 'rouge_2_f', 'rouge_l_f']
+    
+    for metric in metrics:
+        plt.figure(figsize=(12, 10))
+        
+        heatmap_data = pd.DataFrame(index=student_models, columns=teacher_models, dtype=float)
+        
+        for _, row in df.iterrows():
+            student = row['Student Model']
+            teacher = row['Teacher Model']
+            value = row[metric]
+            try:
+                heatmap_data.loc[student, teacher] = float(value)
+            except (ValueError, TypeError):
+                heatmap_data.loc[student, teacher] = np.nan
+        
+        mask = np.zeros_like(heatmap_data, dtype=bool)
+        mask[np.triu_indices_from(mask, k=1)] = True
+        
+        cmap = sns.light_palette("navy", as_cmap=True)
+        
+        sns.heatmap(heatmap_data, annot=True, cmap=cmap, fmt='.2f', linewidths=0.5,
+                    cbar=False, linecolor='white', annot_kws={"size": 10, "weight": "bold"},
+                    mask=mask)
+        
+        metric_name = metric.replace('_', ' ').title()
+        plt.title(f"{metric_name} - Student vs Teacher Models ({truncation_status})", fontsize=16, fontweight='bold', pad=20)
+        plt.xlabel('Teacher Model', fontsize=12, fontweight='bold')
+        plt.ylabel('Student Model', fontsize=12, fontweight='bold')
+        plt.xticks(rotation=45, ha='right')
+        plt.yticks(rotation=0)
+        plt.tight_layout()
+        
+        plot_filename = os.path.join(output_dir, f"student_teacher_{metric.lower()}_{truncation_status}.pdf")
+        plt.savefig(plot_filename, format='pdf', dpi=300, bbox_inches='tight')
+        plt.close()
+    
+    logging.info(f"Student-Teacher heatmap plots saved in the folder '{output_dir}'")
+
+
 def create_heatmap_plots(df, output_dir, truncation_status):
     sns.set_style("white", {'axes.grid': False})
     

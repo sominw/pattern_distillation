@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 
 def preprocess_text(text):
-    return ' '.join(word_tokenize(str(text).lower())) if pd.notna(text) else ""
+    return ' '.join(word_tokenize(str(text).replace('####', '').lower())) if pd.notna(text) else ""
 
 
 def truncate_text(text, max_words):
@@ -35,6 +35,8 @@ def map_qa_dataset(teacher_path, student_path):
     df.rename(columns={'rationale': 'student', 'gold_rationale': 'teacher_summ', 'id_student': 'id'}, inplace=True)
 
     df = df[['id', 'student', 'teacher_summ']]
+    df.dropna(subset=['student'], inplace=True)
+    df['student'] = df['student'].apply(lambda x: x.replace('####', ''))
     return df
 
 def load_dfs(dataset, truncate, same_ids, sample_size=None, qa_datasets=False):
@@ -45,6 +47,7 @@ def load_dfs(dataset, truncate, same_ids, sample_size=None, qa_datasets=False):
         df.dropna(subset=['student'], inplace=True)
         df['model'] = model
         df['length'] = df['student'].apply(lambda x: len(str(x).split()))
+        df['student'] = df['student'].apply(lambda x: x.replace('####', ''))
         logging.info(f"Average word length for model {model}: {df['length'].mean()}")
         return df
     
