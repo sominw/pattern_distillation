@@ -1,0 +1,11 @@
+Model 1,Model 2,cosine_similarity,rouge_1_f,rouge_2_f,rouge_l_f
+gpt2_gemma2_9b,gpt2_llama8b,0.368,0.161,0.015,0.145
+gpt2_gemma2_9b,gpt2_mixtral,0.384,0.161,0.016,0.146
+gpt2_gemma2_9b,gpt2_llama70b,0.376,0.162,0.017,0.146
+gpt2_gemma2_9b,gpt2_mistral7b,0.377,0.158,0.016,0.142
+gpt2_llama8b,gpt2_mixtral,0.39,0.166,0.018,0.149
+gpt2_llama8b,gpt2_llama70b,0.381,0.166,0.019,0.148
+gpt2_llama8b,gpt2_mistral7b,0.381,0.16,0.016,0.143
+gpt2_mixtral,gpt2_llama70b,0.387,0.167,0.017,0.149
+gpt2_mixtral,gpt2_mistral7b,0.41,0.167,0.02,0.149
+gpt2_llama70b,gpt2_mistral7b,0.383,0.165,0.018,0.145

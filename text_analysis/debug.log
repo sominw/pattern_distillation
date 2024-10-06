@@ -7980,3 +7980,207 @@ weighted avg     0.497018   0.388  0.369872  250.000
 2024-10-06 05:21:39,770 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=False/original_len_n=50
 2024-10-06 05:21:39,771 [INFO] Analysis for pubmed (truncate=False) completed.
 
+2024-10-06 05:37:50,128 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:37:50,193 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:37:50,208 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:37:50,238 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:37:50,262 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:38:05,254 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50'
+2024-10-06 05:38:05,256 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:38:05,256 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:38:05,306 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:38:05,321 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:38:05,351 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:38:05,375 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:38:19,475 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50'
+2024-10-06 05:38:19,477 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:38:23,118 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:38:23,163 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:38:23,186 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:38:23,207 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:38:23,230 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:38:30,654 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/openbookqa/same_ids=True/truncated_n=50'
+2024-10-06 05:38:30,655 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 05:38:30,656 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 05:38:30,677 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:38:30,701 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:38:30,720 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:38:30,743 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:38:37,818 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/openbookqa/same_ids=True/original_len_n=50'
+2024-10-06 05:38:37,820 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:38:41,312 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:38:41,370 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:38:41,386 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:38:41,397 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:38:41,413 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:38:46,150 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/quarel/same_ids=True/truncated_n=50'
+2024-10-06 05:38:46,151 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 05:38:46,151 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 05:38:46,181 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:38:46,196 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:38:46,204 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:38:46,220 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:38:50,638 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/quarel/same_ids=True/original_len_n=50'
+2024-10-06 05:38:50,639 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 05:38:55,937 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 05:38:55,968 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:38:56,002 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:38:56,037 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:38:56,069 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:38:56,101 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:39:19,248 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/rotten_tomatoes/same_ids=True/truncated_n=50'
+2024-10-06 05:39:19,250 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 05:39:19,250 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 05:39:19,266 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:39:19,301 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:39:19,335 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:39:19,367 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:39:19,399 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:39:44,282 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/rotten_tomatoes/same_ids=True/original_len_n=50'
+2024-10-06 05:39:44,284 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 05:39:47,962 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-10-06 05:39:48,007 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:39:48,040 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:39:48,075 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:39:48,105 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:39:48,141 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:40:41,052 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/cnn/same_ids=True/truncated_n=50'
+2024-10-06 05:40:41,056 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-10-06 05:40:41,056 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-10-06 05:40:41,093 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:40:41,124 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:40:41,158 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:40:41,188 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:40:41,221 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:41:36,661 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/cnn/same_ids=True/original_len_n=50'
+2024-10-06 05:41:36,665 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-10-06 05:41:48,440 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-10-06 05:41:48,523 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:41:48,552 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:41:48,574 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:41:48,595 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:41:48,620 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:42:32,588 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/pubmed/same_ids=True/truncated_n=50'
+2024-10-06 05:42:32,591 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-10-06 05:42:32,592 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-10-06 05:42:32,638 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:42:32,665 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:42:32,686 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:42:32,707 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:42:32,732 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:43:21,464 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/pubmed/same_ids=True/original_len_n=50'
+2024-10-06 05:43:21,468 [INFO] Analysis for pubmed (truncate=False) completed.
+
+2024-10-06 05:43:29,776 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:43:29,817 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:43:29,859 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:43:29,892 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:43:29,915 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:43:44,701 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/commonsenseqa/same_ids=False/truncated_n=50'
+2024-10-06 05:43:44,703 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:43:44,703 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:43:44,732 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:43:44,776 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:43:44,810 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:43:44,835 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:43:58,805 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/commonsenseqa/same_ids=False/original_len_n=50'
+2024-10-06 05:43:58,807 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:44:02,432 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:44:02,476 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:44:02,498 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:44:02,519 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:44:02,541 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:44:09,826 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/openbookqa/same_ids=False/truncated_n=50'
+2024-10-06 05:44:09,827 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 05:44:09,827 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 05:44:09,849 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:44:09,872 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:44:09,892 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:44:09,913 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:44:16,947 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/openbookqa/same_ids=False/original_len_n=50'
+2024-10-06 05:44:16,948 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:44:21,037 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:44:21,095 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:44:21,109 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:44:21,124 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:44:21,132 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:44:25,962 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/quarel/same_ids=False/truncated_n=50'
+2024-10-06 05:44:25,963 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 05:44:25,963 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 05:44:25,995 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:44:26,011 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:44:26,029 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:44:26,039 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:44:30,437 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/quarel/same_ids=False/original_len_n=50'
+2024-10-06 05:44:30,438 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 05:44:37,998 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 05:44:38,038 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:44:38,072 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:44:38,106 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:44:38,139 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:44:38,173 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:45:01,475 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/rotten_tomatoes/same_ids=False/truncated_n=50'
+2024-10-06 05:45:01,476 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 05:45:01,476 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 05:45:01,485 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:45:01,517 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:45:01,550 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:45:01,581 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:45:01,611 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:45:26,589 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/rotten_tomatoes/same_ids=False/original_len_n=50'
+2024-10-06 05:45:26,590 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 05:45:30,402 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-10-06 05:45:30,455 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:45:30,487 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:45:30,521 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:45:30,550 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:45:30,586 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:46:22,328 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/cnn/same_ids=False/truncated_n=50'
+2024-10-06 05:46:22,332 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-10-06 05:46:22,332 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-10-06 05:46:22,375 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:46:22,407 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:46:22,441 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:46:22,471 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:46:22,505 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:47:16,670 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/cnn/same_ids=False/original_len_n=50'
+2024-10-06 05:47:16,674 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-10-06 05:47:20,027 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-10-06 05:47:20,078 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:47:20,104 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:47:20,127 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:47:20,146 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:47:20,172 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:48:03,956 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/pubmed/same_ids=False/truncated_n=50'
+2024-10-06 05:48:03,960 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-10-06 05:48:03,960 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-10-06 05:48:04,004 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:48:04,029 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:48:04,050 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:48:04,068 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:48:04,093 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:48:52,783 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/pubmed/same_ids=False/original_len_n=50'
+2024-10-06 05:48:52,787 [INFO] Analysis for pubmed (truncate=False) completed.
+

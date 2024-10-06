@@ -30,7 +30,8 @@ def run_analysis(dataset, truncate, same_ids, sample_size=None, qa_datasets=Fals
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     truncation_status = "truncated" if truncate else "original_len"
-    output_dir = f"student_vs_teacher_exps/{dataset}/same_ids={same_ids}/{truncation_status}"
+    # output_dir = f"student_vs_teacher_exps/{dataset}/same_ids={same_ids}/{truncation_status}"
+    output_dir = f"teacher_vs_teacher_exps/{dataset}/same_ids={same_ids}/{truncation_status}"
 
     if sample_size:
         output_dir += f"_n={sample_size}"
@@ -55,15 +56,22 @@ def run_analysis(dataset, truncate, same_ids, sample_size=None, qa_datasets=Fals
     # # Heat map results
     # create_student_teacher_heatmap(student_vs_teachers_results, output_dir, truncation_status)
 
-    # LR analysis; only run for sample n=50 for the students (not necessary for the others)
-    if sample_size:
-        accuracy, report, feature_importance = multiclass_lr_teacher_classification(dfs, original_dfs, truncate=truncate)
-        # feature_importance.to_csv(os.path.join(output_dir, f'feature_importance_{truncation_status}.csv'), index=False)
-        report = pd.DataFrame(report).transpose()
-        report['model'] = report.index
-        report.to_csv(os.path.join(output_dir, f'classification_report_{truncation_status}.csv'), index=False)
+    # Between Teacher Analysis (Teacher vs Teacher)
+    teacher_vs_teachers_results = analyze_across_models(original_dfs, 'teacher_summ', truncate)
+    teacher_vs_teachers_results.to_csv(os.path.join(output_dir, f'teacher_vs_all_teachers_analysis_{truncation_status}.csv'), index=False)
 
-        logging.info(f"Results saved to {output_dir}")
+    # Heat map results
+    create_heatmap_plots(teacher_vs_teachers_results, output_dir, truncation_status)
+
+    # LR analysis; only run for sample n=50 for the students (not necessary for the others)
+    # if sample_size:
+    #     accuracy, report, feature_importance = multiclass_lr_teacher_classification(dfs, original_dfs, truncate=truncate)
+    #     # feature_importance.to_csv(os.path.join(output_dir, f'feature_importance_{truncation_status}.csv'), index=False)
+    #     report = pd.DataFrame(report).transpose()
+    #     report['model'] = report.index
+    #     report.to_csv(os.path.join(output_dir, f'classification_report_{truncation_status}.csv'), index=False)
+
+    #     logging.info(f"Results saved to {output_dir}")
 
 
 def main():
