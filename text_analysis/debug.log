@@ -6283,3 +6283,1700 @@ weighted avg     0.831662  0.821849  0.824068  595.000000
 2024-09-27 12:43:03,136 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=False/original_len
 2024-09-27 12:43:03,138 [INFO] Analysis for pubmed (truncate=False) completed.
 
+2024-10-03 09:34:34,199 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-03 09:34:34,337 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-03 09:34:34,425 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-03 09:34:34,463 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-03 09:34:34,528 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-03 09:34:35,260 [INFO] Multiclass LR Accuracy: 0.775
+2024-10-03 09:34:35,263 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.800000   0.800  0.800000   10.000
+GPT2_llama3_8b    0.909091   1.000  0.952381   10.000
+GPT2_mistral7b    0.636364   0.700  0.666667   10.000
+GPT2_mixtral      0.750000   0.600  0.666667   10.000
+accuracy          0.775000   0.775  0.775000    0.775
+macro avg         0.773864   0.775  0.771429   40.000
+weighted avg      0.773864   0.775  0.771429   40.000
+2024-10-03 09:34:35,270 [INFO] Top 20 important features:
+               feature    importance
+3160          negative  1.726050e-16
+1834              dust  1.647987e-16
+4716           posters  1.517883e-16
+8886                up  1.465841e-16
+7761              them  1.448494e-16
+4463             place  1.353084e-16
+2246              from  1.318390e-16
+2932            likely  1.257675e-16
+7789        themselves  1.253338e-16
+9783          would be  1.240327e-16
+1787               dog  1.214306e-16
+7175   the development  1.214306e-16
+6057           someone  1.127570e-16
+2649     is common and  1.084202e-16
+2733  is possible that  1.040834e-16
+4704     possible that  1.040834e-16
+2370              have  1.032160e-16
+2437               ice  1.023487e-16
+6290          stations  1.014813e-16
+1739       development  1.014813e-16
+2024-10-03 09:34:35,348 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-03 09:34:35,349 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-03 09:34:35,349 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-03 09:34:35,372 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-03 09:34:35,412 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-03 09:34:35,427 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-03 09:34:35,458 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-03 09:34:36,042 [INFO] Multiclass LR Accuracy: 0.875
+2024-10-03 09:34:36,045 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.818182   0.900  0.857143   10.000
+GPT2_llama3_8b    0.909091   1.000  0.952381   10.000
+GPT2_mistral7b    0.800000   0.800  0.800000   10.000
+GPT2_mixtral      1.000000   0.800  0.888889   10.000
+accuracy          0.875000   0.875  0.875000    0.875
+macro avg         0.881818   0.875  0.874603   40.000
+weighted avg      0.881818   0.875  0.874603   40.000
+2024-10-03 09:34:36,052 [INFO] Top 20 important features:
+                  feature    importance
+7872                  the  5.828671e-15
+5259                   of  1.398187e-15
+3729                   is  1.193490e-15
+4592              mailbox  1.176576e-15
+9202                under  1.157928e-15
+3032            furniture  1.098080e-15
+8013        the furniture  1.094766e-15
+9208            under the  1.067614e-15
+212                   and  1.044304e-15
+9210  under the furniture  1.012652e-15
+647                   are  9.332812e-16
+4775                might  9.224392e-16
+7540             suitable  9.098625e-16
+2756                  for  9.089951e-16
+7208                   so  8.508819e-16
+6031                place  8.344020e-16
+745                    as  8.335346e-16
+2876              for the  7.758551e-16
+1406                  can  7.641457e-16
+2621                field  7.628446e-16
+2024-10-03 09:34:36,141 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-03 09:34:36,141 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-03 10:00:55,874 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-03 10:00:55,922 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-03 10:00:55,965 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-03 10:00:55,986 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-03 10:00:55,999 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:51:08,659 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:51:08,844 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:51:08,895 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:51:08,965 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:51:09,044 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:52:08,486 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:52:08,539 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:52:08,555 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:52:08,589 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:52:08,613 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:52:28,681 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:52:28,725 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:52:28,771 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:52:28,797 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:52:28,814 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:52:29,618 [INFO] Multiclass LR Accuracy: 0.425
+2024-10-06 04:52:29,632 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.117647   0.080  0.095238   50.000
+GPT2_mixtral      0.958333   0.920  0.938776   50.000
+GPT2_llama3_70b   0.200000   0.020  0.036364   50.000
+GPT2_llama3_8b    0.300885   0.680  0.417178   50.000
+accuracy          0.425000   0.425  0.425000    0.425
+macro avg         0.394216   0.425  0.371889  200.000
+weighted avg      0.394216   0.425  0.371889  200.000
+2024-10-06 04:52:29,728 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:52:29,729 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:52:29,729 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:52:29,781 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:52:29,823 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:52:29,849 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:52:29,864 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:52:30,658 [INFO] Multiclass LR Accuracy: 0.445
+2024-10-06 04:52:30,661 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.111111   0.060  0.077922   50.000
+GPT2_mixtral      0.958333   0.920  0.938776   50.000
+GPT2_llama3_70b   0.200000   0.020  0.036364   50.000
+GPT2_llama3_8b    0.325000   0.780  0.458824   50.000
+accuracy          0.445000   0.445  0.445000    0.445
+macro avg         0.398611   0.445  0.377971  200.000
+weighted avg      0.398611   0.445  0.377971  200.000
+2024-10-06 04:52:30,720 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:52:30,721 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:53:22,069 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:53:22,120 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:53:22,155 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:53:22,170 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:53:22,193 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:53:23,157 [INFO] Multiclass LR Accuracy: 0.235
+2024-10-06 04:53:23,164 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.336066   0.820  0.476744   50.000
+GPT2_mistral7b    0.200000   0.120  0.150000   50.000
+GPT2_llama3_8b    0.000000   0.000  0.000000   50.000
+GPT2_llama3_70b   0.000000   0.000  0.000000   50.000
+accuracy          0.235000   0.235  0.235000    0.235
+macro avg         0.134016   0.235  0.156686  200.000
+weighted avg      0.134016   0.235  0.156686  200.000
+2024-10-06 04:53:23,209 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:53:23,210 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:53:23,210 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:53:23,251 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:53:23,282 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:53:23,297 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:53:23,320 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:53:24,342 [INFO] Multiclass LR Accuracy: 0.235
+2024-10-06 04:53:24,346 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.315385   0.820  0.455556   50.000
+GPT2_mistral7b    0.260870   0.120  0.164384   50.000
+GPT2_llama3_8b    0.000000   0.000  0.000000   50.000
+GPT2_llama3_70b   0.000000   0.000  0.000000   50.000
+accuracy          0.235000   0.235  0.235000    0.235
+macro avg         0.144064   0.235  0.154985  200.000
+weighted avg      0.144064   0.235  0.154985  200.000
+2024-10-06 04:53:24,399 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:53:24,400 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:54:56,084 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:54:56,121 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:54:56,136 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:54:56,176 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:54:56,209 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:54:57,159 [INFO] Multiclass LR Accuracy: 0.045
+2024-10-06 04:54:57,164 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.166667   0.160  0.163265   50.000
+GPT2_llama3_8b    0.000000   0.000  0.000000   50.000
+GPT2_mixtral      0.083333   0.020  0.032258   50.000
+GPT2_mistral7b    0.000000   0.000  0.000000   50.000
+accuracy          0.045000   0.045  0.045000    0.045
+macro avg         0.062500   0.045  0.048881  200.000
+weighted avg      0.062500   0.045  0.048881  200.000
+2024-10-06 04:54:57,235 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:54:57,235 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:54:57,235 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:54:57,260 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:54:57,277 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:54:57,316 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:54:57,348 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:54:58,333 [INFO] Multiclass LR Accuracy: 0.04
+2024-10-06 04:54:58,337 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.189189    0.14  0.160920    50.00
+GPT2_llama3_8b    0.000000    0.00  0.000000    50.00
+GPT2_mixtral      0.083333    0.02  0.032258    50.00
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+accuracy          0.040000    0.04  0.040000     0.04
+macro avg         0.068131    0.04  0.048294   200.00
+weighted avg      0.068131    0.04  0.048294   200.00
+2024-10-06 04:54:58,382 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:54:58,383 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:55:19,607 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:55:19,653 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:55:19,684 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:55:19,700 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:55:19,723 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:55:20,675 [INFO] Multiclass LR Accuracy: 0.38
+2024-10-06 04:55:20,680 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.187500    0.18  0.183673    50.00
+GPT2_mistral7b    1.000000    0.84  0.913043    50.00
+GPT2_llama3_8b    0.240000    0.48  0.320000    50.00
+GPT2_llama3_70b   0.100000    0.02  0.033333    50.00
+accuracy          0.380000    0.38  0.380000     0.38
+macro avg         0.381875    0.38  0.362513   200.00
+weighted avg      0.381875    0.38  0.362513   200.00
+2024-10-06 04:55:20,728 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:55:20,729 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:55:20,729 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:55:20,767 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:55:20,799 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:55:20,813 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:55:20,836 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:55:21,833 [INFO] Multiclass LR Accuracy: 0.375
+2024-10-06 04:55:21,838 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.181818   0.160  0.170213   50.000
+GPT2_mistral7b    1.000000   0.840  0.913043   50.000
+GPT2_llama3_8b    0.235849   0.500  0.320513   50.000
+GPT2_llama3_70b   0.000000   0.000  0.000000   50.000
+accuracy          0.375000   0.375  0.375000    0.375
+macro avg         0.354417   0.375  0.350942  200.000
+weighted avg      0.354417   0.375  0.350942  200.000
+2024-10-06 04:55:21,861 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:55:21,862 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:55:31,650 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:55:31,669 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:55:31,712 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:55:31,743 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:55:31,766 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:55:32,654 [INFO] Multiclass LR Accuracy: 0.01507537688442211
+2024-10-06 04:55:32,659 [INFO] Classification Report:
+                 precision    recall  f1-score     support
+GPT2_llama3_8b    0.000000  0.000000  0.000000   50.000000
+GPT2_mixtral      0.000000  0.000000  0.000000   50.000000
+GPT2_mistral7b    0.250000  0.020000  0.037037   50.000000
+GPT2_llama3_70b   0.285714  0.040816  0.071429   49.000000
+accuracy          0.015075  0.015075  0.015075    0.015075
+macro avg         0.133929  0.015204  0.027116  199.000000
+weighted avg      0.133166  0.015075  0.026894  199.000000
+2024-10-06 04:55:32,682 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:55:32,682 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:55:32,682 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:55:32,696 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:55:32,737 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:55:32,767 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:55:32,790 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:55:33,718 [INFO] Multiclass LR Accuracy: 0.010050251256281407
+2024-10-06 04:55:33,721 [INFO] Classification Report:
+                 precision   recall  f1-score    support
+GPT2_llama3_8b    0.000000  0.00000  0.000000   50.00000
+GPT2_mixtral      0.000000  0.00000  0.000000   50.00000
+GPT2_mistral7b    0.400000  0.04000  0.072727   50.00000
+GPT2_llama3_70b   0.000000  0.00000  0.000000   49.00000
+accuracy          0.010050  0.01005  0.010050    0.01005
+macro avg         0.100000  0.01000  0.018182  199.00000
+weighted avg      0.100503  0.01005  0.018273  199.00000
+2024-10-06 04:55:33,741 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:55:33,741 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:56:05,754 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:56:05,804 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:56:05,820 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:56:05,852 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:56:05,875 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:56:06,656 [INFO] Multiclass LR Accuracy: 0.62
+2024-10-06 04:56:06,661 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.581081    0.86  0.693548    50.00
+GPT2_llama3_8b    0.918919    0.68  0.781609    50.00
+GPT2_mistral7b    0.666667    0.32  0.432432    50.00
+GPT2_llama3_70b   0.476923    0.62  0.539130    50.00
+accuracy          0.620000    0.62  0.620000     0.62
+macro avg         0.660897    0.62  0.611680   200.00
+weighted avg      0.660897    0.62  0.611680   200.00
+2024-10-06 04:56:06,692 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:56:06,692 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:56:06,692 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:56:06,732 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:56:06,747 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:56:06,776 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:56:06,799 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:56:07,626 [INFO] Multiclass LR Accuracy: 0.69
+2024-10-06 04:56:07,629 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.661538    0.86  0.747826    50.00
+GPT2_llama3_8b    0.944444    0.68  0.790698    50.00
+GPT2_mistral7b    0.700000    0.56  0.622222    50.00
+GPT2_llama3_70b   0.559322    0.66  0.605505    50.00
+accuracy          0.690000    0.69  0.690000     0.69
+macro avg         0.716326    0.69  0.691563   200.00
+weighted avg      0.716326    0.69  0.691563   200.00
+2024-10-06 04:56:07,655 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:56:07,656 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:58:14,073 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:58:14,098 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:58:14,121 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:58:14,160 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:58:14,190 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:58:14,962 [INFO] Multiclass LR Accuracy: 0.27
+2024-10-06 04:58:14,967 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.459770    0.80  0.583942    50.00
+GPT2_llama3_70b   0.095238    0.08  0.086957    50.00
+GPT2_mixtral      0.416667    0.20  0.270270    50.00
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+accuracy          0.270000    0.27  0.270000     0.27
+macro avg         0.242919    0.27  0.235292   200.00
+weighted avg      0.242919    0.27  0.235292   200.00
+2024-10-06 04:58:14,977 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:58:14,978 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:58:14,978 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:58:14,991 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:58:15,016 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:58:15,056 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:58:15,086 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:58:15,906 [INFO] Multiclass LR Accuracy: 0.31
+2024-10-06 04:58:15,910 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.459770    0.80  0.583942    50.00
+GPT2_llama3_70b   0.125000    0.08  0.097561    50.00
+GPT2_mixtral      0.520000    0.26  0.346667    50.00
+GPT2_mistral7b    0.089286    0.10  0.094340    50.00
+accuracy          0.310000    0.31  0.310000     0.31
+macro avg         0.298514    0.31  0.280627   200.00
+weighted avg      0.298514    0.31  0.280627   200.00
+2024-10-06 04:58:15,919 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:58:15,920 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:58:17,919 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:58:17,943 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:58:17,985 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:58:18,010 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:58:18,041 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:58:24,027 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 04:58:24,082 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 04:58:24,126 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 04:58:24,147 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 04:58:24,185 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 04:58:24,829 [INFO] Multiclass LR Accuracy: 0.28
+2024-10-06 04:58:24,834 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+GPT2_mixtral      0.062500    0.08  0.070175    50.00
+GPT2_llama3_8b    0.629032    0.78  0.696429    50.00
+GPT2_llama3_70b   0.500000    0.26  0.342105    50.00
+accuracy          0.280000    0.28  0.280000     0.28
+macro avg         0.297883    0.28  0.277177   200.00
+weighted avg      0.297883    0.28  0.277177   200.00
+2024-10-06 04:58:24,847 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/truncated_n=50
+2024-10-06 04:58:24,847 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 04:58:24,847 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 04:58:24,871 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 04:58:24,892 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 04:58:24,903 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 04:58:24,923 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 04:58:25,505 [INFO] Multiclass LR Accuracy: 0.27
+2024-10-06 04:58:25,508 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.020833    0.02  0.020408    50.00
+GPT2_mixtral      0.072727    0.08  0.076190    50.00
+GPT2_llama3_8b    0.552632    0.84  0.666667    50.00
+GPT2_llama3_70b   0.333333    0.14  0.197183    50.00
+accuracy          0.270000    0.27  0.270000     0.27
+macro avg         0.244881    0.27  0.240112   200.00
+weighted avg      0.244881    0.27  0.240112   200.00
+2024-10-06 04:58:25,521 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/original_len_n=50
+2024-10-06 04:58:25,521 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 04:58:27,571 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 04:58:27,606 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 04:58:27,616 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 04:58:27,637 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 04:58:27,658 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 04:58:32,095 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 04:58:32,137 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 04:58:32,165 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 04:58:32,183 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 04:58:32,211 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 04:58:32,641 [INFO] Multiclass LR Accuracy: 0.12
+2024-10-06 04:58:32,646 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.026316    0.02  0.022727    50.00
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+GPT2_llama3_8b    0.153846    0.24  0.187500    50.00
+GPT2_mixtral      0.211538    0.22  0.215686    50.00
+accuracy          0.120000    0.12  0.120000     0.12
+macro avg         0.097925    0.12  0.106478   200.00
+weighted avg      0.097925    0.12  0.106478   200.00
+2024-10-06 04:58:32,659 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/truncated_n=50
+2024-10-06 04:58:32,659 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 04:58:32,659 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 04:58:32,677 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 04:58:32,690 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 04:58:32,699 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 04:58:32,715 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 04:58:33,197 [INFO] Multiclass LR Accuracy: 0.08
+2024-10-06 04:58:33,200 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.027027    0.02  0.022989    50.00
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+GPT2_llama3_8b    0.058824    0.06  0.059406    50.00
+GPT2_mixtral      0.179104    0.24  0.205128    50.00
+accuracy          0.080000    0.08  0.080000     0.08
+macro avg         0.066239    0.08  0.071881   200.00
+weighted avg      0.066239    0.08  0.071881   200.00
+2024-10-06 04:58:33,213 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/original_len_n=50
+2024-10-06 04:58:33,214 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 04:58:35,698 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 04:58:35,750 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 04:58:35,766 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 04:58:35,782 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 04:58:35,792 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 04:58:39,283 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 04:58:39,302 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 04:58:39,398 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 04:58:39,503 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 04:58:39,578 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 04:58:39,684 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 04:58:40,843 [INFO] Multiclass LR Accuracy: 0.86875
+2024-10-06 04:58:40,848 [INFO] Classification Report:
+                precision    recall  f1-score    support
+gpt2_llama8b     0.914894  0.977273  0.945055   44.00000
+gpt2_mixtral     0.818182  0.794118  0.805970   34.00000
+gpt2_llama70b    0.846154  0.868421  0.857143   38.00000
+gpt2_mistral7b   0.878049  0.818182  0.847059   44.00000
+accuracy         0.868750  0.868750  0.868750    0.86875
+macro avg        0.864320  0.864498  0.863807  160.00000
+weighted avg     0.867884  0.868750  0.867671  160.00000
+2024-10-06 04:58:40,866 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/truncated_n=50
+2024-10-06 04:58:40,867 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 04:58:40,867 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 04:58:40,875 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 04:58:40,907 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 04:58:40,942 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 04:58:40,976 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 04:58:41,009 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 04:58:42,104 [INFO] Multiclass LR Accuracy: 0.875
+2024-10-06 04:58:42,107 [INFO] Classification Report:
+                precision    recall  f1-score  support
+gpt2_llama8b     0.914894  0.977273  0.945055   44.000
+gpt2_mixtral     0.866667  0.764706  0.812500   34.000
+gpt2_llama70b    0.825000  0.868421  0.846154   38.000
+gpt2_mistral7b   0.883721  0.863636  0.873563   44.000
+accuracy         0.875000  0.875000  0.875000    0.875
+macro avg        0.872570  0.868509  0.869318  160.000
+weighted avg     0.874723  0.875000  0.873738  160.000
+2024-10-06 04:58:42,124 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/original_len_n=50
+2024-10-06 04:58:42,125 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 04:58:44,642 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 04:58:44,652 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 04:58:44,686 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 04:58:44,721 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 04:58:44,756 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 04:58:44,788 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 04:59:47,625 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:59:47,679 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:59:47,703 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:59:47,734 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:59:47,748 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:59:48,508 [INFO] Multiclass LR Accuracy: 0.355
+2024-10-06 04:59:48,512 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.100000   0.060  0.075000   50.000
+GPT2_llama3_70b   0.971429   0.680  0.800000   50.000
+GPT2_mistral7b    0.281250   0.180  0.219512   50.000
+GPT2_llama3_8b    0.242718   0.500  0.326797   50.000
+accuracy          0.355000   0.355  0.355000    0.355
+macro avg         0.398849   0.355  0.355327  200.000
+weighted avg      0.398849   0.355  0.355327  200.000
+2024-10-06 04:59:48,524 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 04:59:48,525 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 04:59:48,525 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 04:59:48,564 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:59:48,587 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:59:48,617 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:59:48,634 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:59:49,433 [INFO] Multiclass LR Accuracy: 0.32
+2024-10-06 04:59:49,437 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.055556    0.04  0.046512    50.00
+GPT2_llama3_70b   0.971429    0.68  0.800000    50.00
+GPT2_mistral7b    0.103448    0.06  0.075949    50.00
+GPT2_llama3_8b    0.250000    0.50  0.333333    50.00
+accuracy          0.320000    0.32  0.320000     0.32
+macro avg         0.345108    0.32  0.313949   200.00
+weighted avg      0.345108    0.32  0.313949   200.00
+2024-10-06 04:59:49,446 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 04:59:49,446 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 04:59:51,980 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 04:59:52,024 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 04:59:52,055 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 04:59:52,078 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 04:59:52,094 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 04:59:58,507 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 04:59:58,536 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 04:59:58,557 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 04:59:58,577 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 04:59:58,590 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 04:59:59,222 [INFO] Multiclass LR Accuracy: 0.22
+2024-10-06 04:59:59,226 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.620000    0.62  0.620000    50.00
+GPT2_mixtral      0.071429    0.08  0.075472    50.00
+GPT2_llama3_70b   0.135135    0.10  0.114943    50.00
+GPT2_llama3_8b    0.070175    0.08  0.074766    50.00
+accuracy          0.220000    0.22  0.220000     0.22
+macro avg         0.224185    0.22  0.221295   200.00
+weighted avg      0.224185    0.22  0.221295   200.00
+2024-10-06 04:59:59,240 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/truncated_n=50
+2024-10-06 04:59:59,241 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 04:59:59,241 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 04:59:59,264 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 04:59:59,286 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 04:59:59,308 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 04:59:59,320 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 04:59:59,895 [INFO] Multiclass LR Accuracy: 0.18
+2024-10-06 04:59:59,898 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.764706    0.52  0.619048    50.00
+GPT2_mixtral      0.043011    0.08  0.055944    50.00
+GPT2_llama3_70b   0.100000    0.04  0.057143    50.00
+GPT2_llama3_8b    0.075472    0.08  0.077670    50.00
+accuracy          0.180000    0.18  0.180000     0.18
+macro avg         0.245797    0.18  0.202451   200.00
+weighted avg      0.245797    0.18  0.202451   200.00
+2024-10-06 04:59:59,912 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/original_len_n=50
+2024-10-06 04:59:59,912 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:00:02,266 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:00:02,290 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:00:02,314 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:00:02,323 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:00:02,344 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:00:06,407 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:00:06,420 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:00:06,435 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:00:06,451 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:00:06,465 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:00:06,886 [INFO] Multiclass LR Accuracy: 0.05
+2024-10-06 05:00:06,891 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.000000    0.00  0.000000    50.00
+GPT2_llama3_70b   0.000000    0.00  0.000000    50.00
+GPT2_mixtral      0.106383    0.10  0.103093    50.00
+GPT2_mistral7b    0.100000    0.10  0.100000    50.00
+accuracy          0.050000    0.05  0.050000     0.05
+macro avg         0.051596    0.05  0.050773   200.00
+weighted avg      0.051596    0.05  0.050773   200.00
+2024-10-06 05:00:06,901 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/truncated_n=50
+2024-10-06 05:00:06,902 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 05:00:06,902 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 05:00:06,910 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:00:06,922 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:00:06,936 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:00:06,949 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:00:07,428 [INFO] Multiclass LR Accuracy: 0.035
+2024-10-06 05:00:07,431 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.000000   0.000  0.000000   50.000
+GPT2_llama3_70b   0.000000   0.000  0.000000   50.000
+GPT2_mixtral      0.106383   0.100  0.103093   50.000
+GPT2_mistral7b    0.060606   0.040  0.048193   50.000
+accuracy          0.035000   0.035  0.035000    0.035
+macro avg         0.041747   0.035  0.037821  200.000
+weighted avg      0.041747   0.035  0.037821  200.000
+2024-10-06 05:00:07,442 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/original_len_n=50
+2024-10-06 05:00:07,443 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 05:00:09,445 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:00:09,463 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:00:09,477 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:00:09,485 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:00:09,498 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:00:12,705 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 05:00:12,707 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:00:12,741 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:00:12,775 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:00:12,806 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:00:12,838 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:00:13,996 [INFO] Multiclass LR Accuracy: 0.8662420382165605
+2024-10-06 05:00:14,000 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_llama8b     0.862745  1.000000  0.926316   44.000000
+gpt2_mixtral     0.870968  0.870968  0.870968   31.000000
+gpt2_llama70b    0.790698  0.871795  0.829268   39.000000
+gpt2_mistral7b   0.968750  0.720930  0.826667   43.000000
+accuracy         0.866242  0.866242  0.866242    0.866242
+macro avg        0.873290  0.865923  0.863305  157.000000
+weighted avg     0.875505  0.866242  0.863987  157.000000
+2024-10-06 05:00:14,011 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/truncated_n=50
+2024-10-06 05:00:14,012 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 05:00:14,012 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 05:00:14,013 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:00:14,044 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:00:14,077 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:00:14,109 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:00:14,140 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:00:15,231 [INFO] Multiclass LR Accuracy: 0.8789808917197452
+2024-10-06 05:00:15,235 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_llama8b     0.880000  1.000000  0.936170   44.000000
+gpt2_mixtral     0.838710  0.838710  0.838710   31.000000
+gpt2_llama70b    0.837209  0.923077  0.878049   39.000000
+gpt2_mistral7b   0.969697  0.744186  0.842105   43.000000
+accuracy         0.878981  0.878981  0.878981    0.878981
+macro avg        0.881404  0.876493  0.873758  157.000000
+weighted avg     0.885784  0.878981  0.876726  157.000000
+2024-10-06 05:00:15,247 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/original_len_n=50
+2024-10-06 05:00:15,248 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 05:03:32,619 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:03:32,672 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:03:32,696 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:03:32,726 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:03:32,741 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:03:33,569 [INFO] Multiclass LR Accuracy: 0.435
+2024-10-06 05:03:33,575 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.283019   0.300  0.291262   50.000
+GPT2_llama3_70b   1.000000   0.760  0.863636   50.000
+GPT2_mistral7b    0.000000   0.000  0.000000   50.000
+GPT2_llama3_8b    0.346939   0.680  0.459459   50.000
+accuracy          0.435000   0.435  0.435000    0.435
+macro avg         0.407489   0.435  0.403589  200.000
+weighted avg      0.407489   0.435  0.403589  200.000
+2024-10-06 05:03:33,591 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 05:03:33,592 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:03:33,592 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:03:33,634 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:03:33,658 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:03:33,689 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:03:33,706 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:03:34,513 [INFO] Multiclass LR Accuracy: 0.44
+2024-10-06 05:03:34,516 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.289474    0.22  0.250000    50.00
+GPT2_llama3_70b   1.000000    0.76  0.863636    50.00
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+GPT2_llama3_8b    0.345133    0.78  0.478528    50.00
+accuracy          0.440000    0.44  0.440000     0.44
+macro avg         0.408652    0.44  0.398041   200.00
+weighted avg      0.408652    0.44  0.398041   200.00
+2024-10-06 05:03:34,527 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 05:03:34,527 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:03:53,075 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:03:53,120 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:03:53,151 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:03:53,167 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:03:53,189 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:03:54,026 [INFO] Multiclass LR Accuracy: 0.12
+2024-10-06 05:03:54,031 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.000000    0.00  0.000000    50.00
+GPT2_mistral7b    0.026667    0.04  0.032000    50.00
+GPT2_llama3_8b    0.666667    0.08  0.142857    50.00
+GPT2_llama3_70b   0.250000    0.36  0.295082    50.00
+accuracy          0.120000    0.12  0.120000     0.12
+macro avg         0.235833    0.12  0.117485   200.00
+weighted avg      0.235833    0.12  0.117485   200.00
+2024-10-06 05:03:54,056 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 05:03:54,057 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:03:54,057 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:03:54,098 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:03:54,127 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:03:54,140 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:03:54,161 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:03:55,052 [INFO] Multiclass LR Accuracy: 0.12
+2024-10-06 05:03:55,055 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.000000    0.00  0.000000    50.00
+GPT2_mistral7b    0.029851    0.04  0.034188    50.00
+GPT2_llama3_8b    0.500000    0.06  0.107143    50.00
+GPT2_llama3_70b   0.237500    0.38  0.292308    50.00
+accuracy          0.120000    0.12  0.120000     0.12
+macro avg         0.191838    0.12  0.108410   200.00
+weighted avg      0.191838    0.12  0.108410   200.00
+2024-10-06 05:03:55,071 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 05:03:55,072 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:03:57,296 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:03:57,332 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:03:57,356 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:03:57,396 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:03:57,411 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:04:03,658 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:04:03,681 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:04:03,691 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:04:03,710 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:04:03,730 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:04:04,398 [INFO] Multiclass LR Accuracy: 0.435
+2024-10-06 05:04:04,402 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.214286   0.060  0.093750   50.000
+GPT2_llama3_8b    0.952381   0.800  0.869565   50.000
+GPT2_mistral7b    0.347222   0.500  0.409836   50.000
+GPT2_mixtral      0.263889   0.380  0.311475   50.000
+accuracy          0.435000   0.435  0.435000    0.435
+macro avg         0.444444   0.435  0.421157  200.000
+weighted avg      0.444444   0.435  0.421157  200.000
+2024-10-06 05:04:04,414 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/truncated_n=50
+2024-10-06 05:04:04,415 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 05:04:04,415 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 05:04:04,433 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:04:04,442 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:04:04,461 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:04:04,481 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:04:05,191 [INFO] Multiclass LR Accuracy: 0.405
+2024-10-06 05:04:05,195 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.125000   0.020  0.034483   50.000
+GPT2_llama3_8b    1.000000   0.800  0.888889   50.000
+GPT2_mistral7b    0.308824   0.420  0.355932   50.000
+GPT2_mixtral      0.226190   0.380  0.283582   50.000
+accuracy          0.405000   0.405  0.405000    0.405
+macro avg         0.415004   0.405  0.390721  200.000
+weighted avg      0.415004   0.405  0.390721  200.000
+2024-10-06 05:04:05,205 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/original_len_n=50
+2024-10-06 05:04:05,205 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:05:59,506 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:05:59,553 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:05:59,585 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:05:59,600 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:05:59,623 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:06:00,443 [INFO] Multiclass LR Accuracy: 0.43
+2024-10-06 05:06:00,448 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.000000    0.00  0.000000    50.00
+GPT2_mistral7b    1.000000    0.82  0.901099    50.00
+GPT2_llama3_8b    0.285714    0.64  0.395062    50.00
+GPT2_llama3_70b   0.317073    0.26  0.285714    50.00
+accuracy          0.430000    0.43  0.430000     0.43
+macro avg         0.400697    0.43  0.395469   200.00
+weighted avg      0.400697    0.43  0.395469   200.00
+2024-10-06 05:06:00,458 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 05:06:00,458 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:06:00,458 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:06:00,500 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:06:00,530 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:06:00,542 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:06:00,563 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:06:01,423 [INFO] Multiclass LR Accuracy: 0.42
+2024-10-06 05:06:01,426 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.000000    0.00  0.000000    50.00
+GPT2_mistral7b    1.000000    0.82  0.901099    50.00
+GPT2_llama3_8b    0.299213    0.76  0.429379    50.00
+GPT2_llama3_70b   0.185185    0.10  0.129870    50.00
+accuracy          0.420000    0.42  0.420000     0.42
+macro avg         0.371099    0.42  0.365087   200.00
+weighted avg      0.371099    0.42  0.365087   200.00
+2024-10-06 05:06:01,435 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 05:06:01,436 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:06:03,500 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:06:03,544 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:06:03,567 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:06:03,582 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:06:03,613 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:17:37,839 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:17:37,890 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:17:37,921 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:17:37,964 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:17:37,982 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:17:38,829 [INFO] Multiclass LR Accuracy: 0.28
+2024-10-06 05:17:38,836 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.411765    0.84  0.552632    50.00
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+GPT2_mixtral      0.038462    0.04  0.039216    50.00
+GPT2_llama3_8b    0.413793    0.24  0.303797    50.00
+accuracy          0.280000    0.28  0.280000     0.28
+macro avg         0.216005    0.28  0.223911   200.00
+weighted avg      0.216005    0.28  0.223911   200.00
+2024-10-06 05:17:38,877 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 05:17:38,877 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:17:38,877 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:17:38,902 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:17:38,936 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:17:38,975 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:17:38,993 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:17:39,881 [INFO] Multiclass LR Accuracy: 0.265
+2024-10-06 05:17:39,885 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.378378   0.840  0.521739   50.000
+GPT2_mistral7b    0.000000   0.000  0.000000   50.000
+GPT2_mixtral      0.038462   0.040  0.039216   50.000
+GPT2_llama3_8b    0.360000   0.180  0.240000   50.000
+accuracy          0.265000   0.265  0.265000    0.265
+macro avg         0.194210   0.265  0.200239  200.000
+weighted avg      0.194210   0.265  0.200239  200.000
+2024-10-06 05:17:39,923 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 05:17:39,924 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:17:45,018 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:17:45,046 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:17:45,070 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:17:45,087 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:17:45,098 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:17:45,772 [INFO] Multiclass LR Accuracy: 0.25
+2024-10-06 05:17:45,779 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.000000    0.00  0.000000    50.00
+GPT2_mixtral      0.076923    0.04  0.052632    50.00
+GPT2_llama3_70b   0.600000    0.30  0.400000    50.00
+GPT2_llama3_8b    0.336735    0.66  0.445946    50.00
+accuracy          0.250000    0.25  0.250000     0.25
+macro avg         0.253414    0.25  0.224644   200.00
+weighted avg      0.253414    0.25  0.224644   200.00
+2024-10-06 05:17:45,828 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/truncated_n=50
+2024-10-06 05:17:45,828 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 05:17:45,828 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 05:17:45,852 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:17:45,873 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:17:45,893 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:17:45,904 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:17:46,639 [INFO] Multiclass LR Accuracy: 0.275
+2024-10-06 05:17:46,642 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.000000   0.000  0.000000   50.000
+GPT2_mixtral      0.133333   0.040  0.061538   50.000
+GPT2_llama3_70b   0.600000   0.240  0.342857   50.000
+GPT2_llama3_8b    0.347458   0.820  0.488095   50.000
+accuracy          0.275000   0.275  0.275000    0.275
+macro avg         0.270198   0.275  0.223123  200.000
+weighted avg      0.270198   0.275  0.223123  200.000
+2024-10-06 05:17:46,687 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/original_len_n=50
+2024-10-06 05:17:46,687 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:17:51,474 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:17:51,498 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:17:51,513 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:17:51,529 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:17:51,540 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:17:52,096 [INFO] Multiclass LR Accuracy: 0.3
+2024-10-06 05:17:52,103 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.477778    0.86  0.614286     50.0
+GPT2_mixtral      0.066667    0.02  0.030769     50.0
+GPT2_llama3_70b   0.020833    0.02  0.020408     50.0
+GPT2_llama3_8b    0.319149    0.30  0.309278     50.0
+accuracy          0.300000    0.30  0.300000      0.3
+macro avg         0.221107    0.30  0.243685    200.0
+weighted avg      0.221107    0.30  0.243685    200.0
+2024-10-06 05:17:52,128 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/truncated_n=50
+2024-10-06 05:17:52,129 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 05:17:52,129 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 05:17:52,143 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:17:52,157 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:17:52,172 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:17:52,180 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:17:52,791 [INFO] Multiclass LR Accuracy: 0.28
+2024-10-06 05:17:52,794 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.409524    0.86  0.554839    50.00
+GPT2_mixtral      0.000000    0.00  0.000000    50.00
+GPT2_llama3_70b   0.020833    0.02  0.020408    50.00
+GPT2_llama3_8b    0.315789    0.24  0.272727    50.00
+accuracy          0.280000    0.28  0.280000     0.28
+macro avg         0.186537    0.28  0.211994   200.00
+weighted avg      0.186537    0.28  0.211994   200.00
+2024-10-06 05:17:52,823 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/original_len_n=50
+2024-10-06 05:17:52,824 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 05:17:56,519 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 05:17:56,525 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:17:56,559 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:17:56,595 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:17:56,627 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:17:56,660 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:17:57,954 [INFO] Multiclass LR Accuracy: 0.8258064516129032
+2024-10-06 05:17:57,959 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_llama8b     0.888889  0.952381  0.919540   42.000000
+gpt2_mixtral     0.875000  0.848485  0.861538   33.000000
+gpt2_llama70b    0.689655  0.975610  0.808081   41.000000
+gpt2_mistral7b   1.000000  0.512821  0.677966   39.000000
+accuracy         0.825806  0.825806  0.825806    0.825806
+macro avg        0.863386  0.822324  0.816781  155.000000
+weighted avg     0.861188  0.825806  0.816925  155.000000
+2024-10-06 05:17:57,999 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/truncated_n=50
+2024-10-06 05:17:58,000 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 05:17:58,000 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 05:17:58,001 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:17:58,033 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:17:58,067 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:17:58,097 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:17:58,130 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:17:59,357 [INFO] Multiclass LR Accuracy: 0.8258064516129032
+2024-10-06 05:17:59,361 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_llama8b     0.909091  0.952381  0.930233   42.000000
+gpt2_mixtral     0.843750  0.818182  0.830769   33.000000
+gpt2_llama70b    0.703704  0.926829  0.800000   41.000000
+gpt2_mistral7b   0.920000  0.589744  0.718750   39.000000
+accuracy         0.825806  0.825806  0.825806    0.825806
+macro avg        0.844136  0.821784  0.819938  155.000000
+weighted avg     0.843596  0.825806  0.821396  155.000000
+2024-10-06 05:17:59,396 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/original_len_n=50
+2024-10-06 05:17:59,396 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 05:18:02,905 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-10-06 05:18:02,984 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:18:03,051 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:18:03,112 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:18:03,191 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:18:03,252 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:18:05,497 [INFO] Multiclass LR Accuracy: 0.2938388625592417
+2024-10-06 05:18:05,503 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_gemma2_9b   0.142857  0.235294  0.177778   17.000000
+gpt2_llama8b     0.284314  0.604167  0.386667   48.000000
+gpt2_mixtral     0.260870  0.250000  0.255319   48.000000
+gpt2_llama70b    0.400000  0.080000  0.133333   50.000000
+gpt2_mistral7b   0.520000  0.270833  0.356164   48.000000
+accuracy         0.293839  0.293839  0.293839    0.293839
+macro avg        0.321608  0.288059  0.261852  211.000000
+weighted avg     0.348613  0.293839  0.272986  211.000000
+2024-10-06 05:18:05,528 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=True/truncated_n=50
+2024-10-06 05:18:05,529 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-10-06 05:18:05,529 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-10-06 05:18:05,572 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:18:05,602 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:18:05,634 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:18:05,663 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:18:05,696 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:18:07,835 [INFO] Multiclass LR Accuracy: 0.3222748815165877
+2024-10-06 05:18:07,842 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_gemma2_9b   0.173913  0.235294  0.200000   17.000000
+gpt2_llama8b     0.358209  0.500000  0.417391   48.000000
+gpt2_mixtral     0.282051  0.229167  0.252874   48.000000
+gpt2_llama70b    0.341463  0.280000  0.307692   50.000000
+gpt2_mistral7b   0.365854  0.312500  0.337079   48.000000
+accuracy         0.322275  0.322275  0.322275    0.322275
+macro avg        0.304298  0.311392  0.303007  211.000000
+weighted avg     0.323806  0.322275  0.318185  211.000000
+2024-10-06 05:18:07,878 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=True/original_len_n=50
+2024-10-06 05:18:07,880 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-10-06 05:18:11,770 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-10-06 05:18:11,858 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:18:11,916 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:18:11,971 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:18:12,022 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:18:12,082 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:18:14,068 [INFO] Multiclass LR Accuracy: 0.388
+2024-10-06 05:18:14,076 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.750000   0.480  0.585366   50.000
+gpt2_llama8b     0.300000   0.540  0.385714   50.000
+gpt2_mixtral     0.375000   0.420  0.396226   50.000
+gpt2_llama70b    0.428571   0.300  0.352941   50.000
+gpt2_mistral7b   0.270270   0.200  0.229885   50.000
+accuracy         0.388000   0.388  0.388000    0.388
+macro avg        0.424768   0.388  0.390027  250.000
+weighted avg     0.424768   0.388  0.390027  250.000
+2024-10-06 05:18:14,108 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=True/truncated_n=50
+2024-10-06 05:18:14,109 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-10-06 05:18:14,109 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-10-06 05:18:14,146 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:18:14,171 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:18:14,191 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:18:14,211 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:18:14,235 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:18:16,160 [INFO] Multiclass LR Accuracy: 0.3
+2024-10-06 05:18:16,163 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.631579    0.24  0.347826     50.0
+gpt2_llama8b     0.555556    0.20  0.294118     50.0
+gpt2_mixtral     0.125000    0.04  0.060606     50.0
+gpt2_llama70b    0.243094    0.88  0.380952     50.0
+gpt2_mistral7b   0.437500    0.14  0.212121     50.0
+accuracy         0.300000    0.30  0.300000      0.3
+macro avg        0.398546    0.30  0.259125    250.0
+weighted avg     0.398546    0.30  0.259125    250.0
+2024-10-06 05:18:16,188 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=True/original_len_n=50
+2024-10-06 05:18:16,189 [INFO] Analysis for pubmed (truncate=False) completed.
+
+2024-10-06 05:18:19,640 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:18:19,677 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:18:19,707 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:18:19,747 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:18:19,764 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:18:20,599 [INFO] Multiclass LR Accuracy: 0.155
+2024-10-06 05:18:20,605 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.192308   0.100  0.131579   50.000
+GPT2_mistral7b    0.037037   0.040  0.038462   50.000
+GPT2_mixtral      0.000000   0.000  0.000000   50.000
+GPT2_llama3_8b    0.328767   0.480  0.390244   50.000
+accuracy          0.155000   0.155  0.155000    0.155
+macro avg         0.139528   0.155  0.140071  200.000
+weighted avg      0.139528   0.155  0.140071  200.000
+2024-10-06 05:18:20,622 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=False/truncated_n=50
+2024-10-06 05:18:20,623 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:18:20,623 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:18:20,651 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:18:20,681 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:18:20,721 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:18:20,735 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:18:21,613 [INFO] Multiclass LR Accuracy: 0.15
+2024-10-06 05:18:21,616 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.384615    0.10  0.158730    50.00
+GPT2_mistral7b    0.035088    0.04  0.037383    50.00
+GPT2_mixtral      0.000000    0.00  0.000000    50.00
+GPT2_llama3_8b    0.277108    0.46  0.345865    50.00
+accuracy          0.150000    0.15  0.150000     0.15
+macro avg         0.174203    0.15  0.135494   200.00
+weighted avg      0.174203    0.15  0.135494   200.00
+2024-10-06 05:18:21,633 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=False/original_len_n=50
+2024-10-06 05:18:21,633 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:18:25,279 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:18:25,310 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:18:25,332 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:18:25,354 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:18:25,373 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:18:26,033 [INFO] Multiclass LR Accuracy: 0.075
+2024-10-06 05:18:26,038 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.055556   0.040  0.046512   50.000
+GPT2_mistral7b    0.029412   0.040  0.033898   50.000
+GPT2_mixtral      0.196078   0.200  0.198020   50.000
+GPT2_llama3_70b   0.022222   0.020  0.021053   50.000
+accuracy          0.075000   0.075  0.075000    0.075
+macro avg         0.075817   0.075  0.074871  200.000
+weighted avg      0.075817   0.075  0.074871  200.000
+2024-10-06 05:18:26,060 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=False/truncated_n=50
+2024-10-06 05:18:26,061 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 05:18:26,061 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 05:18:26,091 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:18:26,112 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:18:26,136 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:18:26,153 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:18:26,870 [INFO] Multiclass LR Accuracy: 0.025
+2024-10-06 05:18:26,874 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.052632   0.020  0.028986   50.000
+GPT2_mistral7b    0.018349   0.040  0.025157   50.000
+GPT2_mixtral      0.068966   0.040  0.050633   50.000
+GPT2_llama3_70b   0.000000   0.000  0.000000   50.000
+accuracy          0.025000   0.025  0.025000    0.025
+macro avg         0.034986   0.025  0.026194  200.000
+weighted avg      0.034986   0.025  0.026194  200.000
+2024-10-06 05:18:26,889 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=False/original_len_n=50
+2024-10-06 05:18:26,890 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:18:30,435 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:18:30,481 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:18:30,496 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:18:30,513 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:18:30,523 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:18:31,059 [INFO] Multiclass LR Accuracy: 0.185
+2024-10-06 05:18:31,064 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.000000   0.000  0.000000   50.000
+GPT2_llama3_70b   0.010417   0.020  0.013699   50.000
+GPT2_mistral7b    0.642857   0.540  0.586957   50.000
+GPT2_llama3_8b    0.642857   0.180  0.281250   50.000
+accuracy          0.185000   0.185  0.185000    0.185
+macro avg         0.324033   0.185  0.220476  200.000
+weighted avg      0.324033   0.185  0.220476  200.000
+2024-10-06 05:18:31,078 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=False/truncated_n=50
+2024-10-06 05:18:31,078 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 05:18:31,078 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 05:18:31,119 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:18:31,135 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:18:31,149 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:18:31,159 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:18:31,692 [INFO] Multiclass LR Accuracy: 0.17
+2024-10-06 05:18:31,696 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mixtral      0.000000    0.00  0.000000    50.00
+GPT2_llama3_70b   0.009615    0.02  0.012987    50.00
+GPT2_mistral7b    0.743590    0.58  0.651685    50.00
+GPT2_llama3_8b    0.444444    0.08  0.135593    50.00
+accuracy          0.170000    0.17  0.170000     0.17
+macro avg         0.299412    0.17  0.200066   200.00
+weighted avg      0.299412    0.17  0.200066   200.00
+2024-10-06 05:18:31,772 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=False/original_len_n=50
+2024-10-06 05:18:31,772 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 05:18:36,154 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 05:18:36,168 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:18:36,202 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:18:36,237 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:18:36,269 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:18:36,300 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:18:37,555 [INFO] Multiclass LR Accuracy: 0.82
+2024-10-06 05:18:37,559 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_llama8b     0.960784    0.98  0.970297    50.00
+gpt2_mixtral     0.754717    0.80  0.776699    50.00
+gpt2_llama70b    0.704225    1.00  0.826446    50.00
+gpt2_mistral7b   1.000000    0.50  0.666667    50.00
+accuracy         0.820000    0.82  0.820000     0.82
+macro avg        0.854932    0.82  0.810027   200.00
+weighted avg     0.854932    0.82  0.810027   200.00
+2024-10-06 05:18:37,589 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=False/truncated_n=50
+2024-10-06 05:18:37,589 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 05:18:37,590 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 05:18:37,597 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:18:37,628 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:18:37,659 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:18:37,689 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:18:37,720 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:18:39,020 [INFO] Multiclass LR Accuracy: 0.84
+2024-10-06 05:18:39,024 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_llama8b     0.925926    1.00  0.961538    50.00
+gpt2_mixtral     0.800000    0.80  0.800000    50.00
+gpt2_llama70b    0.753846    0.98  0.852174    50.00
+gpt2_mistral7b   0.935484    0.58  0.716049    50.00
+accuracy         0.840000    0.84  0.840000     0.84
+macro avg        0.853814    0.84  0.832440   200.00
+weighted avg     0.853814    0.84  0.832440   200.00
+2024-10-06 05:18:39,042 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=False/original_len_n=50
+2024-10-06 05:18:39,043 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 05:18:43,371 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-10-06 05:18:43,419 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:18:43,452 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:18:43,485 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:18:43,515 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:18:43,550 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:18:45,816 [INFO] Multiclass LR Accuracy: 0.192
+2024-10-06 05:18:45,821 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.227273   0.200  0.212766   50.000
+gpt2_llama8b     0.181034   0.420  0.253012   50.000
+gpt2_mixtral     0.183333   0.220  0.200000   50.000
+gpt2_llama70b    0.222222   0.120  0.155844   50.000
+gpt2_mistral7b   0.000000   0.000  0.000000   50.000
+accuracy         0.192000   0.192  0.192000    0.192
+macro avg        0.162773   0.192  0.164324  250.000
+weighted avg     0.162773   0.192  0.164324  250.000
+2024-10-06 05:18:45,848 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=False/truncated_n=50
+2024-10-06 05:18:45,849 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-10-06 05:18:45,849 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-10-06 05:18:45,897 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:18:45,927 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:18:45,959 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:18:45,987 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:18:46,018 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:18:48,209 [INFO] Multiclass LR Accuracy: 0.276
+2024-10-06 05:18:48,214 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.333333   0.220  0.265060   50.000
+gpt2_llama8b     0.217391   0.400  0.281690   50.000
+gpt2_mixtral     0.200000   0.180  0.189474   50.000
+gpt2_llama70b    0.205128   0.160  0.179775   50.000
+gpt2_mistral7b   0.512195   0.420  0.461538   50.000
+accuracy         0.276000   0.276  0.276000    0.276
+macro avg        0.293610   0.276  0.275508  250.000
+weighted avg     0.293610   0.276  0.275508  250.000
+2024-10-06 05:18:48,238 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=False/original_len_n=50
+2024-10-06 05:18:48,239 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-10-06 05:18:52,507 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-10-06 05:18:52,552 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:18:52,579 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:18:52,601 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:18:52,621 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:18:52,647 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:18:54,615 [INFO] Multiclass LR Accuracy: 0.384
+2024-10-06 05:18:54,623 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.739130   0.340  0.465753   50.000
+gpt2_llama8b     0.351064   0.660  0.458333   50.000
+gpt2_mixtral     0.461538   0.240  0.315789   50.000
+gpt2_llama70b    0.289474   0.220  0.250000   50.000
+gpt2_mistral7b   0.333333   0.460  0.386555   50.000
+accuracy         0.384000   0.384  0.384000    0.384
+macro avg        0.434908   0.384  0.375286  250.000
+weighted avg     0.434908   0.384  0.375286  250.000
+2024-10-06 05:18:54,653 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=False/truncated_n=50
+2024-10-06 05:18:54,655 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-10-06 05:18:54,655 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-10-06 05:18:54,696 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:18:54,719 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:18:54,739 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:18:54,759 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:18:54,782 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:18:56,658 [INFO] Multiclass LR Accuracy: 0.4
+2024-10-06 05:18:56,661 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.727273    0.48  0.578313     50.0
+gpt2_llama8b     0.739130    0.34  0.465753     50.0
+gpt2_mixtral     0.230769    0.06  0.095238     50.0
+gpt2_llama70b    0.270968    0.84  0.409756     50.0
+gpt2_mistral7b   0.538462    0.28  0.368421     50.0
+accuracy         0.400000    0.40  0.400000      0.4
+macro avg        0.501320    0.40  0.383496    250.0
+weighted avg     0.501320    0.40  0.383496    250.0
+2024-10-06 05:18:56,695 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=False/original_len_n=50
+2024-10-06 05:18:56,696 [INFO] Analysis for pubmed (truncate=False) completed.
+
+2024-10-06 05:20:27,190 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:20:27,228 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:20:27,270 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:20:27,302 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:20:27,317 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:20:28,246 [INFO] Multiclass LR Accuracy: 0.425
+2024-10-06 05:20:28,251 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.000000   0.000  0.000000   50.000
+GPT2_mixtral      0.973684   0.740  0.840909   50.000
+GPT2_mistral7b    0.396040   0.800  0.529801   50.000
+GPT2_llama3_8b    0.163265   0.160  0.161616   50.000
+accuracy          0.425000   0.425  0.425000    0.425
+macro avg         0.383247   0.425  0.383082  200.000
+weighted avg      0.383247   0.425  0.383082  200.000
+2024-10-06 05:20:28,271 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/truncated_n=50
+2024-10-06 05:20:28,271 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:20:28,271 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:20:28,298 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:20:28,340 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:20:28,369 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:20:28,385 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:20:29,357 [INFO] Multiclass LR Accuracy: 0.445
+2024-10-06 05:20:29,361 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.000000   0.000  0.000000   50.000
+GPT2_mixtral      1.000000   0.740  0.850575   50.000
+GPT2_mistral7b    0.412371   0.800  0.544218   50.000
+GPT2_llama3_8b    0.222222   0.240  0.230769   50.000
+accuracy          0.445000   0.445  0.445000    0.445
+macro avg         0.408648   0.445  0.406390  200.000
+weighted avg      0.408648   0.445  0.406390  200.000
+2024-10-06 05:20:29,374 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=True/original_len_n=50
+2024-10-06 05:20:29,375 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:20:33,519 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:20:33,541 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:20:33,562 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:20:33,585 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:20:33,606 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:20:34,460 [INFO] Multiclass LR Accuracy: 0.195
+2024-10-06 05:20:34,467 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.239130   0.440  0.309859   50.000
+GPT2_mixtral      0.300000   0.060  0.100000   50.000
+GPT2_mistral7b    0.265306   0.260  0.262626   50.000
+GPT2_llama3_70b   0.020408   0.020  0.020202   50.000
+accuracy          0.195000   0.195  0.195000    0.195
+macro avg         0.206211   0.195  0.173172  200.000
+weighted avg      0.206211   0.195  0.173172  200.000
+2024-10-06 05:20:34,483 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/truncated_n=50
+2024-10-06 05:20:34,484 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 05:20:34,484 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 05:20:34,497 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:20:34,517 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:20:34,537 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:20:34,556 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:20:35,336 [INFO] Multiclass LR Accuracy: 0.22
+2024-10-06 05:20:35,339 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.243590    0.38  0.296875    50.00
+GPT2_mixtral      0.428571    0.06  0.105263    50.00
+GPT2_mistral7b    0.318182    0.42  0.362069    50.00
+GPT2_llama3_70b   0.020408    0.02  0.020202    50.00
+accuracy          0.220000    0.22  0.220000     0.22
+macro avg         0.252688    0.22  0.196102   200.00
+weighted avg      0.252688    0.22  0.196102   200.00
+2024-10-06 05:20:35,362 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=True/original_len_n=50
+2024-10-06 05:20:35,362 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:20:38,141 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:20:38,159 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:20:38,177 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:20:38,189 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:20:38,197 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:20:39,023 [INFO] Multiclass LR Accuracy: 0.135
+2024-10-06 05:20:39,028 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.000000   0.000  0.000000   50.000
+GPT2_mixtral      0.048780   0.120  0.069364   50.000
+GPT2_llama3_70b   0.615385   0.320  0.421053   50.000
+GPT2_llama3_8b    0.625000   0.100  0.172414   50.000
+accuracy          0.135000   0.135  0.135000    0.135
+macro avg         0.322291   0.135  0.165708  200.000
+weighted avg      0.322291   0.135  0.165708  200.000
+2024-10-06 05:20:39,050 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/truncated_n=50
+2024-10-06 05:20:39,051 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 05:20:39,051 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 05:20:39,064 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:20:39,078 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:20:39,090 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:20:39,100 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:20:39,864 [INFO] Multiclass LR Accuracy: 0.145
+2024-10-06 05:20:39,867 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.000000   0.000  0.000000   50.000
+GPT2_mixtral      0.049180   0.120  0.069767   50.000
+GPT2_llama3_70b   0.677419   0.420  0.518519   50.000
+GPT2_llama3_8b    0.500000   0.040  0.074074   50.000
+accuracy          0.145000   0.145  0.145000    0.145
+macro avg         0.306650   0.145  0.165590  200.000
+weighted avg      0.306650   0.145  0.165590  200.000
+2024-10-06 05:20:39,879 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=True/original_len_n=50
+2024-10-06 05:20:39,880 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 05:20:42,811 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 05:20:42,819 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:20:42,854 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:20:42,888 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:20:42,920 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:20:42,955 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:20:44,441 [INFO] Multiclass LR Accuracy: 0.7638888888888888
+2024-10-06 05:20:44,446 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_llama8b     0.926829  0.926829  0.926829   41.000000
+gpt2_mixtral     0.750000  0.545455  0.631579   33.000000
+gpt2_llama70b    0.586207  1.000000  0.739130   34.000000
+gpt2_mistral7b   0.952381  0.555556  0.701754   36.000000
+accuracy         0.763889  0.763889  0.763889    0.763889
+macro avg        0.803854  0.756960  0.749823  144.000000
+weighted avg     0.812269  0.763889  0.758581  144.000000
+2024-10-06 05:20:44,462 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/truncated_n=50
+2024-10-06 05:20:44,463 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 05:20:44,463 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 05:20:44,466 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:20:44,498 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:20:44,531 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:20:44,563 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:20:44,597 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:20:45,982 [INFO] Multiclass LR Accuracy: 0.8472222222222222
+2024-10-06 05:20:45,985 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_llama8b     0.928571  0.951220  0.939759   41.000000
+gpt2_mixtral     0.862069  0.757576  0.806452   33.000000
+gpt2_llama70b    0.711111  0.941176  0.810127   34.000000
+gpt2_mistral7b   0.928571  0.722222  0.812500   36.000000
+accuracy         0.847222  0.847222  0.847222    0.847222
+macro avg        0.857581  0.843048  0.842209  144.000000
+weighted avg     0.861986  0.847222  0.846787  144.000000
+2024-10-06 05:20:46,021 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=True/original_len_n=50
+2024-10-06 05:20:46,021 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 05:20:49,006 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-10-06 05:20:49,038 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:20:49,072 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:20:49,105 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:20:49,136 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:20:49,171 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:20:51,703 [INFO] Multiclass LR Accuracy: 0.21800947867298578
+2024-10-06 05:20:51,708 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_gemma2_9b   0.113208  0.352941  0.171429   17.000000
+gpt2_llama8b     0.266667  0.333333  0.296296   48.000000
+gpt2_mixtral     0.228070  0.270833  0.247619   48.000000
+gpt2_llama70b    0.190476  0.080000  0.112676   50.000000
+gpt2_mistral7b   0.350000  0.145833  0.205882   48.000000
+accuracy         0.218009  0.218009  0.218009    0.218009
+macro avg        0.229684  0.236588  0.206780  211.000000
+weighted avg     0.246425  0.218009  0.211082  211.000000
+2024-10-06 05:20:51,731 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=True/truncated_n=50
+2024-10-06 05:20:51,732 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-10-06 05:20:51,733 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-10-06 05:20:51,759 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:20:51,791 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:20:51,823 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:20:51,852 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:20:51,886 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:20:54,315 [INFO] Multiclass LR Accuracy: 0.32701421800947866
+2024-10-06 05:20:54,318 [INFO] Classification Report:
+                precision    recall  f1-score     support
+gpt2_gemma2_9b   0.157895  0.352941  0.218182   17.000000
+gpt2_llama8b     0.325000  0.270833  0.295455   48.000000
+gpt2_mixtral     0.276596  0.270833  0.273684   48.000000
+gpt2_llama70b    0.378378  0.280000  0.321839   50.000000
+gpt2_mistral7b   0.469388  0.479167  0.474227   48.000000
+accuracy         0.327014  0.327014  0.327014    0.327014
+macro avg        0.321451  0.330755  0.316677  211.000000
+weighted avg     0.346021  0.327014  0.331197  211.000000
+2024-10-06 05:20:54,336 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=True/original_len_n=50
+2024-10-06 05:20:54,337 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-10-06 05:20:57,215 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-10-06 05:20:57,251 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:20:57,277 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:20:57,299 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:20:57,319 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:20:57,343 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:21:00,075 [INFO] Multiclass LR Accuracy: 0.336
+2024-10-06 05:21:00,080 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.724138   0.420  0.531646   50.000
+gpt2_llama8b     0.291667   0.420  0.344262   50.000
+gpt2_mixtral     0.308824   0.420  0.355932   50.000
+gpt2_llama70b    0.333333   0.180  0.233766   50.000
+gpt2_mistral7b   0.222222   0.240  0.230769   50.000
+accuracy         0.336000   0.336  0.336000    0.336
+macro avg        0.376037   0.336  0.339275  250.000
+weighted avg     0.376037   0.336  0.339275  250.000
+2024-10-06 05:21:00,098 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=True/truncated_n=50
+2024-10-06 05:21:00,100 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-10-06 05:21:00,100 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-10-06 05:21:00,128 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:21:00,152 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:21:00,172 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:21:00,191 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:21:00,215 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:21:02,826 [INFO] Multiclass LR Accuracy: 0.284
+2024-10-06 05:21:02,830 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.642857   0.180  0.281250   50.000
+gpt2_llama8b     0.562500   0.180  0.272727   50.000
+gpt2_mixtral     0.058824   0.020  0.029851   50.000
+gpt2_llama70b    0.237838   0.880  0.374468   50.000
+gpt2_mistral7b   0.444444   0.160  0.235294   50.000
+accuracy         0.284000   0.284  0.284000    0.284
+macro avg        0.389293   0.284  0.238718  250.000
+weighted avg     0.389293   0.284  0.238718  250.000
+2024-10-06 05:21:02,851 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=True/original_len_n=50
+2024-10-06 05:21:02,852 [INFO] Analysis for pubmed (truncate=False) completed.
+
+2024-10-06 05:21:06,520 [INFO] Running analysis for commonsenseqa dataset (truncate=True)...
+2024-10-06 05:21:06,553 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:21:06,585 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:21:06,626 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:21:06,641 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:21:07,647 [INFO] Multiclass LR Accuracy: 0.475
+2024-10-06 05:21:07,651 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.192308   0.100  0.131579   50.000
+GPT2_mistral7b    1.000000   0.940  0.969072   50.000
+GPT2_mixtral      0.287500   0.460  0.353846   50.000
+GPT2_llama3_8b    0.425532   0.400  0.412371   50.000
+accuracy          0.475000   0.475  0.475000    0.475
+macro avg         0.476335   0.475  0.466717  200.000
+weighted avg      0.476335   0.475  0.466717  200.000
+2024-10-06 05:21:07,681 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=False/truncated_n=50
+2024-10-06 05:21:07,682 [INFO] Analysis for commonsenseqa (truncate=True) completed.
+
+2024-10-06 05:21:07,682 [INFO] Running analysis for commonsenseqa dataset (truncate=False)...
+2024-10-06 05:21:07,705 [INFO] Average word length for model GPT2_llama3_70b: 144.2948402948403
+2024-10-06 05:21:07,738 [INFO] Average word length for model GPT2_mistral7b: 239.31777231777232
+2024-10-06 05:21:07,781 [INFO] Average word length for model GPT2_mixtral: 387.46803278688526
+2024-10-06 05:21:07,797 [INFO] Average word length for model GPT2_llama3_8b: 16.268632268632267
+2024-10-06 05:21:08,731 [INFO] Multiclass LR Accuracy: 0.51
+2024-10-06 05:21:08,735 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_70b   0.416667    0.10  0.161290    50.00
+GPT2_mistral7b    1.000000    0.94  0.969072    50.00
+GPT2_mixtral      0.346154    0.72  0.467532    50.00
+GPT2_llama3_8b    0.378378    0.28  0.321839    50.00
+accuracy          0.510000    0.51  0.510000     0.51
+macro avg         0.535300    0.51  0.479934   200.00
+weighted avg      0.535300    0.51  0.479934   200.00
+2024-10-06 05:21:08,768 [INFO] Results saved to student_vs_teacher_exps/commonsenseqa/same_ids=False/original_len_n=50
+2024-10-06 05:21:08,769 [INFO] Analysis for commonsenseqa (truncate=False) completed.
+
+2024-10-06 05:21:12,189 [INFO] Running analysis for openbookqa dataset (truncate=True)...
+2024-10-06 05:21:12,218 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:21:12,237 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:21:12,258 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:21:12,270 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:21:13,090 [INFO] Multiclass LR Accuracy: 0.245
+2024-10-06 05:21:13,096 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.405405   0.600  0.483871   50.000
+GPT2_llama3_70b   0.212121   0.140  0.168675   50.000
+GPT2_mixtral      0.224490   0.220  0.222222   50.000
+GPT2_llama3_8b    0.022727   0.020  0.021277   50.000
+accuracy          0.245000   0.245  0.245000    0.245
+macro avg         0.216186   0.245  0.224011  200.000
+weighted avg      0.216186   0.245  0.224011  200.000
+2024-10-06 05:21:13,121 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=False/truncated_n=50
+2024-10-06 05:21:13,121 [INFO] Analysis for openbookqa (truncate=True) completed.
+
+2024-10-06 05:21:13,121 [INFO] Running analysis for openbookqa dataset (truncate=False)...
+2024-10-06 05:21:13,142 [INFO] Average word length for model GPT2_mistral7b: 331.242
+2024-10-06 05:21:13,161 [INFO] Average word length for model GPT2_llama3_70b: 304.264
+2024-10-06 05:21:13,180 [INFO] Average word length for model GPT2_mixtral: 379.354
+2024-10-06 05:21:13,190 [INFO] Average word length for model GPT2_llama3_8b: 25.138
+2024-10-06 05:21:13,956 [INFO] Multiclass LR Accuracy: 0.235
+2024-10-06 05:21:13,960 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_mistral7b    0.324786   0.760  0.455090   50.000
+GPT2_llama3_70b   0.388889   0.140  0.205882   50.000
+GPT2_mixtral      0.086957   0.040  0.054795   50.000
+GPT2_llama3_8b    0.000000   0.000  0.000000   50.000
+accuracy          0.235000   0.235  0.235000    0.235
+macro avg         0.200158   0.235  0.178942  200.000
+weighted avg      0.200158   0.235  0.178942  200.000
+2024-10-06 05:21:13,969 [INFO] Results saved to student_vs_teacher_exps/openbookqa/same_ids=False/original_len_n=50
+2024-10-06 05:21:13,970 [INFO] Analysis for openbookqa (truncate=False) completed.
+
+2024-10-06 05:21:16,061 [INFO] Running analysis for quarel dataset (truncate=True)...
+2024-10-06 05:21:16,073 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:21:16,088 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:21:16,103 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:21:16,117 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:21:16,797 [INFO] Multiclass LR Accuracy: 0.065
+2024-10-06 05:21:16,802 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.045455   0.040  0.042553   50.000
+GPT2_llama3_70b   0.010526   0.020  0.013793   50.000
+GPT2_mixtral      0.020833   0.020  0.020408   50.000
+GPT2_mistral7b    0.692308   0.180  0.285714   50.000
+accuracy          0.065000   0.065  0.065000    0.065
+macro avg         0.192280   0.065  0.090617  200.000
+weighted avg      0.192280   0.065  0.090617  200.000
+2024-10-06 05:21:16,824 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=False/truncated_n=50
+2024-10-06 05:21:16,824 [INFO] Analysis for quarel (truncate=True) completed.
+
+2024-10-06 05:21:16,824 [INFO] Running analysis for quarel dataset (truncate=False)...
+2024-10-06 05:21:16,832 [INFO] Average word length for model GPT2_llama3_8b: 38.0863309352518
+2024-10-06 05:21:16,847 [INFO] Average word length for model GPT2_llama3_70b: 264.431654676259
+2024-10-06 05:21:16,862 [INFO] Average word length for model GPT2_mixtral: 388.0935251798561
+2024-10-06 05:21:16,874 [INFO] Average word length for model GPT2_mistral7b: 287.28057553956836
+2024-10-06 05:21:17,587 [INFO] Multiclass LR Accuracy: 0.045
+2024-10-06 05:21:17,590 [INFO] Classification Report:
+                 precision  recall  f1-score  support
+GPT2_llama3_8b    0.083333   0.060  0.069767   50.000
+GPT2_llama3_70b   0.009259   0.020  0.012658   50.000
+GPT2_mixtral      0.020833   0.020  0.020408   50.000
+GPT2_mistral7b    0.500000   0.080  0.137931   50.000
+accuracy          0.045000   0.045  0.045000    0.045
+macro avg         0.153356   0.045  0.060191  200.000
+weighted avg      0.153356   0.045  0.060191  200.000
+2024-10-06 05:21:17,637 [INFO] Results saved to student_vs_teacher_exps/quarel/same_ids=False/original_len_n=50
+2024-10-06 05:21:17,637 [INFO] Analysis for quarel (truncate=False) completed.
+
+2024-10-06 05:21:20,102 [INFO] Running analysis for rotten_tomatoes dataset (truncate=True)...
+2024-10-06 05:21:20,110 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:21:20,144 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:21:20,178 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:21:20,212 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:21:20,244 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:21:21,923 [INFO] Multiclass LR Accuracy: 0.785
+2024-10-06 05:21:21,927 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_llama8b     0.979592   0.960  0.969697   50.000
+gpt2_mixtral     0.679245   0.720  0.699029   50.000
+gpt2_llama70b    0.666667   1.000  0.800000   50.000
+gpt2_mistral7b   1.000000   0.460  0.630137   50.000
+accuracy         0.785000   0.785  0.785000    0.785
+macro avg        0.831376   0.785  0.774716  200.000
+weighted avg     0.831376   0.785  0.774716  200.000
+2024-10-06 05:21:21,952 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=False/truncated_n=50
+2024-10-06 05:21:21,953 [INFO] Analysis for rotten_tomatoes (truncate=True) completed.
+
+2024-10-06 05:21:21,953 [INFO] Running analysis for rotten_tomatoes dataset (truncate=False)...
+2024-10-06 05:21:21,954 [WARNING] File gpt2_gemma2_9b.csv not found for rotten_tomatoes. Skipping.
+2024-10-06 05:21:21,986 [INFO] Average word length for model gpt2_llama8b: 103.94277108433735
+2024-10-06 05:21:22,019 [INFO] Average word length for model gpt2_mixtral: 111.1415313225058
+2024-10-06 05:21:22,052 [INFO] Average word length for model gpt2_llama70b: 108.14502164502164
+2024-10-06 05:21:22,084 [INFO] Average word length for model gpt2_mistral7b: 114.0564705882353
+2024-10-06 05:21:23,708 [INFO] Multiclass LR Accuracy: 0.83
+2024-10-06 05:21:23,711 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_llama8b     0.943396    1.00  0.970874    50.00
+gpt2_mixtral     0.787234    0.74  0.762887    50.00
+gpt2_llama70b    0.731343    0.98  0.837607    50.00
+gpt2_mistral7b   0.909091    0.60  0.722892    50.00
+accuracy         0.830000    0.83  0.830000     0.83
+macro avg        0.842766    0.83  0.823565   200.00
+weighted avg     0.842766    0.83  0.823565   200.00
+2024-10-06 05:21:23,738 [INFO] Results saved to student_vs_teacher_exps/rotten_tomatoes/same_ids=False/original_len_n=50
+2024-10-06 05:21:23,739 [INFO] Analysis for rotten_tomatoes (truncate=False) completed.
+
+2024-10-06 05:21:26,701 [INFO] Running analysis for cnn dataset (truncate=True)...
+2024-10-06 05:21:26,731 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:21:26,763 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:21:26,796 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:21:26,825 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:21:26,859 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:21:29,380 [INFO] Multiclass LR Accuracy: 0.176
+2024-10-06 05:21:29,386 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.153846   0.120  0.134831   50.000
+gpt2_llama8b     0.170732   0.420  0.242775   50.000
+gpt2_mixtral     0.183333   0.220  0.200000   50.000
+gpt2_llama70b    0.240000   0.120  0.160000   50.000
+gpt2_mistral7b   0.000000   0.000  0.000000   50.000
+accuracy         0.176000   0.176  0.176000    0.176
+macro avg        0.149582   0.176  0.147521  250.000
+weighted avg     0.149582   0.176  0.147521  250.000
+2024-10-06 05:21:29,402 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=False/truncated_n=50
+2024-10-06 05:21:29,403 [INFO] Analysis for cnn (truncate=True) completed.
+
+2024-10-06 05:21:29,403 [INFO] Running analysis for cnn dataset (truncate=False)...
+2024-10-06 05:21:29,435 [INFO] Average word length for model gpt2_gemma2_9b: 35.11764705882353
+2024-10-06 05:21:29,464 [INFO] Average word length for model gpt2_llama8b: 102.29721030042919
+2024-10-06 05:21:29,496 [INFO] Average word length for model gpt2_mixtral: 125.60342979635584
+2024-10-06 05:21:29,525 [INFO] Average word length for model gpt2_llama70b: 84.49785407725322
+2024-10-06 05:21:29,557 [INFO] Average word length for model gpt2_mistral7b: 118.347
+2024-10-06 05:21:31,988 [INFO] Multiclass LR Accuracy: 0.252
+2024-10-06 05:21:31,992 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.241379   0.140  0.177215   50.000
+gpt2_llama8b     0.195876   0.380  0.258503   50.000
+gpt2_mixtral     0.204545   0.180  0.191489   50.000
+gpt2_llama70b    0.214286   0.180  0.195652   50.000
+gpt2_mistral7b   0.500000   0.380  0.431818   50.000
+accuracy         0.252000   0.252  0.252000    0.252
+macro avg        0.271217   0.252  0.250936  250.000
+weighted avg     0.271217   0.252  0.250936  250.000
+2024-10-06 05:21:32,020 [INFO] Results saved to student_vs_teacher_exps/cnn/same_ids=False/original_len_n=50
+2024-10-06 05:21:32,022 [INFO] Analysis for cnn (truncate=False) completed.
+
+2024-10-06 05:21:34,270 [INFO] Running analysis for pubmed dataset (truncate=True)...
+2024-10-06 05:21:34,302 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:21:34,328 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:21:34,351 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:21:34,370 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:21:34,397 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:21:37,028 [INFO] Multiclass LR Accuracy: 0.364
+2024-10-06 05:21:37,033 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.700000   0.280  0.400000   50.000
+gpt2_llama8b     0.370370   0.600  0.458015   50.000
+gpt2_mixtral     0.419355   0.260  0.320988   50.000
+gpt2_llama70b    0.242424   0.160  0.192771   50.000
+gpt2_mistral7b   0.305882   0.520  0.385185   50.000
+accuracy         0.364000   0.364  0.364000    0.364
+macro avg        0.407606   0.364  0.351392  250.000
+weighted avg     0.407606   0.364  0.351392  250.000
+2024-10-06 05:21:37,054 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=False/truncated_n=50
+2024-10-06 05:21:37,055 [INFO] Analysis for pubmed (truncate=True) completed.
+
+2024-10-06 05:21:37,055 [INFO] Running analysis for pubmed dataset (truncate=False)...
+2024-10-06 05:21:37,083 [INFO] Average word length for model gpt2_gemma2_9b: 259.8294314381271
+2024-10-06 05:21:37,106 [INFO] Average word length for model gpt2_llama8b: 221.84102564102565
+2024-10-06 05:21:37,126 [INFO] Average word length for model gpt2_mixtral: 125.44949494949495
+2024-10-06 05:21:37,145 [INFO] Average word length for model gpt2_llama70b: 113.36227045075125
+2024-10-06 05:21:37,170 [INFO] Average word length for model gpt2_mistral7b: 191.83779264214047
+2024-10-06 05:21:39,746 [INFO] Multiclass LR Accuracy: 0.388
+2024-10-06 05:21:39,750 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.700000   0.420  0.525000   50.000
+gpt2_llama8b     0.761905   0.320  0.450704   50.000
+gpt2_mixtral     0.214286   0.060  0.093750   50.000
+gpt2_llama70b    0.270440   0.860  0.411483   50.000
+gpt2_mistral7b   0.538462   0.280  0.368421   50.000
+accuracy         0.388000   0.388  0.388000    0.388
+macro avg        0.497018   0.388  0.369872  250.000
+weighted avg     0.497018   0.388  0.369872  250.000
+2024-10-06 05:21:39,770 [INFO] Results saved to student_vs_teacher_exps/pubmed/same_ids=False/original_len_n=50
+2024-10-06 05:21:39,771 [INFO] Analysis for pubmed (truncate=False) completed.
+

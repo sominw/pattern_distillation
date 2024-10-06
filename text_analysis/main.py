@@ -37,32 +37,33 @@ def run_analysis(dataset, truncate, same_ids, sample_size=None, qa_datasets=Fals
     os.makedirs(output_dir, exist_ok=True)
     
 
-    dfs = load_dfs(dataset, truncate, same_ids, sample_size, qa_datasets)
+    dfs, original_dfs = load_dfs(dataset, truncate, same_ids, sample_size, qa_datasets)
 
-    # Within-Model Analysis (Student vs Teacher)
-    within_model_results = []
+    # # Within-Model Analysis (Student vs Teacher)
+    # within_model_results = []
 
-    for i, df in enumerate(dfs):
-        result = analyze_within_model(df, 'student', 'teacher_summ', truncate)
-        within_model_results.append({'Teacher': MODELS[i].split('.')[0].split('gpt2_')[-1], **result})
+    # for i, df in enumerate(dfs):
+    #     result = analyze_within_model(df, 'student', 'teacher_summ', truncate)
+    #     within_model_results.append({'Teacher': MODELS[i].split('.')[0].split('gpt2_')[-1], **result})
 
-    pd.DataFrame(within_model_results).to_csv(os.path.join(output_dir, f'within_model_analysis_{truncation_status}.csv'), index=False)
+    # pd.DataFrame(within_model_results).to_csv(os.path.join(output_dir, f'within_model_analysis_{truncation_status}.csv'), index=False)
 
-    # Between-Model Analysis (Student vs All Teacher)
-    student_vs_teachers_results = analyze_student_vs_all_teachers(dfs, truncate)
-    student_vs_teachers_results.to_csv(os.path.join(output_dir, f'student_vs_all_teachers_analysis_{truncation_status}.csv'), index=False)
+    # # Between-Model Analysis (Student vs All Teacher)
+    # student_vs_teachers_results = analyze_student_vs_all_teachers(dfs, truncate)
+    # student_vs_teachers_results.to_csv(os.path.join(output_dir, f'student_vs_all_teachers_analysis_{truncation_status}.csv'), index=False)
 
-    # Heat map results
-    create_student_teacher_heatmap(student_vs_teachers_results, output_dir, truncation_status)
+    # # Heat map results
+    # create_student_teacher_heatmap(student_vs_teachers_results, output_dir, truncation_status)
 
-    # LR analysis 
-    accuracy, report, feature_importance = multiclass_lr_teacher_classification(dfs, truncate=truncate)
-    feature_importance.to_csv(os.path.join(output_dir, f'feature_importance_{truncation_status}.csv'), index=False)
-    report = pd.DataFrame(report).transpose()
-    report['model'] = report.index
-    report.to_csv(os.path.join(output_dir, f'classification_report_{truncation_status}.csv'), index=False)
+    # LR analysis; only run for sample n=50 for the students (not necessary for the others)
+    if sample_size:
+        accuracy, report, feature_importance = multiclass_lr_teacher_classification(dfs, original_dfs, truncate=truncate)
+        # feature_importance.to_csv(os.path.join(output_dir, f'feature_importance_{truncation_status}.csv'), index=False)
+        report = pd.DataFrame(report).transpose()
+        report['model'] = report.index
+        report.to_csv(os.path.join(output_dir, f'classification_report_{truncation_status}.csv'), index=False)
 
-    logging.info(f"Results saved to {output_dir}")
+        logging.info(f"Results saved to {output_dir}")
 
 
 def main():

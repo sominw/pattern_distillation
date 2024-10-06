@@ -92,6 +92,8 @@ def load_dfs(dataset, truncate, same_ids, sample_size=None, qa_datasets=False):
         logging.error(f"No data files were successfully loaded for {dataset}.")
         return []
     
+    original_df = dfs 
+
     if sample_size:
         if same_ids:
             # sample the same IDs across all dataframes
@@ -101,4 +103,4 @@ def load_dfs(dataset, truncate, same_ids, sample_size=None, qa_datasets=False):
             # sample different IDs for each dataframe
             dfs = [df.sample(min(sample_size, len(df)), random_state=2024) for df in dfs]
     
-    return dfs
+    return dfs, original_df 
