@@ -8184,3 +8184,195 @@ weighted avg     0.497018   0.388  0.369872  250.000
 2024-10-06 05:48:52,783 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/pubmed/same_ids=False/original_len_n=50'
 2024-10-06 05:48:52,787 [INFO] Analysis for pubmed (truncate=False) completed.
 
+2024-10-16 13:20:17,737 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 13:20:17,870 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 13:20:17,951 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 13:20:18,031 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 13:20:18,115 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 13:20:18,189 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 13:20:29,226 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=True/truncated_n=50'
+2024-10-16 13:20:29,231 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 13:20:29,231 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 13:20:29,294 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 13:20:29,358 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 13:20:29,406 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 13:20:29,471 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 13:20:29,509 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 13:20:41,113 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=True/original_len_n=50'
+2024-10-16 13:20:41,117 [INFO] Analysis for alpaca (truncate=False) completed.
+
+2024-10-16 13:20:52,458 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 13:20:52,528 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 13:20:52,589 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 13:20:52,642 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 13:20:52,707 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 13:20:52,751 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 13:36:51,127 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=True/truncated'
+2024-10-16 13:36:51,133 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 13:36:51,133 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 13:36:51,186 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 13:36:51,244 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 13:36:51,290 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 13:36:51,349 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 13:36:51,384 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 14:00:24,758 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=True/original_len'
+2024-10-16 14:00:24,767 [INFO] Analysis for alpaca (truncate=False) completed.
+
+2024-10-16 14:00:42,938 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 14:00:43,056 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 14:00:43,118 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 14:00:43,169 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 14:00:43,236 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 14:00:43,277 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 14:01:10,587 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=False/truncated_n=50'
+2024-10-16 14:01:10,595 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 14:01:10,595 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 14:01:10,657 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 14:01:10,715 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 14:01:10,760 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 14:01:10,820 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 14:01:10,855 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 14:01:46,993 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=False/original_len_n=50'
+2024-10-16 14:01:46,997 [INFO] Analysis for alpaca (truncate=False) completed.
+
+2024-10-16 14:02:03,026 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 14:02:03,113 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 14:02:03,173 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 14:02:03,224 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 14:02:03,289 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 14:02:03,329 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 14:18:01,409 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=False/truncated'
+2024-10-16 14:18:01,416 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 14:18:01,416 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 14:18:01,506 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 14:18:01,567 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 14:18:01,618 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 14:18:01,684 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 14:18:01,725 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 14:42:03,296 [INFO] Student-Teacher heatmap plots saved in the folder 'student_vs_teacher_exps/alpaca/same_ids=False/original_len'
+2024-10-16 14:42:03,300 [INFO] Analysis for alpaca (truncate=False) completed.
+
+2024-10-16 14:57:53,665 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 14:57:53,741 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 14:57:53,801 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 14:57:53,850 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 14:57:53,912 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 14:57:53,950 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 15:05:49,438 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=True/truncated_n=50'
+2024-10-16 15:06:02,670 [INFO] Multiclass LR Accuracy: 0.23943661971830985
+2024-10-16 15:06:02,680 [INFO] Classification Report:
+                precision    recall  f1-score    support
+gpt2_gemma2_9b   0.187500  0.157895  0.171429  19.000000
+gpt2_llama8b     0.000000  0.000000  0.000000  10.000000
+gpt2_mixtral     0.208333  0.357143  0.263158  14.000000
+gpt2_llama70b    0.461538  0.352941  0.400000  17.000000
+gpt2_mistral7b   0.272727  0.272727  0.272727  11.000000
+accuracy         0.239437  0.239437  0.239437   0.239437
+macro avg        0.226020  0.228141  0.221463  71.000000
+weighted avg     0.244019  0.239437  0.235794  71.000000
+2024-10-16 15:06:02,698 [INFO] Results saved to teacher_vs_teacher_exps/alpaca/same_ids=True/truncated_n=50
+2024-10-16 15:06:02,700 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 15:06:02,700 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 15:06:02,751 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 15:06:02,808 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 15:06:02,855 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 15:06:02,918 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 15:06:02,953 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 15:16:52,366 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=True/original_len_n=50'
+2024-10-16 15:17:05,706 [INFO] Multiclass LR Accuracy: 0.22535211267605634
+2024-10-16 15:17:05,711 [INFO] Classification Report:
+                precision    recall  f1-score    support
+gpt2_gemma2_9b   0.166667  0.157895  0.162162  19.000000
+gpt2_llama8b     0.200000  0.100000  0.133333  10.000000
+gpt2_mixtral     0.190476  0.285714  0.228571  14.000000
+gpt2_llama70b    0.400000  0.352941  0.375000  17.000000
+gpt2_mistral7b   0.166667  0.181818  0.173913  11.000000
+accuracy         0.225352  0.225352  0.225352   0.225352
+macro avg        0.224762  0.215674  0.214596  71.000000
+weighted avg     0.231925  0.225352  0.223978  71.000000
+2024-10-16 15:17:05,730 [INFO] Results saved to teacher_vs_teacher_exps/alpaca/same_ids=True/original_len_n=50
+2024-10-16 15:17:05,733 [INFO] Analysis for alpaca (truncate=False) completed.
+
+2024-10-16 15:17:11,148 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 15:17:11,204 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 15:17:11,263 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 15:17:11,312 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 15:17:11,375 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 15:17:11,413 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 15:25:04,150 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=True/truncated'
+2024-10-16 15:25:04,155 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 15:25:04,155 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 15:25:04,212 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 15:25:04,276 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 15:25:04,323 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 15:25:04,386 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 15:25:04,421 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 15:35:47,509 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=True/original_len'
+2024-10-16 15:35:47,513 [INFO] Analysis for alpaca (truncate=False) completed.
+
+2024-10-16 15:35:55,562 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 15:35:55,648 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 15:35:55,710 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 15:35:55,760 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 15:35:55,822 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 15:35:55,865 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 15:43:50,060 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=False/truncated_n=50'
+2024-10-16 15:44:03,469 [INFO] Multiclass LR Accuracy: 0.24
+2024-10-16 15:44:03,479 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.296875    0.76  0.426966    50.00
+gpt2_llama8b     0.157895    0.12  0.136364    50.00
+gpt2_mixtral     0.400000    0.08  0.133333    50.00
+gpt2_llama70b    0.090909    0.06  0.072289    50.00
+gpt2_mistral7b   0.219512    0.18  0.197802    50.00
+accuracy         0.240000    0.24  0.240000     0.24
+macro avg        0.233038    0.24  0.193351   250.00
+weighted avg     0.233038    0.24  0.193351   250.00
+2024-10-16 15:44:03,499 [INFO] Results saved to teacher_vs_teacher_exps/alpaca/same_ids=False/truncated_n=50
+2024-10-16 15:44:03,501 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 15:44:03,502 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 15:44:03,549 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 15:44:03,608 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 15:44:03,654 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 15:44:03,713 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 15:44:03,748 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 15:54:50,557 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=False/original_len_n=50'
+2024-10-16 15:55:04,141 [INFO] Multiclass LR Accuracy: 0.248
+2024-10-16 15:55:04,147 [INFO] Classification Report:
+                precision  recall  f1-score  support
+gpt2_gemma2_9b   0.309735   0.700  0.429448   50.000
+gpt2_llama8b     0.133333   0.080  0.100000   50.000
+gpt2_mixtral     0.384615   0.200  0.263158   50.000
+gpt2_llama70b    0.095238   0.080  0.086957   50.000
+gpt2_mistral7b   0.230769   0.180  0.202247   50.000
+accuracy         0.248000   0.248  0.248000    0.248
+macro avg        0.230738   0.248  0.216362  250.000
+weighted avg     0.230738   0.248  0.216362  250.000
+2024-10-16 15:55:04,172 [INFO] Results saved to teacher_vs_teacher_exps/alpaca/same_ids=False/original_len_n=50
+2024-10-16 15:55:04,175 [INFO] Analysis for alpaca (truncate=False) completed.
+
+2024-10-16 15:55:10,361 [INFO] Running analysis for alpaca dataset (truncate=True)...
+2024-10-16 15:55:10,415 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 15:55:10,475 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 15:55:10,524 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 15:55:10,587 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 15:55:10,627 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 16:03:03,518 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=False/truncated'
+2024-10-16 16:03:03,523 [INFO] Analysis for alpaca (truncate=True) completed.
+
+2024-10-16 16:03:03,523 [INFO] Running analysis for alpaca dataset (truncate=False)...
+2024-10-16 16:03:03,572 [INFO] Average word length for model gpt2_gemma2_9b: 77.35411069317571
+2024-10-16 16:03:03,631 [INFO] Average word length for model gpt2_llama8b: 172.54402035623409
+2024-10-16 16:03:03,677 [INFO] Average word length for model gpt2_mixtral: 141.1861761426979
+2024-10-16 16:03:03,740 [INFO] Average word length for model gpt2_llama70b: 210.85611510791367
+2024-10-16 16:03:03,775 [INFO] Average word length for model gpt2_mistral7b: 57.12912241475685
+2024-10-16 16:13:48,639 [INFO] Heatmap plots saved in the folder 'teacher_vs_teacher_exps/alpaca/same_ids=False/original_len'
+2024-10-16 16:13:48,644 [INFO] Analysis for alpaca (truncate=False) completed.
+

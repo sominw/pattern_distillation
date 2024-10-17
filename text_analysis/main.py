@@ -64,14 +64,14 @@ def run_analysis(dataset, truncate, same_ids, sample_size=None, qa_datasets=Fals
     create_heatmap_plots(teacher_vs_teachers_results, output_dir, truncation_status)
 
     # LR analysis; only run for sample n=50 for the students (not necessary for the others)
-    # if sample_size:
-    #     accuracy, report, feature_importance = multiclass_lr_teacher_classification(dfs, original_dfs, truncate=truncate)
-    #     # feature_importance.to_csv(os.path.join(output_dir, f'feature_importance_{truncation_status}.csv'), index=False)
-    #     report = pd.DataFrame(report).transpose()
-    #     report['model'] = report.index
-    #     report.to_csv(os.path.join(output_dir, f'classification_report_{truncation_status}.csv'), index=False)
+    if sample_size:
+        accuracy, report, feature_importance = multiclass_lr_teacher_classification(dfs, original_dfs, truncate=truncate)
+        # feature_importance.to_csv(os.path.join(output_dir, f'feature_importance_{truncation_status}.csv'), index=False)
+        report = pd.DataFrame(report).transpose()
+        report['model'] = report.index
+        report.to_csv(os.path.join(output_dir, f'classification_report_{truncation_status}.csv'), index=False)
 
-    #     logging.info(f"Results saved to {output_dir}")
+        logging.info(f"Results saved to {output_dir}")
 
 
 def main():
