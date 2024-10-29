@@ -37,7 +37,18 @@
 # # python3 main.py --dataset pubmed --same_ids False
 
 python3 main.py --dataset alpaca --sample_size 50 
-python3 main.py --dataset alpaca 
+python3 main.py --dataset rotten_tomatoes --sample_size 50
+python3 main.py --dataset cnn --sample_size 50
+python3 main.py --dataset pubmed --sample_size 50
+python3 main.py --dataset commonsenseqa --sample_size 50 --qa_datasets True
+python3 main.py --dataset openbookqa --sample_size 50 --qa_datasets True
+python3 main.py --dataset quarel --sample_size 50 --qa_datasets True
 
-python3 main.py --dataset alpaca --sample_size 50 --same_ids False
-python3 main.py --dataset alpaca --same_ids False
+# python3 main.py --dataset alpaca 
+
+# python3 main.py --dataset alpaca --sample_size 50 --same_ids False
+# python3 main.py --dataset alpaca --same_ids False
+
+
+# python3 main.py --dataset rotten_tomatoes
+
