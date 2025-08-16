@@ -4,6 +4,7 @@ DATASETS = {
     'rotten_tomatoes': '/work/frink/shaib.c/pattern_distillation/inference/rotten_tomatoes/',
     'pubmed': '/work/frink/shaib.c/pattern_distillation/inference/pubmed/',
     'cnn': '/work/frink/shaib.c/pattern_distillation/inference/cnn/',
+    'alpaca': '/work/frink/shaib.c/pattern_distillation/inference/alpaca/'
 }
 
 MODELS = [

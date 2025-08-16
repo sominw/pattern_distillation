@@ -24,7 +24,7 @@ def perform_lr_bow(df, original_df, text_column, label_column, teacher_summ, tru
     train_df = pd.DataFrame()
     for model in df['model'].unique():
         df_to_sample_from = original_df[~(original_df['id'].isin(df['id']))]
-        model_df = df_to_sample_from[df_to_sample_from['model'] == model].sample(50, random_state=RANDOM_STATE)
+        model_df = df_to_sample_from[df_to_sample_from['model'] == model]# .sample(50, random_state=RANDOM_STATE)
         train_df = pd.concat([train_df, model_df], ignore_index=True)
 
     if truncate:
