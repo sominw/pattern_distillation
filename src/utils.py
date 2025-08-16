@@ -46,20 +46,28 @@ def prepare_compute_metrics_clm(tokenizer: AutoTokenizer):
 
         final_labels = []
         for sentence in decoded_predictions:
-            match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]', sentence.strip())
+            # match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]\s*(.*)', sentence.strip())
+            match = re.search(r'\[SUMMARY\]\s*(.*)', sentence.strip(), re.DOTALL)
             if match:
-                label = match.group(1)
-                final_labels.append(label.strip())
+                label = match.group(1).replace('[SUMMARY]', '').strip()
+                lines = re.split(r'\.\s*', label)
+                unique_lines = list(dict.fromkeys(line.strip() for line in lines if line.strip()))
+                summ = '. '.join(unique_lines) + '.'
+                final_labels.append(summ.strip())
             else:
                 final_labels.append("None")
         decoded_predictions = final_labels
 
         final_labels = []
         for sentence in decoded_labels:
-            match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]', sentence.strip())
+            # match = re.search(r'\[SUMMARY\]\s*(.*?)\s*\[SUMMARY\]\s*(.*)', sentence.strip())
+            match = re.search(r'\[SUMMARY\]\s*(.*)', sentence.strip(), re.DOTALL)
             if match:
-                label = match.group(1)
-                final_labels.append(label.strip())
+                label = match.group(1).replace('[SUMMARY]', '').strip()
+                lines = re.split(r'\.\s*', label)
+                unique_lines = list(dict.fromkeys(line.strip() for line in lines if line.strip()))
+                summ = '. '.join(unique_lines) + '.'
+                final_labels.append(summ.strip())
             else:
                 final_labels.append("None")
         decoded_labels = final_labels
@@ -71,8 +79,8 @@ def prepare_compute_metrics_clm(tokenizer: AutoTokenizer):
         print ("\nPREDS (FULL): ", decoded_predictions[rand_ix])
 
         result = rouge.compute(predictions=decoded_predictions, references=decoded_labels, use_stemmer=True)
-        prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in predictions]
-        result["gen_len"] = np.mean(prediction_lens)
+        # prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in predictions]
+        # result["gen_len"] = np.mean(prediction_lens)
 
         return {k: round(v, 4) for k, v in result.items()}
 

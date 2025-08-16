@@ -7,3 +7,10 @@ wandb
 logs
 .log
 inference_outputs
+*.sh
+*.png
+*.eps
+plots.ipynb
+*.err
+*.out
+diversity

@@ -21,6 +21,7 @@ def load_data_for_training_evaluation(config: dict,
     d = Dataset.from_pandas(df)
     d = d.train_test_split(test_size=0.2)
 
+    d["test"] = d["test"].select(range(50))
 
     return d['train'], d['test'], d['test']
 

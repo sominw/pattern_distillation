@@ -12,7 +12,7 @@ import datetime as dt
 import logging.config
 from datasets import Dataset
 # from transformers.utils import logging
-from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments, EarlyStoppingCallback, DataCollatorForLanguageModeling
+from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments, EarlyStoppingCallback, DataCollatorForLanguageModeling, DataCollatorForSeq2Seq
 
 from load_data import load_data_for_training_evaluation
 from utils import prepare_compute_metrics_clm as prepare_compute_metrics, prepare_preprocess_clm_fn
@@ -76,7 +76,8 @@ def main(args):
 
     model = AutoModelForCausalLM.from_pretrained(m, 
                                             cache_dir=cache_path, 
-                                            device_map = "auto"
+                                            device_map = "auto",
+                                            torch_dtype = torch.bfloat16 if args.bf16 else torch.float32,
                                             )
     tokenizer = AutoTokenizer.from_pretrained(m, 
                                             cache_dir=cache_path,
@@ -111,6 +112,7 @@ def main(args):
          output_path = output_path + "trained/" + args.data + "/" + args.model + "_" + args.teacher + "/"
 
     logger.info("Output Path: \t" + output_path)
+    # data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, padding=True)
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
     # data_collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer, mlm=False)
     # print (d_train[1])
@@ -119,6 +121,11 @@ def main(args):
 
     if torch.cuda.is_available():
         logger.info("# of GPUs in use: " + str(torch.cuda.device_count()))
+
+    if args.bf16:
+        fp16 = False
+    else:
+        fp16 = args.fp16
 
     training_args = TrainingArguments(
                     report_to=args.report_to,
@@ -135,6 +142,7 @@ def main(args):
                     logging_steps=args.logging_steps,
                     weight_decay=args.weight_decay,
                     save_total_limit=args.save_total_limit,
+                    save_steps=args.save_steps,
                     num_train_epochs=args.max_epochs,
                     logging_dir=output_path + "/logs",
                     load_best_model_at_end = args.load_best_model_at_end,
@@ -142,6 +150,9 @@ def main(args):
                     greater_is_better = args.greater_is_better,
                     log_level="info",
                     eval_accumulation_steps=args.eval_accumulation_steps,
+                    bf16=args.bf16,
+                    fp16_full_eval=args.fp16_full_eval,
+                    fp16=fp16,
                     )
     
     trainer = Trainer(
@@ -183,6 +194,7 @@ if __name__ == "__main__":
     parser.add_argument("--auto_find_batch_size", default=False, action=BooleanOptionalAction)
     parser.add_argument("--eval_steps", type=int, default=500),
     parser.add_argument("--lr", type=float, default=5e-5)
+    parser.add_argument("--save_steps", type=int, default=500)
     parser.add_argument("--weight_decay", type=float, default=0.01)
     parser.add_argument("--output_path", type=str, default=None)
     parser.add_argument("--save_strategy", type=str, default="steps")
@@ -190,7 +202,10 @@ if __name__ == "__main__":
     parser.add_argument("--greater_is_better", type=bool, default=False, action=BooleanOptionalAction)
     parser.add_argument("--generation_max_length", type=int, default=1024)
     parser.add_argument("--metric_for_best_model", type=str, default="eval_loss")
-    parser.add_argument("--eval_accumulation_steps", type=int, default=12)
+    parser.add_argument("--eval_accumulation_steps", type=int, default=4)
+    parser.add_argument("--bf16", type=bool, default=False, action=BooleanOptionalAction)
+    parser.add_argument("--fp16", type=bool, default=True, action=BooleanOptionalAction)
+    parser.add_argument("--fp16_full_eval", type=bool, default=False, action=BooleanOptionalAction)
 
 
     # src specific

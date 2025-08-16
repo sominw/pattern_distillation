@@ -121,7 +121,7 @@ def main(args):
                 summ = "None"
                 generated.append(summ)
                 erroneous += 1
-            gold.append(ins["gold_summary"])
+            # gold.append(ins["gold_summary"])
             teacher.append(ins["generated_summary"])
             ip.append(ins["text"])
             ids.append(ins["id"])
@@ -133,7 +133,7 @@ def main(args):
                 print ("\n---TEACHER GENERATED: ", ins["generated_summary"])
                 print ("\n\n------------------------------------------------------------------------------------------\n\n")
         except:
-            logger.error("Error in processing instance: " + ins["id"])
+            logger.error("Error in processing instance: " + str(ins["id"]))
             erroneous += 1
     
     result = rouge.compute(predictions=generated, references=teacher, use_stemmer=True)
@@ -145,7 +145,12 @@ def main(args):
     if args.save:
         path = "/work/frink/shaib.c/pattern_distillation/inference/" + args.data + "/"
         os.makedirs(path, exist_ok = True)
-        pd.DataFrame({"id": ids, "text": ip, "student": generated, "teacher_summ": teacher, "gold_reference": gold}).to_csv(path + str(args.student + "_" + args.teacher +".csv"), index = False)
+        pd.DataFrame({
+                      "id": ids, "text": ip, 
+                      "student": generated, 
+                      "teacher_summ": teacher, 
+                    #   "gold_reference": gold
+                      }).to_csv(path + str(args.student + "_" + args.teacher +".csv"), index = False)
         logger.info("Augmented data with outputs saved at: " + path)
 
     logger.info("Final Results: \n" + str(final_res))
